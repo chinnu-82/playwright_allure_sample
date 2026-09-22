@@ -1,0 +1,11 @@
+{
+  "total": 3,
+  "errors": 1,
+  "warnings": 1,
+  "pageErrors": 0,
+  "byType": {
+    "log": 1,
+    "warning": 1,
+    "error": 1
+  }
+}

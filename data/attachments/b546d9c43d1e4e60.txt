@@ -1,0 +1,62 @@
+2026-09-22T12:08:29.623Z [INFO ] (Product catalog › Every product card shows a name, a price and an image) ▶ START "Every product card shows a name, a price and an image" (attempt 1, worker 0)
+2026-09-22T12:08:29.659Z [INFO ] (Product catalog › Every product card shows a name, a price and an image) Navigating to https://sauce-demo.myshopify.com/collections/all
+2026-09-22T12:08:30.076Z [DEBUG] (Product catalog › Every product card shows a name, a price and an image:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:30.185Z [DEBUG] (Product catalog › Every product card shows a name, a price and an image:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:30.192Z [DEBUG] (Product catalog › Every product card shows a name, a price and an image) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/collections/all"
+    }
+2026-09-22T12:08:30.392Z [DEBUG] (Product catalog › Every product card shows a name, a price and an image:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-22T12:08:30.532Z [INFO ] (Product catalog › Every product card shows a name, a price and an image) DATA catalog.products
+    [
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/collections/all/products/flower-print-jeans",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/collections/all/products/bronze-sandals",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/collections/all/products/brown-shades",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      },
+      {
+        "name": "Grey jacket",
+        "priceText": "£55.00",
+        "href": "/collections/all/products/grey-jacket",
+        "imageAlt": "Grey jacket",
+        "price": 55
+      },
+      {
+        "name": "Noir jacket",
+        "priceText": "£60.00",
+        "href": "/collections/all/products/noir-jacket",
+        "imageAlt": "Noir jacket",
+        "price": 60
+      },
+      {
+        "name": "Striped top",
+        "priceText": "£50.00",
+        "href": "/collections/all/products/striped-top",
+        "imageAlt": "Striped top",
+        "price": 50
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/collections/all/products/white-sandals",
+        "imageAlt": "White sandals",
+        "price": 25
+      }
+    ]
+2026-09-22T12:08:30.569Z [INFO ] (Product catalog › Every product card shows a name, a price and an image) ■ END status=passed duration=946ms

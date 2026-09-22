@@ -1,0 +1,1 @@
+[WARN] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():network) HTTP 404 GET https://sauce-demo.myshopify.com/pages/shipping

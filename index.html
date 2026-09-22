@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="allure-report-uuid" content="13728eaf-21e3-4640-a366-1e296c7a67e2">
+    <title>Sauce Demo – E2E Quality Report</title>
+    <link rel="icon" href="assets/favicon-BDLHVmV7.ico">
+    <!-- allure-core-head:start -->
+    <!-- allure-core-head:end -->
+<!-- custom-theme --><style>
+/*
+ * Custom Allure 2 theme — injected into allure-report/index.html by scripts/generate-report.ts.
+ * `url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxNTAgNDAiPgogIDxyZWN0IHg9IjIiIHk9IjYiIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgcng9IjciIGZpbGw9IiMyMmM1NWUiLz4KICA8cGF0aCBkPSJNOSAyMS41bDUgNSA5LjUtMTEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBiMTIyMCIgc3Ryb2tlLXdpZHRoPSIzLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDx0ZXh0IHg9IjM4IiB5PSIyNiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPlNhdWNlIFFBPC90ZXh0Pgo8L3N2Zz4K")` is replaced with an inline data URI of allure-theme/logo.svg.
+ * Tip: open the report, press F12 and inspect elements to find more selectors.
+ */
+:root {
+  --brand: #22c55e;
+  --brand-strong: #15803d;
+  --nav-bg: #0b1220;
+  --nav-hover: #1e293b;
+  --nav-text: #cbd5e1;
+}
+
+/* ---- Sidebar ---------------------------------------------------------- */
+.side-nav { background: var(--nav-bg) !important; }
+
+/* Replace the Allure logo + text with our own logo */
+.side-nav__brand {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxNTAgNDAiPgogIDxyZWN0IHg9IjIiIHk9IjYiIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgcng9IjciIGZpbGw9IiMyMmM1NWUiLz4KICA8cGF0aCBkPSJNOSAyMS41bDUgNSA5LjUtMTEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBiMTIyMCIgc3Ryb2tlLXdpZHRoPSIzLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDx0ZXh0IHg9IjM4IiB5PSIyNiIgZm9udC1mYW1pbHk9IlNlZ29lIFVJLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPlNhdWNlIFFBPC90ZXh0Pgo8L3N2Zz4K") no-repeat 14px center !important;
+  background-size: 130px 35px !important;
+  min-height: 56px;
+}
+.side-nav__brand-icon, .side-nav__brand-text { visibility: hidden; }
+
+.side-nav__link,
+.side-nav__theme,
+.side-nav__language,
+.side-nav__collapse { color: var(--nav-text) !important; }
+.side-nav__icon { color: var(--nav-text) !important; }            /* icons are stroke="currentColor" */
+.side-nav__link_active .side-nav__icon { color: var(--brand) !important; }
+.side-nav__language-small { color: var(--nav-text) !important; border-color: var(--nav-text) !important; }
+
+.side-nav__link:hover,
+.side-nav__theme:hover,
+.side-nav__collapse:hover { background: var(--nav-hover) !important; color: #fff !important; }
+
+.side-nav__link_active,
+.side-nav__link_active:hover {
+  background: var(--nav-hover) !important;
+  color: #fff !important;
+  box-shadow: inset 3px 0 0 var(--brand);
+}
+
+/* ---- Content ---------------------------------------------------------- */
+.app__content a:not(.button) { color: var(--brand-strong); }
+.app__content .tab_active, .app__content .pane__tab_active { border-bottom-color: var(--brand) !important; }
+
+/* Readable text attachments (logs, JSON) */
+.attachment__text { font-size: 12px; line-height: 1.5; }
+
+</style><!-- custom-theme -->
+</head>
+<body>
+    <div id="alert"></div>
+    <div id="content">
+        <span class="spinner">
+            <span class="spinner__circle"></span>
+        </span>
+    </div>
+    <div id="popup"></div>
+    <!-- allure-core-body:start -->
+    <script>
+        window.__allureCoreLoaded = new Promise(function (resolve, reject) {
+        window.__allureResolveCoreLoaded = resolve;
+        window.__allureRejectCoreLoaded = reject;
+    });
+    </script>
+    <script src="assets/index-CqG5t6J2.js"></script>
+    <script>
+        if (typeof window.__allureResolveCoreLoaded === "function") {
+            window.__allureResolveCoreLoaded([]);
+        }
+    </script>
+    <!-- allure-core-body:end -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVWC4GKEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FVWC4GKEYS', {
+          'allureVersion': '2.46.1',
+          'reportUuid': '13728eaf-21e3-4640-a366-1e296c7a67e2',
+          'single_file': false
+        });
+    </script>
+</body>
+</html>

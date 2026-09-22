@@ -1,0 +1,3 @@
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Simulating network failure (failed) for **/cart/add.js
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) Uncaught page error: SyntaxError: Unexpected token ')'
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/cart/add.js (net::ERR_FAILED)

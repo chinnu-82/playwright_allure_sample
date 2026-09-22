@@ -1,0 +1,1 @@
+[WARN] (Checkout › Shipping details are accepted for Name with apostrophe:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=c755ac61623f794c2131b69282795448&checkout_type=c1

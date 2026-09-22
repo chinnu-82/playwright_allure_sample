@@ -1,0 +1,7 @@
+2026-09-22T12:08:54.659Z [INFO ] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail()) ▶ START "EXPECTED FAILURE: known defect marked with test.fail()" (attempt 1, worker 0)
+2026-09-22T12:08:54.897Z [WARN ] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():network) HTTP 404 GET https://sauce-demo.myshopify.com/pages/shipping
+2026-09-22T12:08:54.901Z [DEBUG] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():console) console.error: Failed to load resource: the server responded with a status of 404 ()
+2026-09-22T12:08:55.131Z [DEBUG] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:55.282Z [DEBUG] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:55.283Z [DEBUG] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail():network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-22T12:08:55.431Z [INFO ] (Allure feature showcase › Result statuses › EXPECTED FAILURE: known defect marked with test.fail()) ■ END status=failed duration=772ms

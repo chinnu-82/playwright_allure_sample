@@ -1,0 +1,3 @@
+[INFO] cart service ready
+[WARN] slow response 1800ms
+[INFO] cart rendered

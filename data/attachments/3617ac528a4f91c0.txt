@@ -1,0 +1,1 @@
+[WARN] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')

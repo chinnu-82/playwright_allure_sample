@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"36c900977e1d8b81a2c6893cc82bfc01","name":"chromium","statistic":{"failed":0,"broken":0,"skipped":6,"passed":50,"unknown":0,"total":56}},{"uid":"4073fa644d676affc703cf9bf783a1c3","name":"Allure Showcase","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

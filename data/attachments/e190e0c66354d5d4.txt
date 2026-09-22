@@ -1,0 +1,6 @@
+2026-09-22T12:08:36.389Z [INFO ] (Product details › Variant selectors expose every size and colour) ▶ START "Variant selectors expose every size and colour" (attempt 1, worker 1)
+2026-09-22T12:08:36.395Z [INFO ] (Product details › Variant selectors expose every size and colour) Opening product noir-jacket
+2026-09-22T12:08:36.813Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:36.930Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:37.162Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-22T12:08:37.673Z [INFO ] (Product details › Variant selectors expose every size and colour) ■ END status=passed duration=1284ms

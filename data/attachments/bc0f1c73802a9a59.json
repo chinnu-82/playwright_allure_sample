@@ -1,0 +1,11 @@
+{
+  "orderId": "SO-10042",
+  "items": [
+    {
+      "sku": "GREY-JACKET",
+      "qty": 1,
+      "price": 55
+    }
+  ],
+  "currency": "GBP"
+}

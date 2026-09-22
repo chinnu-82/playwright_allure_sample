@@ -1,0 +1,10 @@
+2026-09-22T12:08:02.021Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ▶ START "UI cart and /cart.js API stay in sync" (attempt 1, worker 1)
+2026-09-22T12:08:02.029Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Opening product striped-top
+2026-09-22T12:08:02.450Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:02.827Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-22T12:08:02.847Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-22T12:08:02.971Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Adding "Striped top" to the cart
+2026-09-22T12:08:04.788Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync) /cart/add.js answered HTTP 200
+2026-09-22T12:08:04.920Z [WARN ] (Shopping cart › UI cart and /cart.js API stay in sync:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-09-22T12:08:04.972Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync:api) GET /cart.js -> 200 in 176ms
+2026-09-22T12:08:04.977Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ■ END status=passed duration=2956ms

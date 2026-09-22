@@ -1,0 +1,28 @@
+{
+  "total": 189,
+  "firstParty": 128,
+  "apiCalls": 2,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 56,
+  "p95Ms": 155,
+  "slowestUrl": "606ms https://d.adroll.com/cm/equativ/out?af0=99354fe7&adroll_fpc=9f77a901ed5d49e6030b4f7a2396d149-1790078912274&pv=86629412419.42844&arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Fcollections%2Fall&advertisable=RLFWQFGQMZC2ZEMERYUQ34",
+  "byResourceType": {
+    "document": 5,
+    "other": 51,
+    "stylesheet": 2,
+    "script": 54,
+    "image": 47,
+    "ping": 25,
+    "fetch": 5
+  },
+  "byStatus": {
+    "200": 157,
+    "301": 4,
+    "302": 19,
+    "307": 1,
+    "failed": 4,
+    "pending": 4
+  }
+}
