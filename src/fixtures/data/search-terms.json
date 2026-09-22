@@ -1,0 +1,5 @@
+[
+  { "term": "jacket", "mustInclude": ["Grey jacket", "Noir jacket"] },
+  { "term": "sandals", "mustInclude": ["Bronze sandals", "White sandals"] },
+  { "term": "shades", "mustInclude": ["Brown Shades"] }
+]

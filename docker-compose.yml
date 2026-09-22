@@ -1,0 +1,23 @@
+services:
+  # docker compose run --rm tests     -> runs the suite and generates ./allure-report
+  tests:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ipc: host
+    environment:
+      - TEST_ENV=${TEST_ENV:-production}
+      - BROWSERS=${BROWSERS:-chromium}
+      - SHOWCASE_FAILURES=${SHOWCASE_FAILURES:-true}
+    volumes:
+      - ./allure-results:/app/allure-results
+      - ./allure-report:/app/allure-report
+      - ./allure-history:/app/allure-history
+
+  # docker compose up report          -> http://localhost:8080
+  report:
+    image: nginx:alpine
+    ports:
+      - '8080:80'
+    volumes:
+      - ./allure-report:/usr/share/nginx/html:ro

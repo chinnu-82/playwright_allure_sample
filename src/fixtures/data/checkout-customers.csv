@@ -1,0 +1,4 @@
+# Customers used by the data-driven checkout test. No order is ever placed.
+label,email,firstName,lastName,address,city,postcode
+UK resident,alice.tester@example.com,Alice,Tester,221B Baker Street,London,NW1 6XE
+Name with apostrophe,conor.obrien@example.com,Conor,O'Brien,10 Downing Street,London,SW1A 2AA

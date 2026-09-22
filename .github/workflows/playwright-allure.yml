@@ -1,0 +1,98 @@
+name: E2E tests + Allure report
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      browsers:
+        description: 'chromium or all'
+        default: chromium
+  schedule:
+    - cron: '0 6 * * 1-5' # weekdays 06:00 UTC
+
+permissions:
+  contents: write # push the report to gh-pages
+  pages: write
+  id-token: write
+
+concurrency:
+  group: allure-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: 'true'
+      BROWSERS: ${{ github.event.inputs.browsers || 'chromium' }}
+      # Keep CI green: skip the intentionally failing showcase tests.
+      SHOWCASE_FAILURES: 'false'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4 # Allure 2 CLI needs Java
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - run: npm ci
+      - run: npx playwright install --with-deps ${{ env.BROWSERS == 'all' && 'chromium firefox webkit' || 'chromium' }}
+      - run: npm run typecheck
+
+      - name: Run tests
+        run: npx playwright test
+        continue-on-error: true
+        id: tests
+
+      # ---- History: restore the previous report's history from gh-pages
+      - name: Restore Allure history
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Generate Allure report (with trends)
+        env:
+          ALLURE_REPORT_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          mkdir -p allure-history
+          if [ -d gh-pages/history ]; then cp -r gh-pages/history allure-history/history; fi
+          npm run allure:generate
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-report-${{ github.run_number }}
+          path: allure-report
+          retention-days: 14
+
+      - name: Upload raw results (for merging / debugging)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results-${{ github.run_number }}
+          path: allure-results
+          retention-days: 7
+
+      - name: Publish to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
+          keep_files: false
+
+      - name: Fail the job if tests failed
+        if: steps.tests.outcome == 'failure'
+        run: exit 1

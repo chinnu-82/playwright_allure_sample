@@ -1,0 +1,1295 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Playwright + Allure Reporting Tutorial</title>
+<style>@page { size: A4; }
+:root {
+  --ink: #0f172a; --muted: #475569; --line: #e2e8f0; --brand: #16a34a; --brand-dark: #14532d;
+  --code-bg: #0b1220; --soft: #f1f5f9; --note: #eff6ff; --note-line: #3b82f6; --warn: #fffbeb; --warn-line: #f59e0b;
+}
+* { box-sizing: border-box; }
+body { font: 10.5pt/1.55 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); margin: 0; }
+
+/* Cover */
+.cover { height: 255mm; overflow: hidden; display: flex; flex-direction: column; justify-content: center; break-after: page;
+  background: linear-gradient(160deg, #0b1220 0%, #13213a 60%, #14532d 100%); color: #fff; padding: 0 16mm; border-radius: 10px; }
+.cover h1 { font-size: 34pt; line-height: 1.15; margin: 0 0 6mm; border: 0; color: #fff; }
+.cover p { font-size: 13pt; color: #cbd5e1; max-width: 150mm; }
+.cover strong { color: #86efac; }
+.cover img { width: 200px; margin-bottom: 6mm; }
+.cover p:has(img) { margin: 0; }
+
+/* TOC */
+.toc { page-break-after: always; }
+.toc ol { list-style: none; padding: 0; columns: 1; }
+.toc li { padding: 2px 0; }
+.toc .toc-l1 { font-weight: 700; margin-top: 8px; font-size: 11.5pt; }
+.toc .toc-l2 { padding-left: 16px; color: var(--muted); }
+.toc a { color: inherit; text-decoration: none; }
+
+/* Headings */
+h1 { font-size: 21pt; color: var(--brand-dark); border-bottom: 3px solid var(--brand); padding-bottom: 4px; margin: 0 0 12px; page-break-before: always; }
+main > h1:first-child { page-break-before: avoid; }
+h2 { font-size: 14.5pt; margin: 22px 0 8px; color: var(--ink); page-break-after: avoid; }
+h3 { font-size: 12pt; margin: 16px 0 6px; color: #1e3a8a; page-break-after: avoid; }
+h4 { font-size: 10.5pt; margin: 12px 0 4px; }
+p, ul, ol { margin: 6px 0 10px; }
+li { margin: 2px 0; }
+a { color: #15803d; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+
+/* Code */
+code { font-family: "Cascadia Code", Consolas, "JetBrains Mono", monospace; font-size: 8.6pt; }
+:not(pre) > code { background: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; color: #9f1239; }
+pre.code { position: relative; background: var(--code-bg); color: #e2e8f0; border-radius: 8px; padding: 12px 14px; overflow: hidden;
+  white-space: pre-wrap; word-break: break-word; page-break-inside: avoid; margin: 8px 0 14px; line-height: 1.45; }
+pre.code .code-lang { position: absolute; top: 4px; right: 10px; font-size: 7pt; color: #64748b; text-transform: uppercase; letter-spacing: .5px; }
+.hljs-keyword, .hljs-built_in, .hljs-selector-tag { color: #c084fc; }
+.hljs-string, .hljs-attr + .hljs-string, .hljs-template-string { color: #86efac; }
+.hljs-comment { color: #64748b; font-style: italic; }
+.hljs-number, .hljs-literal { color: #fdba74; }
+.hljs-title, .hljs-title.function_, .hljs-function .hljs-title { color: #7dd3fc; }
+.hljs-attr, .hljs-property, .hljs-variable { color: #93c5fd; }
+.hljs-type, .hljs-title.class_ { color: #fcd34d; }
+.hljs-meta, .hljs-decorator { color: #f9a8d4; }
+.hljs-section, .hljs-name { color: #7dd3fc; }
+.hljs-bullet, .hljs-symbol { color: #fca5a5; }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin: 8px 0 14px; font-size: 9.2pt; }
+tr { break-inside: avoid; }
+thead { display: table-header-group; }
+th, td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+th { background: var(--soft); }
+
+/* Figures */
+figure { margin: 10px 0 16px; page-break-inside: avoid; text-align: center; }
+figure img { max-width: 100%; max-height: 190mm; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 2px 8px rgba(15,23,42,.08); }
+figcaption { font-size: 8.8pt; color: var(--muted); margin-top: 4px; font-style: italic; }
+
+/* Callouts (blockquotes) */
+blockquote { margin: 10px 0 14px; padding: 8px 12px; background: var(--note); border-left: 4px solid var(--note-line); border-radius: 4px; page-break-inside: avoid; }
+blockquote p { margin: 3px 0; }
+</style></head>
+<body>
+<section class="cover"><img src="../../allure-theme/logo.svg" alt="logo"/><h1 id="playwright-allure-reporting">Playwright + Allure Reporting</h1>
+<p>A hands-on tutorial built around a <strong>real, runnable test automation framework</strong> for the Sauce Demo Shopify store. Every screenshot in this guide comes from the report that the project itself generates.</p>
+<p><strong>What you will learn:</strong> setup · reporter integration · steps · screenshots, video &amp; traces · network and console capture · metadata &amp; behaviors · retries &amp; flaky tests · history &amp; trends · categories · custom themes · CI/CD with GitHub Actions, Jenkins and Docker.</p>
+<p>Playwright 1.63 · allure-playwright 3.12 · Allure Report 2.46 · TypeScript 5</p>
+</section>
+<section class="toc"><h1>Contents</h1><ol><li class="toc-l1"><a href="#1-introduction">1. Introduction</a></li>
+<li class="toc-l2"><a href="#11-the-system-under-test">1.1 The system under test</a></li>
+<li class="toc-l2"><a href="#12-how-the-pieces-fit-together">1.2 How the pieces fit together</a></li>
+<li class="toc-l1"><a href="#2-setup-amp-installation">2. Setup &amp; Installation</a></li>
+<li class="toc-l2"><a href="#21-prerequisites">2.1 Prerequisites</a></li>
+<li class="toc-l2"><a href="#22-install-the-project">2.2 Install the project</a></li>
+<li class="toc-l2"><a href="#23-adding-allure-to-your-own-playwright-project">2.3 Adding Allure to your own Playwright project</a></li>
+<li class="toc-l2"><a href="#24-project-structure">2.4 Project structure</a></li>
+<li class="toc-l2"><a href="#25-first-run">2.5 First run</a></li>
+<li class="toc-l1"><a href="#3-basic-integration">3. Basic Integration</a></li>
+<li class="toc-l2"><a href="#31-register-the-reporter">3.1 Register the reporter</a></li>
+<li class="toc-l2"><a href="#32-reporter-options">3.2 Reporter options</a></li>
+<li class="toc-l2"><a href="#33-generate-open-and-serve">3.3 Generate, open and serve</a></li>
+<li class="toc-l2"><a href="#34-clean-results-between-runs">3.4 Clean results between runs</a></li>
+<li class="toc-l1"><a href="#4-framework-architecture">4. Framework Architecture</a></li>
+<li class="toc-l2"><a href="#41-configuration-management">4.1 Configuration management</a></li>
+<li class="toc-l2"><a href="#42-page-object-model">4.2 Page Object Model</a></li>
+<li class="toc-l2"><a href="#43-fixtures-evidence-for-free">4.3 Fixtures: evidence for free</a></li>
+<li class="toc-l1"><a href="#5-allure-features-explained">5. Allure Features Explained</a></li>
+<li class="toc-l2"><a href="#51-titles-and-descriptions">5.1 Titles and descriptions</a></li>
+<li class="toc-l2"><a href="#52-test-statuses">5.2 Test statuses</a></li>
+<li class="toc-l2"><a href="#53-behaviors-epic-feature-story">5.3 Behaviors: epic, feature, story</a></li>
+<li class="toc-l2"><a href="#54-severity">5.4 Severity</a></li>
+<li class="toc-l2"><a href="#55-tags-owner-layer-custom-labels-and-suites">5.5 Tags, owner, layer, custom labels and suites</a></li>
+<li class="toc-l2"><a href="#56-detailed-test-steps">5.6 Detailed test steps</a></li>
+<li class="toc-l2"><a href="#57-visual-evidence-screenshots-video-traces-html-snapshots">5.7 Visual evidence: screenshots, video, traces, HTML snapshots</a></li>
+<li class="toc-l2"><a href="#58-network-and-performance-monitoring">5.8 Network and performance monitoring</a></li>
+<li class="toc-l2"><a href="#59-api-testing-with-allure-steps">5.9 API testing with Allure steps</a></li>
+<li class="toc-l2"><a href="#510-console-capture-and-logging">5.10 Console capture and logging</a></li>
+<li class="toc-l2"><a href="#511-parameters-and-test-data">5.11 Parameters and test data</a></li>
+<li class="toc-l2"><a href="#512-environment-and-executor-information">5.12 Environment and executor information</a></li>
+<li class="toc-l2"><a href="#513-retries-and-flaky-tests">5.13 Retries and flaky tests</a></li>
+<li class="toc-l2"><a href="#514-links-and-relationships">5.14 Links and relationships</a></li>
+<li class="toc-l2"><a href="#515-history-and-trend-analysis">5.15 History and trend analysis</a></li>
+<li class="toc-l2"><a href="#516-custom-attachments">5.16 Custom attachments</a></li>
+<li class="toc-l2"><a href="#517-categories-automatic-defect-triage">5.17 Categories: automatic defect triage</a></li>
+<li class="toc-l2"><a href="#518-timeline-and-packages">5.18 Timeline and Packages</a></li>
+<li class="toc-l1"><a href="#6-best-practices">6. Best Practices</a></li>
+<li class="toc-l2"><a href="#61-write-reports-for-humans">6.1 Write reports for humans</a></li>
+<li class="toc-l2"><a href="#62-metadata-discipline">6.2 Metadata discipline</a></li>
+<li class="toc-l2"><a href="#63-evidence-without-noise">6.3 Evidence without noise</a></li>
+<li class="toc-l2"><a href="#64-stable-history">6.4 Stable history</a></li>
+<li class="toc-l2"><a href="#65-flakiness">6.5 Flakiness</a></li>
+<li class="toc-l2"><a href="#66-speed">6.6 Speed</a></li>
+<li class="toc-l1"><a href="#7-troubleshooting">7. Troubleshooting</a></li>
+<li class="toc-l1"><a href="#8-advanced-customization">8. Advanced Customization</a></li>
+<li class="toc-l2"><a href="#81-one-configuration-file">8.1 One configuration file</a></li>
+<li class="toc-l2"><a href="#82-custom-theme-and-logo">8.2 Custom theme and logo</a></li>
+<li class="toc-l2"><a href="#83-report-name-language-and-filters">8.3 Report name, language and filters</a></li>
+<li class="toc-l2"><a href="#84-global-labels-and-listeners">8.4 Global labels and listeners</a></li>
+<li class="toc-l2"><a href="#85-running-a-subset-with-a-test-plan">8.5 Running a subset with a test plan</a></li>
+<li class="toc-l2"><a href="#86-allure-report-3">8.6 Allure Report 3</a></li>
+<li class="toc-l1"><a href="#9-cicd-integration">9. CI/CD Integration</a></li>
+<li class="toc-l2"><a href="#91-github-actions">9.1 GitHub Actions</a></li>
+<li class="toc-l2"><a href="#92-jenkins">9.2 Jenkins</a></li>
+<li class="toc-l2"><a href="#93-docker">9.3 Docker</a></li>
+<li class="toc-l2"><a href="#94-sharding-and-merging">9.4 Sharding and merging</a></li>
+<li class="toc-l1"><a href="#10-command-reference">10. Command Reference</a></li>
+<li class="toc-l2"><a href="#further-reading">Further reading</a></li></ol></section>
+<main><h1 id="1-introduction">1. Introduction</h1>
+<p>Test automation only pays off when people can <em>understand</em> its results. A green tick is easy to read; a red cross without context sends somebody off to rerun the test locally, dig through CI logs and guess. <strong>Allure Report</strong> fixes that by turning raw results into an interactive web report with:</p>
+<ul>
+<li>a dashboard of pass/fail statistics and <strong>trends across builds</strong>;</li>
+<li>a <strong>step-by-step</strong> breakdown of each test with timings;</li>
+<li><strong>attachments</strong>: screenshots, videos, traces, HTML snapshots, network logs, console output, JSON/CSV files;</li>
+<li><strong>business-level grouping</strong> (epics → features → stories), severities, owners and links to issues;</li>
+<li><strong>retries</strong>, <strong>flaky-test</strong> detection, custom <strong>defect categories</strong> and an execution <strong>timeline</strong>.</li>
+</ul>
+<p>This tutorial walks through the <code>playwright-allure-showcase</code> project. It is both a working test suite (about 50 real tests of login, product browsing, search, cart, checkout and the storefront API) and a reference in which <strong>every Allure feature has a test that demonstrates it</strong>.</p>
+<p><figure><img src="../images/01-overview.png" alt="The finished report: dashboard with statistics, trend, categories, environment and executor"/><figcaption>Figure 1 – The Allure Overview dashboard generated by this project</figcaption></figure></p>
+<h2 id="11-the-system-under-test">1.1 The system under test</h2>
+<p>The tests target <strong><a href="https://sauce-demo.myshopify.com">https://sauce-demo.myshopify.com</a></strong>, a public Shopify demo store. It has 7 products (2 of them sold out), a customer login protected by <strong>hCaptcha</strong>, an AJAX cart API (<code>/cart.js</code>, <code>/cart/add.js</code>) and Shopify&#39;s hosted one-page checkout.</p>
+<blockquote>
+<p><strong>Why hCaptcha matters.</strong> Automated login submissions are intercepted by the captcha, so the store never shows a &quot;wrong password&quot; message to a bot. The login tests therefore assert what <em>can</em> be verified (the user stays signed out) and one showcase test documents the limitation as a <strong>known issue</strong>. Checkout tests stop before payment: no card data is ever entered, so no order can be placed.</p>
+</blockquote>
+<h2 id="12-how-the-pieces-fit-together">1.2 How the pieces fit together</h2>
+<table>
+<thead>
+<tr>
+<th>Piece</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Playwright Test</strong></td>
+<td>Runs the tests, provides fixtures, retries, screenshots, video and traces</td>
+</tr>
+<tr>
+<td><strong>allure-playwright</strong></td>
+<td>A Playwright <em>reporter</em> that writes one JSON file per test result into <code>allure-results/</code></td>
+</tr>
+<tr>
+<td><strong>allure-js-commons</strong></td>
+<td>The runtime API used inside tests: <code>allure.step()</code>, <code>allure.epic()</code>, <code>allure.attachment()</code>, …</td>
+</tr>
+<tr>
+<td><strong>Allure Report 2</strong> (<code>allure-commandline</code>, Java)</td>
+<td>Turns <code>allure-results/</code> into the HTML report in <code>allure-report/</code></td>
+</tr>
+</tbody></table>
+<pre class="code"><span class="code-lang">text</span><code class="hljs language-text"> playwright test ──► allure-playwright reporter ──► allure-results/*.json + attachments
+                                                           │
+                                   allure generate  ◄──────┘   (+ history/, environment, categories)
+                                          │
+                                          ▼
+                                   allure-report/index.html</code></pre>
+<h1 id="2-setup-amp-installation">2. Setup &amp; Installation</h1>
+<h2 id="21-prerequisites">2.1 Prerequisites</h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Version</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Node.js</td>
+<td>20 or newer (22 LTS recommended)</td>
+<td>Runs Playwright and the scripts</td>
+</tr>
+<tr>
+<td>Java (JRE/JDK)</td>
+<td>8 or newer (17 recommended)</td>
+<td>The Allure 2 command-line tool is a Java application</td>
+</tr>
+<tr>
+<td>Git</td>
+<td>any</td>
+<td>Clone the project</td>
+</tr>
+</tbody></table>
+<p>Check them:</p>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">node -v        <span class="hljs-comment"># v22.x</span>
+java -version  <span class="hljs-comment"># openjdk version &quot;17...&quot;</span></code></pre>
+<h2 id="22-install-the-project">2.2 Install the project</h2>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> &lt;your-fork-url&gt; playwright-allure-showcase
+<span class="hljs-built_in">cd</span> playwright-allure-showcase
+npm ci                                  <span class="hljs-comment"># or: npm install</span>
+npx playwright install chromium         <span class="hljs-comment"># add firefox webkit for cross-browser runs</span>
+<span class="hljs-built_in">cp</span> .env.example .<span class="hljs-built_in">env</span>                    <span class="hljs-comment"># optional: adjust settings</span></code></pre>
+<p><code>npm ci</code> installs everything, including the Allure CLI (<code>allure-commandline</code>), so you do <strong>not</strong> need a global Allure installation.</p>
+<h2 id="23-adding-allure-to-your-own-playwright-project">2.3 Adding Allure to your <em>own</em> Playwright project</h2>
+<p>If you are starting from scratch, these are the only packages you need:</p>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">npm i -D @playwright/test allure-playwright allure-js-commons allure-commandline</code></pre>
+<p>Then register the reporter in <code>playwright.config.ts</code> (next chapter) and you are done.</p>
+<h2 id="24-project-structure">2.4 Project structure</h2>
+<pre class="code"><span class="code-lang">text</span><code class="hljs language-text">playwright-allure-showcase/
+├── src/
+│   ├── tests/
+│   │   ├── auth/            login.spec.ts, account-access.spec.ts
+│   │   ├── products/        catalog, product-details, search, products-api
+│   │   ├── cart/            cart.spec.ts
+│   │   ├── checkout/        checkout.spec.ts
+│   │   └── showcase/        allure-features.spec.ts, visual-evidence.spec.ts
+│   ├── pages/               Page Object Model (BasePage, LoginPage, CartPage, ...)
+│   ├── fixtures/
+│   │   ├── base.fixture.ts  page objects + logger + network/console monitors + evidence
+│   │   └── data/            products.json, auth.json, checkout-customers.csv, ...
+│   ├── utils/
+│   │   ├── allure-helper.ts      typed facade over the Allure API + @step decorator
+│   │   ├── logger.ts             per-test structured logger
+│   │   ├── api-interceptor.ts    network capture, timings, mocking
+│   │   ├── console-monitor.ts    browser console + uncaught errors
+│   │   ├── shop-api-client.ts    storefront API client with Allure steps
+│   │   └── test-data.ts          JSON/CSV loaders
+│   └── config/              environments, global setup/teardown, Allure metadata writer
+├── scripts/                 generate-report, trend-demo, run-and-report, docs tooling
+├── allure-theme/            custom-theme.css + logo.svg
+├── playwright.config.ts
+├── allure-report.config.ts  single source of truth for Allure settings
+├── .github/workflows/       GitHub Actions pipeline
+├── Jenkinsfile · docker/Dockerfile · docker-compose.yml
+└── docs/                    this tutorial (Markdown + PDF) and screenshots</code></pre>
+<h2 id="25-first-run">2.5 First run</h2>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">npm run <span class="hljs-built_in">test</span>:report     <span class="hljs-comment"># run all tests, then ALWAYS generate the report</span>
+npm run allure:open     <span class="hljs-comment"># open it in the browser</span></code></pre>
+<p>You should see about 57 results: ~50 real tests that pass, plus the showcase tests that <strong>fail on purpose</strong> (one failed, one broken, one known issue), one flaky test and three skipped tests. Set <code>SHOWCASE_FAILURES=false</code> to skip the intentional failures.</p>
+<blockquote>
+<p><strong>Tip.</strong> <code>npm run trend:demo</code> runs a fast subset four times and generates the report after each run, so you can see the <strong>Trend</strong> graphs straight away.</p>
+</blockquote>
+<h1 id="3-basic-integration">3. Basic Integration</h1>
+<h2 id="31-register-the-reporter">3.1 Register the reporter</h2>
+<p>Allure is just another Playwright reporter. Keep the console reporter (<code>list</code>) so you still see progress in the terminal:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-comment">// playwright.config.ts (excerpt)</span>
+<span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@playwright/test&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { <span class="hljs-title class_">AllureReporter</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;allure-playwright&#x27;</span>;
+<span class="hljs-keyword">import</span> allureConfig <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./allure-report.config&#x27;</span>;
+<span class="hljs-keyword">import</span> { config } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./src/config&#x27;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">allureReporterOptions</span>: <span class="hljs-title class_">AllureReporter</span>[<span class="hljs-string">&#x27;options&#x27;</span>] = {
+  <span class="hljs-attr">resultsDir</span>: allureConfig.<span class="hljs-property">resultsDir</span>,       <span class="hljs-comment">// &#x27;allure-results&#x27;</span>
+  <span class="hljs-comment">// false = only test.step()/allure.step() in the report (clean);</span>
+  <span class="hljs-comment">// true  = also every Playwright API call and expect() (verbose).</span>
+  <span class="hljs-attr">detail</span>: config.<span class="hljs-property">allureDetail</span>,
+  <span class="hljs-attr">suiteTitle</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">links</span>: allureConfig.<span class="hljs-property">links</span>,                 <span class="hljs-comment">// issue/tms URL templates</span>
+  <span class="hljs-attr">categories</span>: allureConfig.<span class="hljs-property">categories</span>,       <span class="hljs-comment">// custom defect categories</span>
+  <span class="hljs-attr">globalLabels</span>: { <span class="hljs-attr">application</span>: <span class="hljs-string">&#x27;sauce-demo-storefront&#x27;</span> },
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">testDir</span>: <span class="hljs-string">&#x27;./src/tests&#x27;</span>,
+  <span class="hljs-attr">retries</span>: config.<span class="hljs-property">retries</span>,
+  <span class="hljs-attr">reporter</span>: [
+    [<span class="hljs-string">&#x27;list&#x27;</span>],
+    [<span class="hljs-string">&#x27;allure-playwright&#x27;</span>, allureReporterOptions],
+    [<span class="hljs-string">&#x27;html&#x27;</span>, { <span class="hljs-attr">outputFolder</span>: <span class="hljs-string">&#x27;playwright-report&#x27;</span>, <span class="hljs-attr">open</span>: <span class="hljs-string">&#x27;never&#x27;</span> }],
+  ],
+  <span class="hljs-attr">use</span>: {
+    <span class="hljs-attr">baseURL</span>: config.<span class="hljs-property">baseURL</span>,
+    <span class="hljs-attr">screenshot</span>: { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;only-on-failure&#x27;</span>, <span class="hljs-attr">fullPage</span>: <span class="hljs-literal">true</span> },
+    <span class="hljs-attr">video</span>: <span class="hljs-string">&#x27;retain-on-failure&#x27;</span>,
+    <span class="hljs-attr">trace</span>: <span class="hljs-string">&#x27;retain-on-failure&#x27;</span>,
+  },
+  <span class="hljs-attr">globalSetup</span>: <span class="hljs-string">&#x27;./src/config/global-setup.ts&#x27;</span>,
+  <span class="hljs-attr">globalTeardown</span>: <span class="hljs-string">&#x27;./src/config/global-teardown.ts&#x27;</span>,
+});</code></pre>
+<p>Screenshots, videos and traces produced by Playwright are <strong>attached to the Allure result automatically</strong>; you do not have to write any code for them.</p>
+<h2 id="32-reporter-options">3.2 Reporter options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>resultsDir</code></td>
+<td>Where result files are written (default <code>allure-results</code>)</td>
+</tr>
+<tr>
+<td><code>detail</code></td>
+<td><code>true</code> records every Playwright API call and <code>expect()</code> as a step. Great for debugging, noisy for stakeholders. This project defaults to <code>false</code> and exposes <code>ALLURE_DETAIL=true</code></td>
+</tr>
+<tr>
+<td><code>suiteTitle</code></td>
+<td>Use the file/describe title in the suite hierarchy</td>
+</tr>
+<tr>
+<td><code>links</code></td>
+<td>URL templates so <code>allure.issue(&#39;42&#39;)</code> becomes a clickable link</td>
+</tr>
+<tr>
+<td><code>categories</code></td>
+<td>Custom defect categories (Categories tab)</td>
+</tr>
+<tr>
+<td><code>environmentInfo</code></td>
+<td>Static key/values for the Environment widget (this project writes them itself; see §5.12)</td>
+</tr>
+<tr>
+<td><code>globalLabels</code></td>
+<td>Labels added to every result</td>
+</tr>
+</tbody></table>
+<h2 id="33-generate-open-and-serve">3.3 Generate, open and serve</h2>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">npx allure generate allure-results -o allure-report --clean   <span class="hljs-comment"># build static HTML</span>
+npx allure open allure-report                                  <span class="hljs-comment"># serve it locally</span>
+npx allure serve allure-results                                <span class="hljs-comment"># generate to a temp dir + open</span>
+npx allure generate --single-file allure-results -o out        <span class="hljs-comment"># one self-contained HTML file</span></code></pre>
+<p>The project wraps these in npm scripts that also handle history, metadata and the theme:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>npm test</code></td>
+<td>Run the suite (results in <code>allure-results/</code>)</td>
+</tr>
+<tr>
+<td><code>npm run allure:generate</code></td>
+<td>Metadata + history + <code>allure generate</code> + theme</td>
+</tr>
+<tr>
+<td><code>npm run allure:single-file</code></td>
+<td>Same, but a single shareable <code>index.html</code></td>
+</tr>
+<tr>
+<td><code>npm run allure:open</code></td>
+<td>Open <code>allure-report/</code> in the browser</td>
+</tr>
+<tr>
+<td><code>npm run allure:serve</code></td>
+<td>Quick look without keeping a report</td>
+</tr>
+<tr>
+<td><code>npm run test:report</code></td>
+<td>Run tests then always generate the report</td>
+</tr>
+<tr>
+<td><code>npm run report</code></td>
+<td>Generate and open</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>Why not just double-click <code>index.html</code>?</strong> The multi-file report loads its data with XHR, which browsers block on <code>file://</code> URLs. Use <code>allure open</code> (it starts a small web server) or generate a <code>--single-file</code> report.</p>
+</blockquote>
+<h2 id="34-clean-results-between-runs">3.4 Clean results between runs</h2>
+<p>allure-playwright never deletes old results; it keeps appending files. Without cleaning, a new report would mix results from several runs. The project&#39;s global setup wipes <code>allure-results/</code> at the start of each run (history is kept separately in <code>allure-history/</code>):</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-comment">// src/config/global-setup.ts</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">globalSetup</span>(<span class="hljs-params"><span class="hljs-attr">_</span>: <span class="hljs-title class_">FullConfig</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt; {
+  <span class="hljs-keyword">const</span> resultsDir = path.<span class="hljs-title function_">resolve</span>(allureConfig.<span class="hljs-property">resultsDir</span>);
+  <span class="hljs-keyword">if</span> (process.<span class="hljs-property">env</span>.<span class="hljs-property">ALLURE_KEEP_RESULTS</span> !== <span class="hljs-string">&#x27;true&#x27;</span> &amp;&amp; fs.<span class="hljs-title function_">existsSync</span>(resultsDir)) {
+    fs.<span class="hljs-title function_">rmSync</span>(resultsDir, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">force</span>: <span class="hljs-literal">true</span> });
+  }
+  fs.<span class="hljs-title function_">mkdirSync</span>(resultsDir, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span> });
+}</code></pre>
+<p>Set <code>ALLURE_KEEP_RESULTS=true</code> when you deliberately merge results, for example from several CI shards.</p>
+<h1 id="4-framework-architecture">4. Framework Architecture</h1>
+<h2 id="41-configuration-management">4.1 Configuration management</h2>
+<p>All runtime settings live in <code>src/config/index.ts</code>, which reads <code>.env</code> and environment variables once. Environments are declared in <code>src/config/environments.ts</code>:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> environments = {
+  <span class="hljs-attr">production</span>: {
+    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;production&#x27;</span>,
+    <span class="hljs-attr">baseURL</span>: <span class="hljs-string">&#x27;https://sauce-demo.myshopify.com&#x27;</span>,
+    <span class="hljs-attr">actionTimeout</span>: <span class="hljs-number">15_000</span>, <span class="hljs-attr">navigationTimeout</span>: <span class="hljs-number">45_000</span>, <span class="hljs-attr">expectTimeout</span>: <span class="hljs-number">10_000</span>,
+    <span class="hljs-attr">testTimeout</span>: <span class="hljs-number">90_000</span>, <span class="hljs-attr">slowRequestThresholdMs</span>: <span class="hljs-number">1_500</span>, <span class="hljs-attr">currencySymbol</span>: <span class="hljs-string">&#x27;£&#x27;</span>,
+  },
+  <span class="hljs-attr">staging</span>: { <span class="hljs-comment">/* same shape, longer timeouts */</span> },
+} <span class="hljs-keyword">satisfies</span> <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-title class_">EnvironmentConfig</span>&gt;;</code></pre>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TEST_ENV</code></td>
+<td><code>production</code></td>
+<td>Environment profile</td>
+</tr>
+<tr>
+<td><code>BASE_URL</code></td>
+<td>profile value</td>
+<td>Override the URL</td>
+</tr>
+<tr>
+<td><code>HEADLESS</code></td>
+<td><code>true</code></td>
+<td><code>false</code> shows the browser (<code>npm run test:headed</code>)</td>
+</tr>
+<tr>
+<td><code>SLOWMO</code></td>
+<td><code>0</code></td>
+<td>Slow down every action (ms)</td>
+</tr>
+<tr>
+<td><code>BROWSERS</code></td>
+<td><code>chromium</code></td>
+<td><code>all</code> adds firefox, webkit and a mobile profile</td>
+</tr>
+<tr>
+<td><code>RETRIES</code> / <code>WORKERS</code></td>
+<td>1 local, 2 CI / 3 local, 2 CI</td>
+<td>Execution</td>
+</tr>
+<tr>
+<td><code>VIDEO</code>, <code>TRACE</code>, <code>SCREENSHOT</code></td>
+<td>on failure</td>
+<td>Evidence capture</td>
+</tr>
+<tr>
+<td><code>ALLURE_DETAIL</code></td>
+<td><code>false</code></td>
+<td>Verbose Playwright steps in Allure</td>
+</tr>
+<tr>
+<td><code>SHOWCASE_FAILURES</code></td>
+<td><code>true</code></td>
+<td>Run the intentionally red tests</td>
+</tr>
+<tr>
+<td><code>LOG_LEVEL</code></td>
+<td><code>warn</code></td>
+<td>Console echo level (the full log is always attached)</td>
+</tr>
+</tbody></table>
+<h2 id="42-page-object-model">4.2 Page Object Model</h2>
+<p>Page objects encapsulate locators and actions. Each public action is an <strong>Allure step</strong> thanks to the <code>@step</code> decorator (§5.6):</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CartPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">BasePage</span> {
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">readonly</span> path = <span class="hljs-string">&#x27;/cart&#x27;</span>;
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">lines</span>: <span class="hljs-title class_">Locator</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">locator</span>(<span class="hljs-string">&#x27;section#cart form .row:has(input[name=&quot;updates[]&quot;])&#x27;</span>);
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">total</span>: <span class="hljs-title class_">Locator</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">locator</span>(<span class="hljs-string">&#x27;section#cart .cart.total h2&#x27;</span>);
+
+  <span class="hljs-meta">@step</span>(<span class="hljs-string">&#x27;Set quantity of line {0} to {1} and update the cart&#x27;</span>)
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">setQuantity</span>(<span class="hljs-attr">lineIndex</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">quantity</span>: <span class="hljs-built_in">number</span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt; {
+    <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">lines</span>.<span class="hljs-title function_">nth</span>(lineIndex).<span class="hljs-title function_">locator</span>(<span class="hljs-string">&#x27;input[name=&quot;updates[]&quot;]&#x27;</span>).<span class="hljs-title function_">fill</span>(<span class="hljs-title class_">String</span>(quantity));
+    <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">updateButton</span>.<span class="hljs-title function_">click</span>();
+    <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">waitForURL</span>(<span class="hljs-regexp">/\/cart/</span>);
+  }
+}</code></pre>
+<h2 id="43-fixtures-evidence-for-free">4.3 Fixtures: evidence for free</h2>
+<p><code>src/fixtures/base.fixture.ts</code> extends Playwright&#39;s <code>test</code> with page objects, a logger, network and console monitors, an API client and an <strong>automatic evidence fixture</strong>. Every test gets its evidence attached without writing any code:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-attr">evidence</span>: [
+  <span class="hljs-title function_">async</span> ({ page, logger, network, consoleMonitor }, use, testInfo) =&gt; {
+    <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">contextParameters</span>({ <span class="hljs-title class_">Viewport</span>: <span class="hljs-string">&#x27;1366x900&#x27;</span>, <span class="hljs-title class_">Environment</span>: config.<span class="hljs-property">name</span> });
+    logger.<span class="hljs-title function_">info</span>(<span class="hljs-string">`▶ START &quot;<span class="hljs-subst">${testInfo.title}</span>&quot; (attempt <span class="hljs-subst">${testInfo.retry + <span class="hljs-number">1</span>}</span>)`</span>);
+
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">use</span>();                                   <span class="hljs-comment">// ← the test runs here</span>
+
+    <span class="hljs-keyword">const</span> failed = testInfo.<span class="hljs-property">status</span> !== testInfo.<span class="hljs-property">expectedStatus</span>;
+    <span class="hljs-keyword">if</span> (failed) <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachHtmlSnapshot</span>(page, <span class="hljs-string">&#x27;HTML snapshot at failure&#x27;</span>);
+    <span class="hljs-keyword">await</span> network.<span class="hljs-title function_">stop</span>();
+    <span class="hljs-keyword">await</span> network.<span class="hljs-title function_">attachToAllure</span>({ <span class="hljs-attr">full</span>: failed });   <span class="hljs-comment">// network log, API payloads, failures</span>
+    <span class="hljs-keyword">await</span> consoleMonitor.<span class="hljs-title function_">attachToAllure</span>();            <span class="hljs-comment">// console messages + errors</span>
+    <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachText</span>(<span class="hljs-string">&#x27;📝 execution.log&#x27;</span>, logger.<span class="hljs-title function_">toText</span>());
+  },
+  { <span class="hljs-attr">auto</span>: <span class="hljs-literal">true</span> },
+],</code></pre>
+<p>In the report, attachments added during fixture teardown appear inside the collapsible <strong>After Hooks</strong> section at the end of the test body.</p>
+<p>Tests import <code>test</code> and <code>expect</code> from the fixture file instead of <code>@playwright/test</code>:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">import</span> { expect, test } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../../fixtures/base.fixture&#x27;</span>;
+
+<span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Adding a product updates the header cart counter&#x27;</span>, <span class="hljs-title function_">async</span> ({ productPage, cartPage }) =&gt; { ... });</code></pre>
+<h1 id="5-allure-features-explained">5. Allure Features Explained</h1>
+<p>Each section explains one capability, shows the code the project uses and the result in the report.</p>
+<h2 id="51-titles-and-descriptions">5.1 Titles and descriptions</h2>
+<p>The test title becomes the result name. Descriptions accept <strong>Markdown</strong> (<code>allure.description</code>) or <strong>HTML</strong> (<code>allure.descriptionHtml</code>):</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Login page renders every element a customer needs to sign in&#x27;</span>, <span class="hljs-title function_">async</span> ({ loginPage }) =&gt; {
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">applyMetadata</span>({
+    <span class="hljs-attr">story</span>: <span class="hljs-string">&#x27;Login form&#x27;</span>,
+    <span class="hljs-attr">severity</span>: <span class="hljs-title class_">Severity</span>.<span class="hljs-property">CRITICAL</span>,
+    <span class="hljs-attr">description</span>: [
+      <span class="hljs-string">&#x27;Verifies the **customer login** page is reachable and complete.&#x27;</span>,
+      <span class="hljs-string">&#x27;&#x27;</span>,
+      <span class="hljs-string">&#x27;| Element | Expectation |&#x27;</span>,
+      <span class="hljs-string">&#x27;|---|---|&#x27;</span>,
+      <span class="hljs-string">&#x27;| Email field | visible, `type=email` |&#x27;</span>,
+    ].<span class="hljs-title function_">join</span>(<span class="hljs-string">&#x27;\n&#x27;</span>),
+  });
+  <span class="hljs-comment">// ...</span>
+});</code></pre>
+<p><code>allure.displayName()</code> renames a result at runtime, for example to include data only known during execution.</p>
+<h2 id="52-test-statuses">5.2 Test statuses</h2>
+<p>Allure has five statuses. How allure-playwright maps Playwright outcomes is worth knowing:</p>
+<table>
+<thead>
+<tr>
+<th>Allure status</th>
+<th>Colour</th>
+<th>Produced by (allure-playwright 3.x)</th>
+<th>Showcase test</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>passed</strong></td>
+<td>green</td>
+<td>test passed, or a <code>test.fail()</code> test failed as expected</td>
+<td><code>EXPECTED FAILURE: known defect…</code></td>
+</tr>
+<tr>
+<td><strong>failed</strong></td>
+<td>red</td>
+<td>test failed (assertion or any thrown error)</td>
+<td><code>FAILED: cart total assertion…</code></td>
+</tr>
+<tr>
+<td><strong>broken</strong></td>
+<td>yellow</td>
+<td>test <strong>timed out</strong></td>
+<td><code>BROKEN: test exceeds its timeout…</code></td>
+</tr>
+<tr>
+<td><strong>skipped</strong></td>
+<td>grey</td>
+<td><code>test.skip()</code>, <code>test.fixme()</code>, conditional skips</td>
+<td><code>SKIPPED: …</code>, <code>FIXME: …</code></td>
+</tr>
+<tr>
+<td><strong>unknown</strong></td>
+<td>purple</td>
+<td>results without a final status (rare)</td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>Failed vs broken.</strong> In Allure&#39;s vocabulary <em>failed</em> means &quot;the product is wrong&quot; (an assertion failed) and <em>broken</em> means &quot;the test or its environment is wrong&quot;. allure-playwright 3.x reports every failing Playwright test as <strong>failed</strong> and only <strong>timeouts</strong> as <strong>broken</strong>. <em>Steps</em> are classified more finely: a step that throws a non-assertion error is shown as broken inside a failed test.</p>
+</blockquote>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;BROKEN: test exceeds its timeout (infrastructure problem)&#x27;</span>, <span class="hljs-title function_">async</span> ({ page }) =&gt; {
+  test.<span class="hljs-built_in">setTimeout</span>(<span class="hljs-number">8_000</span>);
+  <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">goto</span>(<span class="hljs-string">&#x27;/&#x27;</span>);
+  <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">&#x27;Wait for a widget that never renders&#x27;</span>, <span class="hljs-title function_">async</span> () =&gt; {
+    <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">locator</span>(<span class="hljs-string">&#x27;#loyalty-widget-that-does-not-exist&#x27;</span>).<span class="hljs-title function_">waitFor</span>({ <span class="hljs-attr">timeout</span>: <span class="hljs-number">0</span> });
+  });
+});
+
+<span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;SKIPPED: runs on WebKit only&#x27;</span>, <span class="hljs-title function_">async</span> ({ browserName }) =&gt; {
+  test.<span class="hljs-title function_">skip</span>(browserName !== <span class="hljs-string">&#x27;webkit&#x27;</span>, <span class="hljs-string">`Apple Pay button only renders on WebKit (current: <span class="hljs-subst">${browserName}</span>)`</span>);
+});
+
+<span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;EXPECTED FAILURE: known defect marked with test.fail()&#x27;</span>, <span class="hljs-title function_">async</span> ({ page }) =&gt; {
+  test.<span class="hljs-title function_">fail</span>(<span class="hljs-literal">true</span>, <span class="hljs-string">&#x27;Issue #88: the store has no /pages/shipping page yet&#x27;</span>);
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">goto</span>(<span class="hljs-string">&#x27;/pages/shipping&#x27;</span>);
+  <span class="hljs-title function_">expect</span>(response?.<span class="hljs-title function_">status</span>()).<span class="hljs-title function_">toBe</span>(<span class="hljs-number">200</span>);   <span class="hljs-comment">// fails → reported as passed (expected)</span>
+});</code></pre>
+<p><figure><img src="../images/11-failed-test.png" alt="A failed test: status, error message, category, severity, description, parameters and links"/><figcaption>Figure 2 – A failed result shows the error message, the category it was sorted into, its metadata and the steps</figcaption></figure></p>
+<p><figure><img src="../images/25-broken.png" alt="A broken (timed-out) test"/><figcaption>Figure 3 – A timed-out test is reported as broken</figcaption></figure></p>
+<h2 id="53-behaviors-epic-feature-story">5.3 Behaviors: epic, feature, story</h2>
+<p>The <strong>Behaviors</strong> tab groups results by business capability instead of by file. Three labels drive it:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts">test.<span class="hljs-title function_">beforeEach</span>(<span class="hljs-title function_">async</span> () =&gt; {
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">applyMetadata</span>({ <span class="hljs-attr">epic</span>: <span class="hljs-string">&#x27;Web Shop&#x27;</span>, <span class="hljs-attr">feature</span>: <span class="hljs-string">&#x27;Checkout&#x27;</span>, <span class="hljs-attr">owner</span>: <span class="hljs-string">&#x27;qa-checkout-team&#x27;</span>, <span class="hljs-attr">layer</span>: <span class="hljs-string">&#x27;e2e&#x27;</span> });
+});
+
+<span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Pay now with an empty form lists every required field&#x27;</span>, <span class="hljs-title function_">async</span> ({ cartPage, checkoutPage }) =&gt; {
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">applyMetadata</span>({ <span class="hljs-attr">story</span>: <span class="hljs-string">&#x27;Checkout validation&#x27;</span>, <span class="hljs-attr">severity</span>: <span class="hljs-title class_">Severity</span>.<span class="hljs-property">CRITICAL</span> });
+  <span class="hljs-comment">// ...</span>
+});</code></pre>
+<p>Runtime calls made in <code>beforeEach</code> are applied to the test, which lets a whole <code>describe</code> share its epic, feature and owner.</p>
+<p><figure><img src="../images/04-behaviors.png" alt="Behaviors tab: Web Shop → Checkout → Checkout validation"/><figcaption>Figure 4 – Behaviors tab: epics, features and stories with status counts. This is the feature coverage view.</figcaption></figure></p>
+<p>The <strong>Features by stories</strong> widget on the Overview page lists epics with the number of <strong>features</strong> under each (for example <em>Web Shop: 6</em> = Authentication, Product Catalog, Product Search, Product Catalog API, Shopping Cart, Checkout).</p>
+<blockquote>
+<p><strong>Note.</strong> Tests skipped with <code>test.fixme()</code> never run their hooks, so runtime labels are not applied and they appear at the root of the Behaviors tree. Use static annotations (§5.14) if skipped tests must be grouped too.</p>
+</blockquote>
+<h2 id="54-severity">5.4 Severity</h2>
+<p>Five levels are available through the <code>Severity</code> enum and appear in the result header, filters and the <strong>Severity</strong> graph:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Use for</th>
+<th>Example in the project</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>blocker</code></td>
+<td>Core business flow is impossible</td>
+<td>Catalog lists every product; add to cart; reach checkout</td>
+</tr>
+<tr>
+<td><code>critical</code></td>
+<td>Major function broken, no workaround</td>
+<td>Checkout validation, product prices</td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Default</td>
+<td>Search results, cart/API sync</td>
+</tr>
+<tr>
+<td><code>minor</code></td>
+<td>Cosmetic or edge case</td>
+<td>Password recovery form, 404 page</td>
+</tr>
+<tr>
+<td><code>trivial</code></td>
+<td>Barely noticeable</td>
+<td>Header navigation</td>
+</tr>
+</tbody></table>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">severity</span>(<span class="hljs-title class_">Severity</span>.<span class="hljs-property">BLOCKER</span>);</code></pre>
+<h2 id="55-tags-owner-layer-custom-labels-and-suites">5.5 Tags, owner, layer, custom labels and suites</h2>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Adding a product...&#x27;</span>, { <span class="hljs-attr">tag</span>: [<span class="hljs-string">&#x27;@smoke&#x27;</span>] }, <span class="hljs-title function_">async</span> () =&gt; { ... });  <span class="hljs-comment">// Playwright tags → Allure tags</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">tags</span>(<span class="hljs-string">&#x27;metadata&#x27;</span>, <span class="hljs-string">&#x27;documentation&#x27;</span>);                       <span class="hljs-comment">// runtime tags</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">owner</span>(<span class="hljs-string">&#x27;qa-checkout-team&#x27;</span>);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">layer</span>(<span class="hljs-string">&#x27;e2e&#x27;</span>);                    <span class="hljs-comment">// e2e | api | ui | ...</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">label</span>(<span class="hljs-string">&#x27;component&#x27;</span>, <span class="hljs-string">&#x27;storefront&#x27;</span>); <span class="hljs-comment">// any custom label</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parentSuite</span>(<span class="hljs-string">&#x27;Allure Showcase&#x27;</span>);   <span class="hljs-comment">// override the Suites tree</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">suite</span>(<span class="hljs-string">&#x27;Metadata&#x27;</span>);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">subSuite</span>(<span class="hljs-string">&#x27;Labels &amp; links&#x27;</span>);</code></pre>
+<p>Playwright tags work for both tools: <code>npx playwright test --grep @smoke</code> selects tests and Allure shows the tags as chips you can filter on.</p>
+<p><figure><img src="../images/03-suites.png" alt="Suites tab with a test selected"/><figcaption>Figure 5 – Suites tab: project → file → describe → test, with the selected result on the right</figcaption></figure></p>
+<p><figure><img src="../images/08-metadata.png" alt="Rich metadata of a single result"/><figcaption>Figure 6 – Tags, severity, HTML description, owner, parameters and links (issue, TMS, Jira, docs, related)</figcaption></figure></p>
+<h2 id="56-detailed-test-steps">5.6 Detailed test steps</h2>
+<p>Steps make a report readable by people who never saw the code. This project uses four techniques.</p>
+<p><strong>1. <code>allure.step()</code> with nesting and step parameters.</strong> Each step has its own duration:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">&#x27;Level 1: browse the catalog&#x27;</span>, <span class="hljs-title function_">async</span> (s1) =&gt; {
+  <span class="hljs-keyword">await</span> s1.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;page&#x27;</span>, <span class="hljs-string">&#x27;/collections/all&#x27;</span>);
+  <span class="hljs-keyword">await</span> catalogPage.<span class="hljs-title function_">open</span>();
+
+  <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">&#x27;Level 2: inspect products&#x27;</span>, <span class="hljs-title function_">async</span> (s2) =&gt; {
+    <span class="hljs-keyword">const</span> products = <span class="hljs-keyword">await</span> catalogPage.<span class="hljs-title function_">getProducts</span>();
+    <span class="hljs-keyword">await</span> s2.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;products found&#x27;</span>, <span class="hljs-title class_">String</span>(products.<span class="hljs-property">length</span>));
+
+    <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">&#x27;Level 3: pick the cheapest in-stock item&#x27;</span>, <span class="hljs-title function_">async</span> (s3) =&gt; {
+      <span class="hljs-keyword">const</span> cheapest = [...products].<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.<span class="hljs-property">price</span> - b.<span class="hljs-property">price</span>)[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">await</span> s3.<span class="hljs-title function_">displayName</span>(<span class="hljs-string">`Level 3: cheapest item is &quot;<span class="hljs-subst">${cheapest.name}</span>&quot; (<span class="hljs-subst">${cheapest.priceText}</span>)`</span>);
+    });
+  });
+});</code></pre>
+<p><strong>2. The <code>@step</code> decorator</strong> turns page-object methods into steps. <code>{0}</code> and <code>{1}</code> are replaced by the arguments, <code>{this.path}</code> by an instance property and <code>{class}</code> by the class name:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-comment">// src/utils/allure-helper.ts</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">step</span>(<span class="hljs-params"><span class="hljs-attr">title</span>?: <span class="hljs-built_in">string</span></span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> &lt;<span class="hljs-title class_">This</span>, <span class="hljs-title class_">Args</span> <span class="hljs-keyword">extends</span> <span class="hljs-built_in">unknown</span>[], <span class="hljs-title class_">Return</span>&gt;(
+    <span class="hljs-attr">target</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">this</span>: <span class="hljs-title class_">This</span>, ...<span class="hljs-attr">args</span>: <span class="hljs-title class_">Args</span></span>) =&gt;</span> <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">Return</span>&gt;,
+    <span class="hljs-attr">context</span>: <span class="hljs-title class_">ClassMethodDecoratorContext</span>&lt;<span class="hljs-title class_">This</span>, <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">this</span>: <span class="hljs-title class_">This</span>, ...<span class="hljs-attr">args</span>: <span class="hljs-title class_">Args</span></span>) =&gt;</span> <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">Return</span>&gt;&gt;,
+  ) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-attr">this</span>: <span class="hljs-title class_">This</span>, ...<span class="hljs-attr">args</span>: <span class="hljs-title class_">Args</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">Return</span>&gt; {
+      <span class="hljs-keyword">const</span> className = (<span class="hljs-variable language_">this</span> <span class="hljs-keyword">as</span> { <span class="hljs-attr">constructor</span>: { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> } }).<span class="hljs-property">constructor</span>.<span class="hljs-property">name</span>;
+      <span class="hljs-keyword">const</span> name = title
+        ? title
+            .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\{(\d+)\}/g</span>, <span class="hljs-function">(<span class="hljs-params">_, <span class="hljs-attr">i</span>: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-title function_">formatArg</span>(args[<span class="hljs-title class_">Number</span>(i)]))
+            .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\{this\.(\w+)\}/g</span>, <span class="hljs-function">(<span class="hljs-params">_, <span class="hljs-attr">prop</span>: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-title function_">formatArg</span>((<span class="hljs-variable language_">this</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">unknown</span>&gt;)[prop]))
+            .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\{class\}/g</span>, className)
+        : <span class="hljs-string">`<span class="hljs-subst">${className}</span>.<span class="hljs-subst">${<span class="hljs-built_in">String</span>(context.name)}</span>`</span>;
+      <span class="hljs-keyword">return</span> allure.<span class="hljs-title function_">step</span>(name, <span class="hljs-function">() =&gt;</span> target.<span class="hljs-title function_">call</span>(<span class="hljs-variable language_">this</span>, ...args));
+    };
+  };
+}
+
+<span class="hljs-comment">// usage in a page object</span>
+<span class="hljs-meta">@step</span>(<span class="hljs-string">&#x27;Open {class} ({this.path})&#x27;</span>)
+<span class="hljs-keyword">async</span> <span class="hljs-title function_">open</span>(): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt; { ... }</code></pre>
+<p>Playwright compiles TypeScript with support for standard (TC39) decorators, so no <code>experimentalDecorators</code> flag is needed.</p>
+<p><strong>3. Assertion steps with explanatory messages.</strong> <code>AllureHelper.verify()</code> wraps an assertion in a step named after <em>what</em> is validated, and <code>expect(value, message)</code> puts a business-level message into the error:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">`total £<span class="hljs-subst">${total.toFixed(<span class="hljs-number">2</span>)}</span> = sum of lines £<span class="hljs-subst">${expected.toFixed(<span class="hljs-number">2</span>)}</span>`</span>, <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-title function_">expect</span>(total).<span class="hljs-title function_">toBeCloseTo</span>(lines.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">s, l</span>) =&gt;</span> s + l.<span class="hljs-property">lineTotal</span>, <span class="hljs-number">0</span>), <span class="hljs-number">2</span>);
+});
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">&#x27;10% loyalty discount is applied to the cart total&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+  <span class="hljs-title function_">expect</span>(total, <span class="hljs-string">&#x27;Expected £49.50 after a 10% loyalty discount&#x27;</span>).<span class="hljs-title function_">toBe</span>(<span class="hljs-number">49.5</span>),
+);</code></pre>
+<p><strong>4. Log steps</strong> mark decisions or observations without a body, with any status:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">logStep</span>(<span class="hljs-string">&#x27;Decision: guest checkout path chosen&#x27;</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">PASSED</span>);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">logStep</span>(<span class="hljs-string">&#x27;Optional recommendation widget not present — skipped&#x27;</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">SKIPPED</span>);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">logStep</span>(<span class="hljs-string">&#x27;Non-critical analytics beacon failed&#x27;</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;beacon blocked&#x27;</span>));</code></pre>
+<p><figure><img src="../images/09-nested-steps.png" alt="Nested steps with parameters, durations and log steps"/><figcaption>Figure 7 – Nested steps, step parameters, per-step timing and log steps with different statuses</figcaption></figure></p>
+<p><figure><img src="../images/10-steps-verify.png" alt="Page-object steps and verification steps"/><figcaption>Figure 8 – Decorated page-object methods and ✔ Verify steps read like a test case</figcaption></figure></p>
+<blockquote>
+<p><strong><code>detail: true</code> vs <code>false</code>.</strong> With <code>detail: true</code> allure-playwright also records every <code>page.click()</code>, <code>expect()</code> and fixture as a step. Keep it off for stakeholder reports and switch it on while debugging: <code>ALLURE_DETAIL=true npm test</code>.</p>
+</blockquote>
+<h2 id="57-visual-evidence-screenshots-video-traces-html-snapshots">5.7 Visual evidence: screenshots, video, traces, HTML snapshots</h2>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>How it is produced</th>
+<th>Configured in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Screenshot on failure</td>
+<td>Playwright <code>screenshot: { mode: &#39;only-on-failure&#39;, fullPage: true }</code></td>
+<td><code>playwright.config.ts</code></td>
+</tr>
+<tr>
+<td>Checkpoint screenshots</td>
+<td><code>AllureHelper.checkpoint(page, &#39;name&#39;)</code></td>
+<td>tests</td>
+</tr>
+<tr>
+<td>Element screenshot</td>
+<td><code>AllureHelper.attachElementScreenshot(locator, &#39;name&#39;)</code></td>
+<td>tests</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>Playwright <code>video: &#39;retain-on-failure&#39;</code> (or <code>&#39;on&#39;</code>)</td>
+<td>config / <code>test.use()</code></td>
+</tr>
+<tr>
+<td>Trace</td>
+<td>Playwright <code>trace: &#39;retain-on-failure&#39;</code></td>
+<td>config / <code>test.use()</code></td>
+</tr>
+<tr>
+<td>HTML snapshot</td>
+<td><code>page.content()</code> attached as <code>text/html</code> on failure</td>
+<td>evidence fixture</td>
+</tr>
+</tbody></table>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">async</span> <span class="hljs-title function_">checkpoint</span>(<span class="hljs-params"><span class="hljs-attr">page</span>: <span class="hljs-title class_">Page</span>, <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">options</span>: { force?: <span class="hljs-built_in">boolean</span>; fullPage?: <span class="hljs-built_in">boolean</span> } = {}</span>) {
+  <span class="hljs-keyword">if</span> (!config.<span class="hljs-property">checkpointScreenshots</span> &amp;&amp; !options.<span class="hljs-property">force</span>) <span class="hljs-keyword">return</span>;
+  <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">`📸 Checkpoint: <span class="hljs-subst">${name}</span>`</span>, <span class="hljs-title function_">async</span> () =&gt; {
+    <span class="hljs-keyword">const</span> png = <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">screenshot</span>({ <span class="hljs-attr">fullPage</span>: options.<span class="hljs-property">fullPage</span> ?? <span class="hljs-literal">false</span>, <span class="hljs-attr">animations</span>: <span class="hljs-string">&#x27;disabled&#x27;</span> });
+    <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">attachment</span>(<span class="hljs-string">`Checkpoint – <span class="hljs-subst">${name}</span>`</span>, png, <span class="hljs-title class_">ContentType</span>.<span class="hljs-property">PNG</span>);
+  });
+},</code></pre>
+<p>To always record video for one scenario, set it at <strong>file level</strong>. Playwright refuses <code>test.use({ video })</code> inside a <code>describe</code> because it needs a new browser context:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-comment">// src/tests/showcase/visual-evidence.spec.ts</span>
+test.<span class="hljs-title function_">use</span>({ <span class="hljs-attr">video</span>: { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;on&#x27;</span>, <span class="hljs-attr">size</span>: { <span class="hljs-attr">width</span>: <span class="hljs-number">1366</span>, <span class="hljs-attr">height</span>: <span class="hljs-number">900</span> } }, <span class="hljs-attr">trace</span>: <span class="hljs-string">&#x27;on&#x27;</span> });</code></pre>
+<p><figure><img src="../images/21-checkpoints.png" alt="Checkpoint screenshots as steps"/><figcaption>Figure 9 – Each checkpoint is a step with its screenshot attached</figcaption></figure></p>
+<p><figure><img src="../images/14-failure-screenshot.png" alt="Failure screenshot in the tear-down section"/><figcaption>Figure 10 – Playwright's failure screenshot, attached automatically</figcaption></figure></p>
+<p><figure><img src="../images/22-video.png" alt="Video attachment"/><figcaption>Figure 11 – The recorded video plays inside the report</figcaption></figure></p>
+<p>The <strong>trace</strong> attachment (<code>trace.zip</code>) can be downloaded from the report and opened with <code>npx playwright show-trace trace.zip</code> or at <a href="https://trace.playwright.dev">https://trace.playwright.dev</a>. It is the most powerful debugging artefact: DOM snapshots before and after every action, network, console and source.</p>
+<h2 id="58-network-and-performance-monitoring">5.8 Network and performance monitoring</h2>
+<p><code>src/utils/api-interceptor.ts</code> listens to Playwright&#39;s page events and records every exchange:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">start</span>(): <span class="hljs-built_in">void</span> {
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;request&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onRequest</span>);          <span class="hljs-comment">// method, url, type, first-party?</span>
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;response&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onResponse</span>);        <span class="hljs-comment">// status, headers, JSON body (first-party XHR/fetch)</span>
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;requestfinished&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onFinished</span>); <span class="hljs-comment">// duration from request.timing()</span>
+  <span class="hljs-variable language_">this</span>.<span class="hljs-property">page</span>.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;requestfailed&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onFailed</span>);     <span class="hljs-comment">// transport errors (net::ERR_*)</span>
+}</code></pre>
+<p>At the end of each test the evidence fixture attaches:</p>
+<ul>
+<li><strong>🌐 Network summary</strong> (JSON): totals, average and p95 time, slowest URL, counts by type and status;</li>
+<li><strong>🌐 Network log</strong> (HTML table): first-party requests and all failures, with 4xx/5xx/failed rows in red and slow rows in yellow;</li>
+<li><strong>🔌 API calls with payloads</strong>: request/response bodies of the store&#39;s AJAX API (sensitive headers are redacted);</li>
+<li><strong>❌ Failed network requests</strong>, only when there are any;</li>
+<li><code>network-log.csv</code> for failed tests.</li>
+</ul>
+<p>It can also <strong>simulate failures</strong> with <code>page.route()</code>, which is great for error-handling tests:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Add to cart fails gracefully when the cart service is unreachable&#x27;</span>, <span class="hljs-title function_">async</span> ({ productPage, network, shopApi }) =&gt; {
+  <span class="hljs-keyword">await</span> network.<span class="hljs-title function_">simulateNetworkFailure</span>(<span class="hljs-string">&#x27;**/cart/add.js&#x27;</span>);   <span class="hljs-comment">// route.abort()</span>
+  <span class="hljs-keyword">await</span> productPage.<span class="hljs-title function_">openByHandle</span>(<span class="hljs-string">&#x27;grey-jacket&#x27;</span>);
+  <span class="hljs-keyword">await</span> productPage.<span class="hljs-title function_">clickAddToCart</span>();
+
+  <span class="hljs-keyword">await</span> expect.<span class="hljs-title function_">poll</span>(<span class="hljs-function">() =&gt;</span> network.<span class="hljs-title function_">find</span>(<span class="hljs-string">&#x27;/cart/add.js&#x27;</span>).<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> e.<span class="hljs-property">outcome</span> === <span class="hljs-string">&#x27;failed&#x27;</span>).<span class="hljs-property">length</span>).<span class="hljs-title function_">toBeGreaterThan</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> { body } = <span class="hljs-keyword">await</span> shopApi.<span class="hljs-title function_">getCart</span>();
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">&#x27;server-side cart is still empty&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">expect</span>(body.<span class="hljs-property">item_count</span>).<span class="hljs-title function_">toBe</span>(<span class="hljs-number">0</span>));
+});</code></pre>
+<p><figure><img src="../images/15-network-log.png" alt="Network log attachment"/><figcaption>Figure 12 – The network log: status codes, response times, the aborted /cart/add.js request</figcaption></figure></p>
+<p><figure><img src="../images/16-failed-requests.png" alt="Failed requests attachment"/><figcaption>Figure 13 – Failed requests with the transport error, marked as mocked</figcaption></figure></p>
+<p><strong>Page performance.</strong> The showcase measures Navigation Timing (TTFB, DOMContentLoaded, load, transfer size) for key pages and attaches it as CSV, with each measurement a step with parameters:</p>
+<p><figure><img src="../images/27-performance.png" alt="Performance metrics per page"/><figcaption>Figure 14 – One step per page with TTFB and load time as step parameters</figcaption></figure></p>
+<h2 id="59-api-testing-with-allure-steps">5.9 API testing with Allure steps</h2>
+<p><code>ShopApiClient</code> wraps Playwright&#39;s <code>APIRequestContext</code>. Every call is a step with the method, URL, status and duration as parameters and the request/response bodies attached:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">private</span> <span class="hljs-keyword">async</span> call&lt;T&gt;(<span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;GET&#x27;</span> | <span class="hljs-string">&#x27;POST&#x27;</span>, <span class="hljs-attr">url</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">data</span>?: <span class="hljs-built_in">unknown</span>) {
+  <span class="hljs-keyword">return</span> allure.<span class="hljs-title function_">step</span>(<span class="hljs-string">`API <span class="hljs-subst">${method}</span> <span class="hljs-subst">${url}</span>`</span>, <span class="hljs-title function_">async</span> (ctx) =&gt; {
+    <span class="hljs-keyword">await</span> ctx.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;method&#x27;</span>, method);
+    <span class="hljs-keyword">await</span> ctx.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;url&#x27;</span>, url);
+    <span class="hljs-keyword">if</span> (data !== <span class="hljs-literal">undefined</span>) <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachJson</span>(<span class="hljs-string">`Request <span class="hljs-subst">${method}</span> <span class="hljs-subst">${url}</span>`</span>, data);
+
+    <span class="hljs-keyword">const</span> started = performance.<span class="hljs-title function_">now</span>();
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">raw</span>(method, url, data);
+    <span class="hljs-keyword">const</span> durationMs = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">round</span>(performance.<span class="hljs-title function_">now</span>() - started);
+    <span class="hljs-keyword">await</span> ctx.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;status&#x27;</span>, <span class="hljs-title class_">String</span>(response.<span class="hljs-title function_">status</span>()));
+    <span class="hljs-keyword">await</span> ctx.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;duration&#x27;</span>, <span class="hljs-string">`<span class="hljs-subst">${durationMs}</span> ms`</span>);
+    <span class="hljs-comment">// ...parse, attach the response, throw on non-2xx</span>
+  });
+}</code></pre>
+<p>Created from <code>page.request</code>, the client <strong>shares cookies with the browser</strong>, so the UI tests use it for fast setup: the checkout tests fill the cart through the API in <code>beforeEach</code> and only exercise the checkout in the UI.</p>
+<p><figure><img src="../images/26-api-step.png" alt="API step with parameters and response"/><figcaption>Figure 15 – An API step: parameters (method, url, status, duration) and the JSON response</figcaption></figure></p>
+<h2 id="510-console-capture-and-logging">5.10 Console capture and logging</h2>
+<p><code>ConsoleMonitor</code> records <code>console.*</code> messages and uncaught exceptions (<code>pageerror</code>). The evidence fixture attaches the full console output and a highlighted table of errors and warnings. Against the live store it regularly catches real problems, such as third-party 403s and a <code>TypeError</code> thrown by a theme script.</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Browser console capture and analysis&#x27;</span>, <span class="hljs-title function_">async</span> ({ page, consoleMonitor }) =&gt; {
+  <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">goto</span>(<span class="hljs-string">&#x27;/&#x27;</span>);
+  <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">evaluate</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;[demo] recommendation widget failed to load&#x27;</span>));
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">&#x27;the demo error was captured&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+    <span class="hljs-title function_">expect</span>(consoleMonitor.<span class="hljs-title function_">errors</span>().<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> e.<span class="hljs-property">text</span>)).<span class="hljs-title function_">toContain</span>(<span class="hljs-string">&#x27;[demo] recommendation widget failed to load&#x27;</span>),
+  );
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">&#x27;no uncaught JavaScript exceptions on first-party pages&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+    <span class="hljs-title function_">expect</span>(consoleMonitor.<span class="hljs-title function_">getPageErrors</span>().<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> e.<span class="hljs-property">pageUrl</span>.<span class="hljs-title function_">startsWith</span>(config.<span class="hljs-property">baseURL</span>))).<span class="hljs-title function_">toHaveLength</span>(<span class="hljs-number">0</span>),
+  );
+});</code></pre>
+<p>The per-test <strong>Logger</strong> buffers structured entries (levels, context and data) and attaches them as <code>📝 execution.log</code>. <code>logger.data(&#39;cart.total&#39;, 105)</code> records variable values for debugging. Only warnings and errors are echoed to the terminal by default (<code>LOG_LEVEL</code>), and allure-playwright also attaches the test&#39;s stdout/stderr.</p>
+<p><figure><img src="../images/17-console-errors.png" alt="Console errors table"/><figcaption>Figure 16 – Console errors and warnings with their source location</figcaption></figure></p>
+<p><figure><img src="../images/18-execution-log.png" alt="Execution log"/><figcaption>Figure 17 – The structured execution log, including logged test data</figcaption></figure></p>
+<h2 id="511-parameters-and-test-data">5.11 Parameters and test data</h2>
+<p>Parameters describe <em>what data</em> a result ran with. Allure uses them to tell data-driven variants apart:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;Customer tier&#x27;</span>, <span class="hljs-string">&#x27;Gold&#x27;</span>);                                  <span class="hljs-comment">// plain</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;API key&#x27;</span>, <span class="hljs-string">&#x27;sk_live_51H8secret&#x27;</span>, { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;masked&#x27;</span> });       <span class="hljs-comment">// shown as ******</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;Internal trace id&#x27;</span>, <span class="hljs-string">&#x27;trace-7f3a9&#x27;</span>, { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;hidden&#x27;</span> });    <span class="hljs-comment">// not shown at all</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;Run timestamp&#x27;</span>, <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">toISOString</span>(), { <span class="hljs-attr">excluded</span>: <span class="hljs-literal">true</span> }); <span class="hljs-comment">// not part of history id</span></code></pre>
+<blockquote>
+<p><strong><code>excluded</code> does not hide a parameter.</strong> It only removes it from the <em>history id</em>, so values that change on every run (timestamps, retry numbers, viewports) do not split a test&#39;s history. Use <code>mode: &#39;hidden&#39;</code> to hide it.</p>
+</blockquote>
+<p><strong>Data-driven tests</strong> generate one Allure result per data row. The source file is attached as evidence:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">const</span> customers = loadCsv&lt;<span class="hljs-title class_">Customer</span>&gt;(<span class="hljs-string">&#x27;checkout-customers.csv&#x27;</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> customer <span class="hljs-keyword">of</span> customers) {
+  <span class="hljs-title function_">test</span>(<span class="hljs-string">`Shipping details are accepted for <span class="hljs-subst">${customer.label}</span>`</span>, <span class="hljs-title function_">async</span> ({ cartPage, checkoutPage }) =&gt; {
+    <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;customer&#x27;</span>, customer.<span class="hljs-property">label</span>);
+    <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;email&#x27;</span>, customer.<span class="hljs-property">email</span>, { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;masked&#x27;</span> });
+    <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachCsv</span>(<span class="hljs-string">&#x27;checkout-customers.csv (data source)&#x27;</span>, <span class="hljs-title function_">readDataFile</span>(<span class="hljs-string">&#x27;checkout-customers.csv&#x27;</span>));
+    <span class="hljs-comment">// ...</span>
+  });
+}</code></pre>
+<p><figure><img src="../images/23-parameters.png" alt="Parameters in a result"/><figcaption>Figure 18 – Plain, masked and excluded parameters (the hidden one is not displayed)</figcaption></figure></p>
+<h2 id="512-environment-and-executor-information">5.12 Environment and executor information</h2>
+<p>The <strong>Environment</strong> widget reads <code>allure-results/environment.properties</code>, and the <strong>Executors</strong> widget reads <code>executor.json</code>. The project writes both in global teardown (<code>src/config/allure-metadata.ts</code>) so they can include <strong>runtime</strong> data such as the exact browser version, which each worker records:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-attr">browserMetadata</span>: [
+  <span class="hljs-title function_">async</span> ({ browser, browserName }, use, workerInfo) =&gt; {
+    fs.<span class="hljs-title function_">mkdirSync</span>(<span class="hljs-variable constant_">META_DIR</span>, { <span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span> });
+    fs.<span class="hljs-title function_">writeFileSync</span>(path.<span class="hljs-title function_">join</span>(<span class="hljs-variable constant_">META_DIR</span>, <span class="hljs-string">`browser-<span class="hljs-subst">${workerInfo.project.name}</span>.json`</span>),
+      <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">project</span>: workerInfo.<span class="hljs-property">project</span>.<span class="hljs-property">name</span>, browserName, <span class="hljs-attr">browserVersion</span>: browser.<span class="hljs-title function_">version</span>() }));
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">use</span>();
+  },
+  { <span class="hljs-attr">auto</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">scope</span>: <span class="hljs-string">&#x27;worker&#x27;</span> },
+],</code></pre>
+<p>The resulting <code>environment.properties</code> looks like this:</p>
+<pre class="code"><span class="code-lang">properties</span><code class="hljs language-properties"><span class="hljs-attr">Environment</span>=<span class="hljs-string">production</span>
+<span class="hljs-attr">Base\ URL</span>=<span class="hljs-string">https\://sauce-demo.myshopify.com</span>
+<span class="hljs-attr">OS</span>=<span class="hljs-string">Windows_NT 10.0.26200 (x64)</span>
+<span class="hljs-attr">Node.js</span>=<span class="hljs-string">v22.18.0</span>
+<span class="hljs-attr">Headless</span>=<span class="hljs-string">true</span>
+<span class="hljs-attr">Viewport</span>=<span class="hljs-string">1366x900</span>
+<span class="hljs-attr">Retries</span>=<span class="hljs-string">1</span>
+<span class="hljs-attr">Browser\ (chromium)</span>=<span class="hljs-string">chromium 153.0.8010.12</span></code></pre>
+<p><code>executor.json</code> detects GitHub Actions and Jenkins (build name, number and URL) and falls back to a local executor with an incrementing build number. The build number labels the x-axis of the trend charts.</p>
+<p>Per test, the evidence fixture adds <em>excluded</em> parameters (viewport, environment), and allure-playwright adds the Playwright <strong>Project</strong> (browser) as a parameter, so cross-browser results of the same test are distinguishable.</p>
+<h2 id="513-retries-and-flaky-tests">5.13 Retries and flaky tests</h2>
+<p>Playwright retries are configured with <code>retries</code> (1 locally, 2 on CI in this project). Allure groups all attempts of a test into <strong>one</strong> result; earlier attempts appear in the <strong>Retries</strong> tab. A test that failed and then passed is marked <strong>flaky</strong>.</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;FLAKY: fails on the first attempt, passes on retry&#x27;</span>, <span class="hljs-title function_">async</span> ({ page }, testInfo) =&gt; {
+  <span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">parameter</span>(<span class="hljs-string">&#x27;attempt&#x27;</span>, <span class="hljs-title class_">String</span>(testInfo.<span class="hljs-property">retry</span> + <span class="hljs-number">1</span>), { <span class="hljs-attr">excluded</span>: <span class="hljs-literal">true</span> });
+  <span class="hljs-keyword">await</span> page.<span class="hljs-title function_">goto</span>(<span class="hljs-string">&#x27;/&#x27;</span>);
+  <span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">verify</span>(<span class="hljs-string">`simulated race condition resolved (attempt <span class="hljs-subst">${testInfo.retry + <span class="hljs-number">1</span>}</span>)`</span>, <span class="hljs-function">() =&gt;</span>
+    <span class="hljs-title function_">expect</span>(testInfo.<span class="hljs-property">retry</span>, <span class="hljs-string">&#x27;first attempt loses the simulated race&#x27;</span>).<span class="hljs-title function_">toBeGreaterThan</span>(<span class="hljs-number">0</span>),
+  );
+});</code></pre>
+<p><figure><img src="../images/24-flaky.png" alt="Flaky test"/><figcaption>Figure 19 – A flaky result: passed, with the flaky mark and the retry count</figcaption></figure></p>
+<p><figure><img src="../images/12-retries.png" alt="Retries tab"/><figcaption>Figure 20 – The Retries tab lists every earlier attempt with its own status, duration and evidence</figcaption></figure></p>
+<p>allure-playwright adds a <code>Retry</code> parameter (excluded from history) to retried attempts. Use the <strong>Marks</strong> filter (flaky, new failed, new broken, retries) in the tree views to find them quickly.</p>
+<h2 id="514-links-and-relationships">5.14 Links and relationships</h2>
+<p>Links connect a result to the rest of your tooling. Templates in <code>allure-report.config.ts</code> turn short ids into URLs:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-attr">links</span>: {
+  <span class="hljs-attr">issue</span>: { <span class="hljs-attr">urlTemplate</span>: <span class="hljs-string">&#x27;https://github.com/your-org/playwright-allure-showcase/issues/%s&#x27;</span>, <span class="hljs-attr">nameTemplate</span>: <span class="hljs-string">&#x27;Issue #%s&#x27;</span> },
+  <span class="hljs-attr">tms</span>:   { <span class="hljs-attr">urlTemplate</span>: <span class="hljs-string">&#x27;https://your-org.testrail.io/index.php?/cases/view/%s&#x27;</span>, <span class="hljs-attr">nameTemplate</span>: <span class="hljs-string">&#x27;TC-%s&#x27;</span> },
+  <span class="hljs-attr">jira</span>:  { <span class="hljs-attr">urlTemplate</span>: <span class="hljs-string">&#x27;https://your-org.atlassian.net/browse/%s&#x27;</span>, <span class="hljs-attr">nameTemplate</span>: <span class="hljs-string">&#x27;%s&#x27;</span> },
+},</code></pre>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">issue</span>(<span class="hljs-string">&#x27;101&#x27;</span>);                                   <span class="hljs-comment">// → Issue #101</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">tms</span>(<span class="hljs-string">&#x27;5001&#x27;</span>);                                    <span class="hljs-comment">// → TC-5001</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">link</span>(<span class="hljs-string">&#x27;SHOP-204&#x27;</span>, <span class="hljs-string">&#x27;Jira: SHOP-204&#x27;</span>, <span class="hljs-string">&#x27;jira&#x27;</span>);     <span class="hljs-comment">// custom type with its own template</span>
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">link</span>(<span class="hljs-string">&#x27;https://allurereport.org/docs/playwright/&#x27;</span>, <span class="hljs-string">&#x27;Allure Playwright docs&#x27;</span>, <span class="hljs-string">&#x27;docs&#x27;</span>);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">link</span>(<span class="hljs-string">&#x27;https://allurereport.org/docs/playwright-reference/&#x27;</span>, <span class="hljs-string">&#x27;Related: API reference&#x27;</span>, <span class="hljs-string">&#x27;related&#x27;</span>);</code></pre>
+<p>Metadata can also be declared <strong>statically</strong> with Playwright annotations, which is useful for tests that are skipped before any code runs:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-title function_">test</span>(<span class="hljs-string">&#x27;Rich metadata: labels, links, severity and descriptions&#x27;</span>, {
+  <span class="hljs-attr">tag</span>: [<span class="hljs-string">&#x27;@smoke&#x27;</span>],
+  <span class="hljs-attr">annotation</span>: [
+    { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;allure.label.feature&#x27;</span>, <span class="hljs-attr">description</span>: <span class="hljs-string">&#x27;Report metadata&#x27;</span> },
+    { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;allure.label.story&#x27;</span>, <span class="hljs-attr">description</span>: <span class="hljs-string">&#x27;Labels and links&#x27;</span> },
+    { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;issue&#x27;</span>, <span class="hljs-attr">description</span>: <span class="hljs-string">&#x27;https://github.com/your-org/playwright-allure-showcase/issues/7&#x27;</span> },
+  ],
+}, <span class="hljs-title function_">async</span> ({ homePage }) =&gt; { ... });</code></pre>
+<p><strong>Relationships between tests</strong> are expressed through shared labels and links. Tests with the same <code>story</code> form a group in Behaviors; the same <code>issue</code> or <code>tms</code> id links tests that cover the same requirement; <code>allureId</code>/<code>testCaseId</code> give results a stable identity for TMS integrations; and <code>related</code> links point to other tests or specifications.</p>
+<h2 id="515-history-and-trend-analysis">5.15 History and trend analysis</h2>
+<p>Allure keeps a <code>history/</code> folder inside each generated report. When the <strong>next</strong> report is generated, the previous <code>history/</code> must be copied into <code>allure-results/</code> first. That single step enables:</p>
+<ul>
+<li>the <strong>Trend</strong>, <strong>Duration trend</strong>, <strong>Retries trend</strong> and <strong>Categories trend</strong> graphs;</li>
+<li>the <strong>History</strong> tab of every test (its last runs with status and duration);</li>
+<li>the <strong>new failed / new broken / flaky</strong> marks.</li>
+</ul>
+<p><code>scripts/generate-report.ts</code> automates it:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">const</span> restored = <span class="hljs-title function_">copyDir</span>(path.<span class="hljs-title function_">join</span>(historyDir, <span class="hljs-string">&#x27;history&#x27;</span>), path.<span class="hljs-title function_">join</span>(resultsDir, <span class="hljs-string">&#x27;history&#x27;</span>));  <span class="hljs-comment">// before</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title function_">runAllure</span>([<span class="hljs-string">&#x27;generate&#x27;</span>, resultsDir, <span class="hljs-string">&#x27;-o&#x27;</span>, reportDir, <span class="hljs-string">&#x27;--clean&#x27;</span>, <span class="hljs-string">&#x27;--name&#x27;</span>, allureConfig.<span class="hljs-property">reportName</span>]);
+<span class="hljs-title function_">copyDir</span>(path.<span class="hljs-title function_">join</span>(reportDir, <span class="hljs-string">&#x27;history&#x27;</span>), path.<span class="hljs-title function_">join</span>(historyDir, <span class="hljs-string">&#x27;history&#x27;</span>));                    <span class="hljs-comment">// after</span></code></pre>
+<p>Allure always adds the <em>current</em> results as a new point on top of the restored history. To re-render the same results (for example as a single file) without counting them twice, run <code>npx tsx scripts/generate-report.ts --single-file --no-history-save</code>: the script then restores the history that was the <em>input</em> of the last build (<code>allure-history/previous-history/</code>) and does not save a new one.</p>
+<p>On CI the history lives on the <code>gh-pages</code> branch (GitHub Actions) or is managed by the Allure Jenkins plugin (§9).</p>
+<p><figure><img src="../images/05-graphs.png" alt="Graphs page with status, severity, duration and trend graphs"/><figcaption>Figure 21 – Graphs: status, severity, duration distribution and the trend graphs built from history</figcaption></figure></p>
+<p><figure><img src="../images/13-history.png" alt="History tab of a test"/><figcaption>Figure 22 – The History tab shows how a single test behaved in previous builds</figcaption></figure></p>
+<h2 id="516-custom-attachments">5.16 Custom attachments</h2>
+<p>Any content can be attached; the content type decides how Allure renders it:</p>
+<table>
+<thead>
+<tr>
+<th>Content type</th>
+<th>Rendering</th>
+<th>Helper</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>application/json</code></td>
+<td>pretty-printed, collapsible</td>
+<td><code>AllureHelper.attachJson()</code></td>
+</tr>
+<tr>
+<td><code>text/csv</code></td>
+<td>table</td>
+<td><code>AllureHelper.attachCsv()</code></td>
+</tr>
+<tr>
+<td><code>text/plain</code></td>
+<td>monospace text</td>
+<td><code>AllureHelper.attachText()</code></td>
+</tr>
+<tr>
+<td><code>text/html</code></td>
+<td>rendered HTML (sandboxed iframe)</td>
+<td><code>AllureHelper.attachHtml()</code></td>
+</tr>
+<tr>
+<td><code>image/png</code>, <code>image/svg+xml</code></td>
+<td>image</td>
+<td><code>allure.attachment(name, buf, ContentType.PNG)</code></td>
+</tr>
+<tr>
+<td><code>video/webm</code></td>
+<td>video player</td>
+<td>automatic (Playwright video)</td>
+</tr>
+<tr>
+<td><code>application/xml</code>, <code>text/uri-list</code></td>
+<td>text / clickable links</td>
+<td><code>allure.attachment(..., ContentType.XML / URI)</code></td>
+</tr>
+<tr>
+<td>any file on disk</td>
+<td>download or preview</td>
+<td><code>allure.attachmentPath(name, path, { contentType })</code></td>
+</tr>
+</tbody></table>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachJson</span>(<span class="hljs-string">&#x27;order-payload.json&#x27;</span>, { <span class="hljs-attr">orderId</span>: <span class="hljs-string">&#x27;SO-10042&#x27;</span>, <span class="hljs-attr">items</span>: [...], <span class="hljs-attr">currency</span>: <span class="hljs-string">&#x27;GBP&#x27;</span> });
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachCsv</span>(<span class="hljs-string">&#x27;price-matrix.csv&#x27;</span>, [{ <span class="hljs-attr">product</span>: <span class="hljs-string">&#x27;Grey jacket&#x27;</span>, <span class="hljs-attr">price</span>: <span class="hljs-number">55</span>, <span class="hljs-attr">vat</span>: <span class="hljs-number">9.17</span> }, ...]);
+<span class="hljs-keyword">await</span> allure.<span class="hljs-title function_">attachment</span>(<span class="hljs-string">&#x27;sitemap-extract.xml&#x27;</span>, <span class="hljs-string">&#x27;&lt;urlset&gt;...&lt;/urlset&gt;&#x27;</span>, <span class="hljs-title class_">ContentType</span>.<span class="hljs-property">XML</span>);
+<span class="hljs-keyword">const</span> logFile = testInfo.<span class="hljs-title function_">outputPath</span>(<span class="hljs-string">&#x27;application.log&#x27;</span>);
+fs.<span class="hljs-title function_">writeFileSync</span>(logFile, <span class="hljs-string">&#x27;[INFO] cart service ready\n[WARN] slow response 1800ms&#x27;</span>);
+<span class="hljs-keyword">await</span> <span class="hljs-title class_">AllureHelper</span>.<span class="hljs-title function_">attachFile</span>(<span class="hljs-string">&#x27;application.log (file)&#x27;</span>, logFile, <span class="hljs-title class_">ContentType</span>.<span class="hljs-property">TEXT</span>);
+<span class="hljs-keyword">await</span> testInfo.<span class="hljs-title function_">attach</span>(<span class="hljs-string">&#x27;playwright-native-attachment.txt&#x27;</span>, { <span class="hljs-attr">body</span>: <span class="hljs-string">&#x27;...&#x27;</span>, <span class="hljs-attr">contentType</span>: <span class="hljs-string">&#x27;text/plain&#x27;</span> }); <span class="hljs-comment">// also lands in Allure</span></code></pre>
+<p><figure><img src="../images/19-attachments.png" alt="Attachments of the showcase test"/><figcaption>Figure 23 – JSON, CSV, XML, HTML, SVG, URI list, a log file, screenshots and an HTML snapshot</figcaption></figure></p>
+<p><figure><img src="../images/20-csv-attachment.png" alt="CSV rendered as a table"/><figcaption>Figure 24 – CSV attachments are rendered as tables</figcaption></figure></p>
+<h2 id="517-categories-automatic-defect-triage">5.17 Categories: automatic defect triage</h2>
+<p>Categories sort failures by <strong>message or stack-trace regex</strong> and status. The first matching rule wins:</p>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-attr">categories</span>: [
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Known issues (captcha / bot protection)&#x27;</span>, <span class="hljs-attr">messageRegex</span>: <span class="hljs-string">&#x27;.*(captcha|hCaptcha|bot protection).*&#x27;</span>,
+    <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">FAILED</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>] },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Timeouts (infrastructure or slow environment)&#x27;</span>, <span class="hljs-attr">messageRegex</span>: <span class="hljs-string">&#x27;.*(Timeout|timed out|exceeded).*&#x27;</span>,
+    <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">FAILED</span>] },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Network / API failures&#x27;</span>, <span class="hljs-attr">messageRegex</span>: <span class="hljs-string">&#x27;.*(net::ERR|ECONNREFUSED|status code|HTTP [45]\\d\\d|API).*&#x27;</span>,
+    <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">FAILED</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>] },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Product defects (assertion failures)&#x27;</span>, <span class="hljs-attr">messageRegex</span>: <span class="hljs-string">&#x27;.*(expect|Expected|toBe|toHave|toEqual|toContain).*&#x27;</span>,
+    <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">FAILED</span>] },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Test defects (broken tests)&#x27;</span>, <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>] },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Flaky tests&#x27;</span>, <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">PASSED</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">FAILED</span>, <span class="hljs-title class_">Status</span>.<span class="hljs-property">BROKEN</span>], <span class="hljs-attr">flaky</span>: <span class="hljs-literal">true</span> },
+  { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Ignored / skipped tests&#x27;</span>, <span class="hljs-attr">matchedStatuses</span>: [<span class="hljs-title class_">Status</span>.<span class="hljs-property">SKIPPED</span>] },
+],</code></pre>
+<p>The <em>KNOWN ISSUE</em> showcase test fails with the message &quot;hCaptcha bot protection prevents automated sign-in&quot;, so it lands in its own category instead of mixing with real product defects.</p>
+<p><figure><img src="../images/02-categories.png" alt="Categories tab"/><figcaption>Figure 25 – Categories: failures grouped by rule, then by error message</figcaption></figure></p>
+<h2 id="518-timeline-and-packages">5.18 Timeline and Packages</h2>
+<p>The <strong>Timeline</strong> shows when each test ran on which worker, which is useful for spotting slow tests, idle workers and parallelisation problems. <strong>Packages</strong> groups results by file path.</p>
+<p><figure><img src="../images/06-timeline.png" alt="Timeline"/><figcaption>Figure 26 – Timeline: one lane per host/worker, one bar per test</figcaption></figure></p>
+<p><figure><img src="../images/07-packages.png" alt="Packages"/><figcaption>Figure 27 – Packages: results grouped by directory and spec file</figcaption></figure></p>
+<h1 id="6-best-practices">6. Best Practices</h1>
+<h2 id="61-write-reports-for-humans">6.1 Write reports for humans</h2>
+<ul>
+<li><strong>Name tests after behaviour</strong>, not implementation: &quot;Cart total equals the sum of all line totals&quot;, not &quot;test_cart_03&quot;.</li>
+<li><strong>Use steps as the test case.</strong> A reader should understand the scenario from the step list alone. Decorate page-object methods and name verification steps after the business rule.</li>
+<li><strong>Put the &quot;why&quot; in assertion messages</strong>: <code>expect(total, &#39;Expected £49.50 after a 10% loyalty discount&#39;)</code>.</li>
+<li><strong>Keep <code>detail: false</code> by default</strong>; turn it on while debugging.</li>
+</ul>
+<h2 id="62-metadata-discipline">6.2 Metadata discipline</h2>
+<ul>
+<li>Agree on a small, fixed set of <strong>epics and features</strong> that mirror the product. Put them in <code>beforeEach</code> so a <code>describe</code> shares them.</li>
+<li>Give every test a <strong>severity</strong> and an <strong>owner</strong> so failures are routed quickly.</li>
+<li>Link tests to <strong>issues/TMS ids</strong> with templates instead of hard-coded URLs.</li>
+<li>Use <strong>tags</strong> for run selection (<code>@smoke</code>, <code>@regression</code>) and keep them in the title&#39;s <code>tag</code> option.</li>
+</ul>
+<h2 id="63-evidence-without-noise">6.3 Evidence without noise</h2>
+<ul>
+<li>Attach evidence <strong>automatically in fixtures</strong>, not by hand in each test.</li>
+<li>Prefer <code>retain-on-failure</code> for video and trace: full evidence for failures, small reports for green runs.</li>
+<li>Capture <strong>checkpoint screenshots</strong> at meaningful moments only, and disable them in large suites (<code>CHECKPOINT_SCREENSHOTS=false</code>).</li>
+<li><strong>Redact secrets</strong>: mask parameters (<code>mode: &#39;masked&#39;</code>) and strip <code>cookie</code>/<code>authorization</code> headers from network logs (done in <code>api-interceptor.ts</code>).</li>
+<li>Truncate large bodies; the report is a static site that people download.</li>
+</ul>
+<h2 id="64-stable-history">6.4 Stable history</h2>
+<ul>
+<li>Keep <strong>test titles stable</strong>: the history id is derived from the test&#39;s full name and its non-excluded parameters.</li>
+<li>Mark volatile parameters as <code>excluded: true</code>.</li>
+<li>Always restore <code>history/</code> before generating on CI, or the trends reset.</li>
+<li>Clean <code>allure-results/</code> before each run (except when merging shards).</li>
+</ul>
+<h2 id="65-flakiness">6.5 Flakiness</h2>
+<ul>
+<li>Use retries to <strong>surface</strong> flakiness, not to hide it. Review the <em>Flaky</em> marks and the <em>Retries trend</em> regularly.</li>
+<li>Wait for the real signal (the <code>/cart/add.js</code> response, a URL change, a visible element) instead of fixed timeouts. See <code>ProductPage.addToCart()</code>.</li>
+</ul>
+<h2 id="66-speed">6.6 Speed</h2>
+<ul>
+<li>Set up state through the <strong>API</strong> (<code>shopApi.addToCart</code>) and test only the behaviour under test through the UI.</li>
+<li>Run fully parallel with isolated browser contexts; the Timeline shows whether workers are well used.</li>
+</ul>
+<h1 id="7-troubleshooting">7. Troubleshooting</h1>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ERROR: JAVA_HOME is set to an invalid directory</code></td>
+<td><code>JAVA_HOME</code> points to a missing folder or to <code>.../bin</code></td>
+<td>Point it at the JDK root. The project&#39;s scripts repair it for their own process (<code>scripts/lib/allure-cli.ts</code>): they fall back to the parent folder or to <code>java</code> on the PATH</td>
+</tr>
+<tr>
+<td><code>allure: command not found</code> / <code>&#39;allure&#39; is not recognized</code></td>
+<td>CLI not installed globally</td>
+<td>Use <code>npx allure …</code> or the npm scripts; <code>allure-commandline</code> is a dev dependency</td>
+</tr>
+<tr>
+<td>Report shows <strong>no tests</strong> or old tests</td>
+<td>Results never written, or results from several runs mixed</td>
+<td>Check <code>allure-results/</code> contains <code>*-result.json</code>; clean it before each run (global setup does)</td>
+</tr>
+<tr>
+<td><strong>No results after passing <code>--reporter=…</code> on the CLI</strong></td>
+<td>A CLI <code>--reporter</code> <em>replaces</em> all reporters from the config</td>
+<td>Do not pass <code>--reporter</code>, or pass both: <code>--reporter=list,allure-playwright</code></td>
+</tr>
+<tr>
+<td>Blank page when opening <code>index.html</code></td>
+<td><code>file://</code> blocks the report&#39;s XHR requests</td>
+<td><code>npm run allure:open</code>, <code>allure serve</code>, or <code>--single-file</code></td>
+</tr>
+<tr>
+<td><strong>Trend graphs empty</strong></td>
+<td><code>history/</code> was not copied into <code>allure-results/</code> before generating</td>
+<td>Use <code>npm run allure:generate</code>; on CI restore the history (see §9)</td>
+</tr>
+<tr>
+<td>Every test counts as &quot;new&quot; in history</td>
+<td>Titles or non-excluded parameters change between runs</td>
+<td>Keep titles stable; mark volatile parameters <code>excluded: true</code></td>
+</tr>
+<tr>
+<td>Expected &quot;broken&quot;, got &quot;failed&quot;</td>
+<td>allure-playwright 3 reports all failures as failed; only timeouts are broken</td>
+<td>See §5.2; use Categories to separate infrastructure errors by message</td>
+</tr>
+<tr>
+<td><code>Cannot use({ video }) in a describe group</code></td>
+<td>Browser/context options need a new worker</td>
+<td>Put <code>test.use({ video, trace })</code> at the top of the file</td>
+</tr>
+<tr>
+<td>Labels set in <code>beforeEach</code> missing on skipped tests</td>
+<td><code>test.fixme()</code> / declarative skip never runs hooks</td>
+<td>Use static annotations (<code>allure.label.*</code>)</td>
+</tr>
+<tr>
+<td>Excluded parameter still visible</td>
+<td><code>excluded</code> only affects the history id</td>
+<td>Use <code>mode: &#39;hidden&#39;</code></td>
+</tr>
+<tr>
+<td>Login tests can&#39;t sign in</td>
+<td>Store is protected by hCaptcha</td>
+<td>Expected: assert &quot;not authenticated&quot; (§1.1). For real apps use a test-mode captcha key or an API login</td>
+</tr>
+<tr>
+<td>Attachment too big / slow report</td>
+<td>Full-page screenshots or long bodies on every step</td>
+<td>Use viewport screenshots, truncate bodies, <code>retain-on-failure</code> video</td>
+</tr>
+<tr>
+<td><code>Executable doesn&#39;t exist … ms-playwright</code></td>
+<td>Browsers not installed for this Playwright version</td>
+<td><code>npx playwright install chromium</code> (add <code>--with-deps</code> on Linux CI)</td>
+</tr>
+<tr>
+<td>Test data variables look wrong in failures</td>
+<td>Hard to see runtime values</td>
+<td>Use <code>logger.data(&#39;name&#39;, value)</code> and read <code>📝 execution.log</code></td>
+</tr>
+</tbody></table>
+<h1 id="8-advanced-customization">8. Advanced Customization</h1>
+<h2 id="81-one-configuration-file">8.1 One configuration file</h2>
+<p><code>allure-report.config.ts</code> holds the results/report/history folders, report name and language, link templates, categories, static environment entries and theme settings. <code>playwright.config.ts</code>, the metadata writer and the report scripts all import it, so there is a single place to change.</p>
+<h2 id="82-custom-theme-and-logo">8.2 Custom theme and logo</h2>
+<p>Allure 2 has no theming API, but the report is a static web app. <code>generate-report.ts</code> injects <code>allure-theme/custom-theme.css</code> into <code>index.html</code> as an inline <code>&lt;style&gt;</code> (so it also works for <code>--single-file</code> reports), with <code>url(logo.svg)</code> replaced by an inline data URI of <code>allure-theme/logo.svg</code>:</p>
+<pre class="code"><span class="code-lang">css</span><code class="hljs language-css"><span class="hljs-selector-pseudo">:root</span> { <span class="hljs-attr">--brand</span>: <span class="hljs-number">#22c55e</span>; <span class="hljs-attr">--nav-bg</span>: <span class="hljs-number">#0b1220</span>; <span class="hljs-attr">--nav-hover</span>: <span class="hljs-number">#1e293b</span>; <span class="hljs-attr">--nav-text</span>: <span class="hljs-number">#cbd5e1</span>; }
+
+<span class="hljs-selector-class">.side-nav</span> { <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--nav-bg) <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">.side-nav__brand</span> { <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">logo.svg</span>) no-repeat <span class="hljs-number">14px</span> center <span class="hljs-meta">!important</span>; <span class="hljs-attribute">background-size</span>: <span class="hljs-number">130px</span> <span class="hljs-number">35px</span> <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">.side-nav__brand-icon</span>, <span class="hljs-selector-class">.side-nav__brand-text</span> { <span class="hljs-attribute">visibility</span>: hidden; }
+<span class="hljs-selector-class">.side-nav__icon</span> { <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--nav-text) <span class="hljs-meta">!important</span>; }            <span class="hljs-comment">/* icons are stroke=&quot;currentColor&quot; */</span>
+<span class="hljs-selector-class">.side-nav__link_active</span> { <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">3px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-built_in">var</span>(--brand); <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>; }
+<span class="hljs-selector-class">.app__content</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-class">.button</span>) { <span class="hljs-attribute">color</span>: <span class="hljs-number">#15803d</span>; }</code></pre>
+<p>Edit the CSS and re-apply it without regenerating: <code>npx tsx scripts/docs/inject-theme.ts</code>. Recent Allure 2 releases (2.46 is used here) also have a built-in <strong>dark theme</strong> (sidebar toggle):</p>
+<p><figure><img src="../images/28-dark-theme.png" alt="Dark theme"/><figcaption>Figure 28 – The built-in dark theme combined with the custom logo</figcaption></figure></p>
+<p>Allure ships a <code>custom-logo-plugin</code> that you can enable in <code>allure.yml</code> and pass with <code>allure generate --config</code>, but CSS injection is simpler and survives <code>--single-file</code>.</p>
+<h2 id="83-report-name-language-and-filters">8.3 Report name, language and filters</h2>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">allure generate allure-results -o allure-report --clean --name <span class="hljs-string">&quot;Sauce Demo – E2E Quality Report&quot;</span> --lang en</code></pre>
+<p>In the tree views you can filter by <strong>status</strong>, by <strong>marks</strong> (flaky, new failed, new broken, retries) and by test name. Sort by order, name, duration or status. The download icon exports the tree as CSV.</p>
+<h2 id="84-global-labels-and-listeners">8.4 Global labels and listeners</h2>
+<pre class="code"><span class="code-lang">ts</span><code class="hljs language-ts"><span class="hljs-attr">globalLabels</span>: { <span class="hljs-attr">application</span>: <span class="hljs-string">&#x27;sauce-demo-storefront&#x27;</span> },   <span class="hljs-comment">// added to every result</span>
+<span class="hljs-attr">listeners</span>: [{ <span class="hljs-attr">beforeTestResultWrite</span>: <span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> { <span class="hljs-comment">/* mutate or enrich results */</span> } }],</code></pre>
+<h2 id="85-running-a-subset-with-a-test-plan">8.5 Running a subset with a test plan</h2>
+<p>allure-playwright supports Allure TestOps test plans: set <code>ALLURE_TESTPLAN_PATH=testplan.json</code> to run only the listed tests (by <code>allureId</code> or full name).</p>
+<h2 id="86-allure-report-3">8.6 Allure Report 3</h2>
+<p>Allure Report 3 (<code>npx allure</code> from the <code>allure</code> npm package) is a TypeScript rewrite that does not need Java. It reads the same <code>allure-results/</code>, so this framework works with it unchanged. Configure it with an <code>allurerc.mjs</code>:</p>
+<pre class="code"><span class="code-lang">js</span><code class="hljs language-js"><span class="hljs-comment">// allurerc.mjs (Allure 3)</span>
+<span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;allure&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineConfig</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Sauce Demo – E2E Quality Report&#x27;</span>,
+  <span class="hljs-attr">output</span>: <span class="hljs-string">&#x27;./allure-report&#x27;</span>,
+  <span class="hljs-attr">historyPath</span>: <span class="hljs-string">&#x27;./allure-history/history.jsonl&#x27;</span>,   <span class="hljs-comment">// built-in history, no copying needed</span>
+  <span class="hljs-attr">plugins</span>: { <span class="hljs-attr">awesome</span>: { <span class="hljs-attr">options</span>: { <span class="hljs-attr">singleFile</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">reportLanguage</span>: <span class="hljs-string">&#x27;en&#x27;</span> } } },
+});</code></pre>
+<p>Allure 2 remains the default here because of its mature Categories, Graphs and Timeline pages and its Jenkins plugin.</p>
+<h1 id="9-cicd-integration">9. CI/CD Integration</h1>
+<h2 id="91-github-actions">9.1 GitHub Actions</h2>
+<p><code>.github/workflows/playwright-allure.yml</code> runs on push, pull requests, a weekday schedule and on demand:</p>
+<ol>
+<li>install Node 22, Java 17, dependencies and browsers;</li>
+<li>run the tests (<code>continue-on-error</code>, so the report is always produced);</li>
+<li>check out <code>gh-pages</code> and copy its <code>history/</code> into <code>allure-history/</code>;</li>
+<li><code>npm run allure:generate</code> (the executor picks up the run number and URLs);</li>
+<li>upload the report and raw results as artifacts;</li>
+<li>publish <code>allure-report/</code> to GitHub Pages (main branch only);</li>
+<li>fail the job if the tests failed.</li>
+</ol>
+<pre class="code"><span class="code-lang">yaml</span><code class="hljs language-yaml"><span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Restore</span> <span class="hljs-string">Allure</span> <span class="hljs-string">history</span>
+  <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
+  <span class="hljs-attr">continue-on-error:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-attr">with:</span> { <span class="hljs-attr">ref:</span> <span class="hljs-string">gh-pages</span>, <span class="hljs-attr">path:</span> <span class="hljs-string">gh-pages</span> }
+
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Generate</span> <span class="hljs-string">Allure</span> <span class="hljs-string">report</span> <span class="hljs-string">(with</span> <span class="hljs-string">trends)</span>
+  <span class="hljs-attr">run:</span> <span class="hljs-string">|
+    mkdir -p allure-history
+    if [ -d gh-pages/history ]; then cp -r gh-pages/history allure-history/history; fi
+    npm run allure:generate
+</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Publish</span> <span class="hljs-string">to</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
+  <span class="hljs-attr">if:</span> <span class="hljs-string">github.ref</span> <span class="hljs-string">==</span> <span class="hljs-string">&#x27;refs/heads/main&#x27;</span>
+  <span class="hljs-attr">uses:</span> <span class="hljs-string">peaceiris/actions-gh-pages@v4</span>
+  <span class="hljs-attr">with:</span> { <span class="hljs-attr">github_token:</span> <span class="hljs-string">&#x27;${{ secrets.GITHUB_TOKEN }}&#x27;</span>, <span class="hljs-attr">publish_branch:</span> <span class="hljs-string">gh-pages</span>, <span class="hljs-attr">publish_dir:</span> <span class="hljs-string">allure-report</span> }</code></pre>
+<p>Enable GitHub Pages for the <code>gh-pages</code> branch once in the repository settings. The CI run sets <code>SHOWCASE_FAILURES=false</code> so the pipeline stays green.</p>
+<h2 id="92-jenkins">9.2 Jenkins</h2>
+<p>Install the <strong>Allure Jenkins plugin</strong> and configure an <em>Allure Commandline</em> tool. The plugin generates the report, keeps history between builds, writes the executor and adds an &quot;Allure Report&quot; link and a trend chart to the job page:</p>
+<pre class="code"><span class="code-lang">groovy</span><code class="hljs language-groovy">pipeline {
+  agent { dockerfile { filename <span class="hljs-string">&#x27;docker/Dockerfile&#x27;</span>; args <span class="hljs-string">&#x27;--ipc=host&#x27;</span> } }
+  stages {
+    stage(<span class="hljs-string">&#x27;Install&#x27;</span>) { steps { sh <span class="hljs-string">&#x27;npm ci&#x27;</span> } }
+    stage(<span class="hljs-string">&#x27;Test&#x27;</span>)    { steps { sh <span class="hljs-string">&#x27;npx playwright test || true&#x27;</span> } }
+  }
+  post {
+    always {
+      allure([<span class="hljs-attr">results:</span> [[<span class="hljs-attr">path:</span> <span class="hljs-string">&#x27;allure-results&#x27;</span>]], <span class="hljs-attr">reportBuildPolicy:</span> <span class="hljs-string">&#x27;ALWAYS&#x27;</span>])
+    }
+  }
+}</code></pre>
+<h2 id="93-docker">9.3 Docker</h2>
+<p><code>docker/Dockerfile</code> extends the official Playwright image with Java 17, so one image can run tests <em>and</em> generate reports:</p>
+<pre class="code"><span class="code-lang">bash</span><code class="hljs language-bash">docker compose run --<span class="hljs-built_in">rm</span> tests     <span class="hljs-comment"># run tests + generate ./allure-report (history in ./allure-history)</span>
+docker compose up report          <span class="hljs-comment"># serve the report with nginx on http://localhost:8080</span></code></pre>
+<p><code>--ipc=host</code> (set in <code>docker-compose.yml</code>) prevents Chromium from running out of shared memory.</p>
+<h2 id="94-sharding-and-merging">9.4 Sharding and merging</h2>
+<p>With <code>npx playwright test --shard=1/4</code> on several machines, upload each machine&#39;s <code>allure-results/</code> as an artifact, download them all into one folder and generate a single report. Allure merges results by file, and every result file has a unique name. Set <code>ALLURE_KEEP_RESULTS=true</code> if shards share a workspace.</p>
+<h1 id="10-command-reference">10. Command Reference</h1>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>npm test</code></td>
+<td>Run all tests (headless, chromium)</td>
+</tr>
+<tr>
+<td><code>npm run test:headed</code></td>
+<td>Run with a visible browser</td>
+</tr>
+<tr>
+<td><code>npm run test:debug</code></td>
+<td>Playwright Inspector, one worker</td>
+</tr>
+<tr>
+<td><code>npm run test:smoke</code> / <code>test:regression</code></td>
+<td>Tag-based subsets</td>
+</tr>
+<tr>
+<td><code>npm run test:auth</code> / <code>test:products</code> / <code>test:cart</code> / <code>test:checkout</code> / <code>test:showcase</code></td>
+<td>Suites</td>
+</tr>
+<tr>
+<td><code>npm run test:all-browsers</code></td>
+<td>chromium, firefox, webkit, mobile</td>
+</tr>
+<tr>
+<td><code>npm run test:staging</code></td>
+<td>Use the staging profile</td>
+</tr>
+<tr>
+<td><code>npm run test:report</code></td>
+<td>Run tests, then always generate the report</td>
+</tr>
+<tr>
+<td><code>npm run allure:generate</code></td>
+<td>Generate with history, metadata and theme</td>
+</tr>
+<tr>
+<td><code>npm run allure:single-file</code></td>
+<td>One self-contained HTML report</td>
+</tr>
+<tr>
+<td><code>npm run allure:open</code></td>
+<td>Open the generated report</td>
+</tr>
+<tr>
+<td><code>npm run allure:serve</code></td>
+<td>Temporary report straight from results</td>
+</tr>
+<tr>
+<td><code>npm run trend:demo</code></td>
+<td>Build several reports to populate trends</td>
+</tr>
+<tr>
+<td><code>npm run clean</code> / <code>clean:all</code></td>
+<td>Remove results/reports (<code>clean:all</code> also drops history)</td>
+</tr>
+<tr>
+<td><code>npm run typecheck</code></td>
+<td>TypeScript type check</td>
+</tr>
+<tr>
+<td><code>npm run docs:screenshots</code> / <code>docs:pdf</code></td>
+<td>Rebuild this tutorial&#39;s images / PDF</td>
+</tr>
+<tr>
+<td><code>SHOWCASE_FAILURES=false npm test</code></td>
+<td>Skip the intentionally failing tests</td>
+</tr>
+<tr>
+<td><code>ALLURE_DETAIL=true npm test</code></td>
+<td>Verbose Playwright steps in Allure</td>
+</tr>
+<tr>
+<td><code>npx playwright show-trace &lt;trace.zip&gt;</code></td>
+<td>Open a trace downloaded from the report</td>
+</tr>
+</tbody></table>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li>Allure Report documentation: <a href="https://allurereport.org/docs/">https://allurereport.org/docs/</a></li>
+<li>allure-playwright reference: <a href="https://allurereport.org/docs/playwright-reference/">https://allurereport.org/docs/playwright-reference/</a></li>
+<li>Playwright documentation: <a href="https://playwright.dev/docs/intro">https://playwright.dev/docs/intro</a></li>
+</ul>
+</main>
+</body></html>

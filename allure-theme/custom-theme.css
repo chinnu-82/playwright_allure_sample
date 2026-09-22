@@ -1,0 +1,49 @@
+/*
+ * Custom Allure 2 theme — injected into allure-report/index.html by scripts/generate-report.ts.
+ * `url(logo.svg)` is replaced with an inline data URI of allure-theme/logo.svg.
+ * Tip: open the report, press F12 and inspect elements to find more selectors.
+ */
+:root {
+  --brand: #22c55e;
+  --brand-strong: #15803d;
+  --nav-bg: #0b1220;
+  --nav-hover: #1e293b;
+  --nav-text: #cbd5e1;
+}
+
+/* ---- Sidebar ---------------------------------------------------------- */
+.side-nav { background: var(--nav-bg) !important; }
+
+/* Replace the Allure logo + text with our own logo */
+.side-nav__brand {
+  background: url(logo.svg) no-repeat 14px center !important;
+  background-size: 130px 35px !important;
+  min-height: 56px;
+}
+.side-nav__brand-icon, .side-nav__brand-text { visibility: hidden; }
+
+.side-nav__link,
+.side-nav__theme,
+.side-nav__language,
+.side-nav__collapse { color: var(--nav-text) !important; }
+.side-nav__icon { color: var(--nav-text) !important; }            /* icons are stroke="currentColor" */
+.side-nav__link_active .side-nav__icon { color: var(--brand) !important; }
+.side-nav__language-small { color: var(--nav-text) !important; border-color: var(--nav-text) !important; }
+
+.side-nav__link:hover,
+.side-nav__theme:hover,
+.side-nav__collapse:hover { background: var(--nav-hover) !important; color: #fff !important; }
+
+.side-nav__link_active,
+.side-nav__link_active:hover {
+  background: var(--nav-hover) !important;
+  color: #fff !important;
+  box-shadow: inset 3px 0 0 var(--brand);
+}
+
+/* ---- Content ---------------------------------------------------------- */
+.app__content a:not(.button) { color: var(--brand-strong); }
+.app__content .tab_active, .app__content .pane__tab_active { border-bottom-color: var(--brand) !important; }
+
+/* Readable text attachments (logs, JSON) */
+.attachment__text { font-size: 12px; line-height: 1.5; }

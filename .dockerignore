@@ -1,0 +1,9 @@
+node_modules
+allure-results
+allure-report
+allure-history
+test-results
+playwright-report
+.env
+.probe
+docs/*.pdf

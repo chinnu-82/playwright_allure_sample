@@ -1,0 +1,19 @@
+{
+  "catalogSize": 7,
+  "inStock": [
+    { "handle": "grey-jacket", "title": "Grey jacket", "price": 55.0, "vendor": "Sauce Demo", "type": "Jackets" },
+    { "handle": "striped-top", "title": "Striped top", "price": 50.0, "vendor": "ASOS", "type": "Tops" },
+    { "handle": "bronze-sandals", "title": "Bronze sandals", "price": 39.99, "vendor": "Sauce Demo", "type": "Shoes" }
+  ],
+  "withVariants": {
+    "handle": "noir-jacket",
+    "title": "Noir jacket",
+    "price": 60.0,
+    "options": { "Size": ["S", "M", "L"], "Color": ["Blue", "Red"] }
+  },
+  "soldOut": [
+    { "handle": "brown-shades", "title": "Brown Shades", "price": 20.0 },
+    { "handle": "white-sandals", "title": "White sandals", "price": 25.0 }
+  ],
+  "missingHandle": "this-product-does-not-exist"
+}
