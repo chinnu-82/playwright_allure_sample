@@ -1,6 +1,0 @@
-2026-09-22T12:08:44.441Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ▶ START "Nonsense search term shows a "no results" message" (attempt 1, worker 0)
-2026-09-22T12:08:44.452Z [INFO ] (Product search › Nonsense search term shows a "no results" message) Opening search results for "zzqx-no-such-product"
-2026-09-22T12:08:44.787Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-09-22T12:08:44.867Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-09-22T12:08:45.049Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-09-22T12:08:45.170Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ■ END status=passed duration=729ms

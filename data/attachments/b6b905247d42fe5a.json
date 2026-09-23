@@ -1,0 +1,88 @@
+{
+  "id": 263739389,
+  "title": "Grey jacket",
+  "handle": "grey-jacket",
+  "description": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>X",
+  "published_at": "2014-03-12T20:42:38+00:00",
+  "created_at": "2014-03-12T20:43:09+00:00",
+  "vendor": "Sauce Demo",
+  "type": "Jackets",
+  "tags": [],
+  "price": 5500,
+  "price_min": 5500,
+  "price_max": 5500,
+  "available": true,
+  "price_varies": false,
+  "compare_at_price": null,
+  "compare_at_price_min": 0,
+  "compare_at_price_max": 0,
+  "compare_at_price_varies": false,
+  "variants": [
+    {
+      "id": 611945025,
+      "title": "Grey jacket",
+      "option1": "Grey jacket",
+      "option2": null,
+      "option3": null,
+      "sku": "",
+      "requires_shipping": true,
+      "taxable": true,
+      "featured_image": null,
+      "available": true,
+      "name": "Grey jacket - Grey jacket",
+      "public_title": "Grey jacket",
+      "options": [
+        "Grey jacket"
+      ],
+      "price": 5500,
+      "weight": 0,
+      "compare_at_price": null,
+      "inventory_quantity": -2135318,
+      "inventory_management": null,
+      "inventory_policy": "deny",
+      "barcode": null,
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "quantity_price_breaks": [],
+      "requires_selling_plan": false,
+      "selling_plan_allocations": []
+    }
+  ],
+  "images": [
+    "//cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989"
+  ],
+  "featured_image": "//cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989",
+  "options": [
+    {
+      "name": "Title",
+      "position": 1,
+      "values": [
+        "Grey jacket"
+      ]
+    }
+  ],
+  "url": "/products/grey-jacket",
+  "media": [
+    {
+      "alt": null,
+      "id": 2117404753983,
+      "position": 1,
+      "preview_image": {
+        "aspect_ratio": 0.625,
+        "height": 480,
+        "width": 300,
+        "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989"
+      },
+      "aspect_ratio": 0.625,
+      "height": 480,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989",
+      "width": 300
+    }
+  ],
+  "requires_selling_plan": false,
+  "selling_plan_groups": []
+}

@@ -1,0 +1,11 @@
+2026-09-23T10:33:09.036Z [INFO ] (Customer login › Browser validation flags malformed email "user name@example.com") ▶ START "Browser validation flags malformed email "user name@example.com"" (attempt 1, worker 0)
+2026-09-23T10:33:09.053Z [INFO ] (Customer login › Browser validation flags malformed email "user name@example.com") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-23T10:33:09.659Z [DEBUG] (Customer login › Browser validation flags malformed email "user name@example.com":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-23T10:33:09.744Z [DEBUG] (Customer login › Browser validation flags malformed email "user name@example.com") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-23T10:33:09.977Z [DEBUG] (Customer login › Browser validation flags malformed email "user name@example.com":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-23T10:33:10.020Z [DEBUG] (Customer login › Browser validation flags malformed email "user name@example.com":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-23T10:33:10.446Z [DEBUG] (Customer login › Browser validation flags malformed email "user name@example.com":console) console.error: Provider's accounts list is empty.
+2026-09-23T10:33:10.452Z [INFO ] (Customer login › Browser validation flags malformed email "user name@example.com") ■ END status=passed duration=1416ms

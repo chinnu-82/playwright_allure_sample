@@ -1,1 +1,0 @@
-[WARN] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) HTTP 404 GET https://shop.app/pay/authentication/login/check?email=unknown.user%40example.com&analytics_trace_id=c12c8357-d17e-4abb-999e-f624366f58bf

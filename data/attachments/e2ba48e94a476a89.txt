@@ -1,0 +1,5 @@
+2026-09-23T10:34:11.952Z [INFO ] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry) ▶ START "FLAKY: fails on the first attempt, passes on retry" (attempt 1, worker 1)
+2026-09-23T10:34:12.260Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-23T10:34:12.335Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-23T10:34:12.481Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-23T10:34:12.734Z [INFO ] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry) ■ END status=failed duration=782ms

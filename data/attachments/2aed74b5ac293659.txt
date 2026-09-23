@@ -1,0 +1,2 @@
+2026-09-23T10:34:12.746Z [INFO ] (Allure feature showcase › Result statuses › SKIPPED: runs on WebKit only) ▶ START "SKIPPED: runs on WebKit only" (attempt 1, worker 0)
+2026-09-23T10:34:12.755Z [INFO ] (Allure feature showcase › Result statuses › SKIPPED: runs on WebKit only) ■ END status=skipped duration=9ms
