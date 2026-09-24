@@ -1,0 +1,23 @@
+2026-09-24T10:51:07.141Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) ▶ START "Customer reaches checkout with the correct order summary" (attempt 1, worker 0)
+2026-09-24T10:51:07.445Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) GET /products/grey-jacket.js -> 200 in 284ms
+2026-09-24T10:51:07.949Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) POST /cart/add.js -> 200 in 494ms
+2026-09-24T10:51:08.082Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) GET /products/striped-top.js -> 200 in 128ms
+2026-09-24T10:51:08.491Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) POST /cart/add.js -> 200 in 402ms
+2026-09-24T10:51:08.496Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-24T10:51:08.848Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:08.950Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:08.982Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-24T10:51:09.171Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:09.328Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) DATA cart.total
+    105
+2026-09-24T10:51:11.221Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-09-24T10:51:11.323Z [WARN ] (Checkout › Customer reaches checkout with the correct order summary:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=eff9dd85b897978458231cbfde0d1f30&checkout_type=c1
+2026-09-24T10:51:11.324Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-09-24T10:51:11.380Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=eff9dd85b897978458231cbfde0d1f30&checkout_type=c1 (net::ERR_ABORTED)
+2026-09-24T10:51:11.475Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:12.215Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) DATA checkout.subtotal
+    105
+2026-09-24T10:51:12.676Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) ■ END status=passed duration=5535ms

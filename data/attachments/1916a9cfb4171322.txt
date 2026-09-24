@@ -1,3 +1,0 @@
-2026-09-23T10:33:04.148Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login:0:0
-2026-09-23T10:33:04.250Z [LOG] recaptchacompat disabled  @ https://js.hcaptcha.com/1/api.js?render=explicit&recaptchacompat=off&onload=__shopify_hcap_load_znrqqo86:3:331587
-2026-09-23T10:33:04.930Z [DEBUG] [bugsnag] Loaded!  @ https://cdn.shopify.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js:0:46037

@@ -1,0 +1,29 @@
+{
+  "total": 412,
+  "firstParty": 323,
+  "apiCalls": 12,
+  "failed": 9,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 46,
+  "p95Ms": 160,
+  "slowestUrl": "647ms https://otlp-http-production.shopifysvc.com/v1/metrics",
+  "byResourceType": {
+    "document": 6,
+    "other": 204,
+    "stylesheet": 3,
+    "script": 81,
+    "image": 57,
+    "ping": 41,
+    "fetch": 11,
+    "xhr": 9
+  },
+  "byStatus": {
+    "200": 369,
+    "301": 3,
+    "302": 22,
+    "307": 1,
+    "failed": 6,
+    "pending": 11
+  }
+}

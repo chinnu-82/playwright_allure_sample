@@ -1,0 +1,14 @@
+2026-09-24T10:50:33.943Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ▶ START "Header "Sign up" link opens the registration form" (attempt 1, worker 1)
+2026-09-24T10:50:33.960Z [INFO ] (Account access › Header "Sign up" link opens the registration form) Navigating to https://sauce-demo.myshopify.com/
+2026-09-24T10:50:34.557Z [DEBUG] (Account access › Header "Sign up" link opens the registration form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-09-24T10:50:34.729Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:34.745Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:34.745Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:50:35.628Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:35.871Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:50:35.875Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:36.165Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=12762c94-69b6-4e5a-976b-4afe11022613&avoid_sdk_session=false&client_id=&compact_layout=true&flow=classic_customer_accounts&flow_version=sign_up&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3D4da08d02-7a40-492e-a535-3221e084d54b&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-24T10:50:36.313Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ■ END status=passed duration=2371ms

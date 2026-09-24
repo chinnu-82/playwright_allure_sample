@@ -1,0 +1,11 @@
+2026-09-24T10:50:49.052Z [INFO ] (Customer login › Browser validation flags malformed email "user@") ▶ START "Browser validation flags malformed email "user@"" (attempt 1, worker 1)
+2026-09-24T10:50:49.075Z [INFO ] (Customer login › Browser validation flags malformed email "user@") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-24T10:50:49.632Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:49.857Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:50:49.904Z [DEBUG] (Customer login › Browser validation flags malformed email "user@") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-24T10:50:49.934Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:50:50.260Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=d4f4e120-583b-48ef-a9bd-c4a9659248d5&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Da7ef1ad0-9c72-4d90-bb2d-5c5856fe3541&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-24T10:50:50.446Z [INFO ] (Customer login › Browser validation flags malformed email "user@") ■ END status=passed duration=1394ms

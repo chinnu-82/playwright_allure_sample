@@ -1,7 +1,0 @@
-2026-09-23T10:33:53.081Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket) ▶ START "Product page shows correct title and price for Grey jacket" (attempt 1, worker 0)
-2026-09-23T10:33:53.215Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket:api) GET /products/grey-jacket.js -> 200 in 121ms
-2026-09-23T10:33:53.216Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket) Opening product grey-jacket
-2026-09-23T10:33:53.543Z [DEBUG] (Product details › Product page shows correct title and price for Grey jacket:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-09-23T10:33:53.730Z [DEBUG] (Product details › Product page shows correct title and price for Grey jacket:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-09-23T10:33:53.775Z [DEBUG] (Product details › Product page shows correct title and price for Grey jacket:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-09-23T10:33:53.866Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket) ■ END status=passed duration=785ms

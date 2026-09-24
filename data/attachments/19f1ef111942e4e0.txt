@@ -1,0 +1,45 @@
+2026-09-24T10:51:41.489Z [INFO ] (Product search › Searching "sandals" returns the matching products) ▶ START "Searching "sandals" returns the matching products" (attempt 1, worker 1)
+2026-09-24T10:51:41.496Z [INFO ] (Product search › Searching "sandals" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-09-24T10:51:41.850Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:41.942Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:41.949Z [DEBUG] (Product search › Searching "sandals" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-09-24T10:51:42.363Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:42.581Z [INFO ] (Product search › Searching "sandals" returns the matching products) Searching for "sandals"
+2026-09-24T10:51:43.216Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:43.293Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:43.294Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:43.396Z [INFO ] (Product search › Searching "sandals" returns the matching products) DATA catalog.products
+    [
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/products/bronze-sandals?_pos=1&_sid=ab7a0a3b7&_ss=r",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/products/flower-print-jeans?_pos=2&_sid=ab7a0a3b7&_ss=r",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/products/white-sandals?_pos=3&_sid=ab7a0a3b7&_ss=r",
+        "imageAlt": "White sandals",
+        "price": 25
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/products/brown-shades?_pos=4&_sid=ab7a0a3b7&_ss=r",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      }
+    ]
+2026-09-24T10:51:43.515Z [INFO ] (Product search › Searching "sandals" returns the matching products) ■ END status=passed duration=2026ms

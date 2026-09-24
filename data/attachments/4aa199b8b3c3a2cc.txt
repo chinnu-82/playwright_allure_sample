@@ -1,0 +1,29 @@
+2026-09-24T10:51:17.825Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ▶ START "Shipping details are accepted for UK resident" (attempt 1, worker 1)
+2026-09-24T10:51:18.003Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) GET /products/grey-jacket.js -> 200 in 166ms
+2026-09-24T10:51:18.485Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) POST /cart/add.js -> 200 in 478ms
+2026-09-24T10:51:18.616Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) GET /products/striped-top.js -> 200 in 128ms
+2026-09-24T10:51:19.033Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) POST /cart/add.js -> 200 in 409ms
+2026-09-24T10:51:19.042Z [INFO ] (Checkout › Shipping details are accepted for UK resident) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-24T10:51:19.443Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:19.602Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:19.716Z [DEBUG] (Checkout › Shipping details are accepted for UK resident) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-24T10:51:19.763Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:22.655Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-09-24T10:51:22.721Z [WARN ] (Checkout › Shipping details are accepted for UK resident:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=7e696ea554ac8c486aa826dc98cb1f38&checkout_type=c1
+2026-09-24T10:51:22.722Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-09-24T10:51:22.829Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=7e696ea554ac8c486aa826dc98cb1f38&checkout_type=c1 (net::ERR_ABORTED)
+2026-09-24T10:51:22.911Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:22.980Z [INFO ] (Checkout › Shipping details are accepted for UK resident) DATA shipping.UK resident
+    {
+      "label": "UK resident",
+      "email": "alice.tester@example.com",
+      "firstName": "Alice",
+      "lastName": "Tester",
+      "address": "221B Baker Street",
+      "city": "London",
+      "postcode": "NW1 6XE"
+    }
+2026-09-24T10:51:25.136Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ■ END status=passed duration=7311ms

@@ -1,0 +1,11 @@
+2026-09-24T10:51:05.965Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) ▶ START "Add to cart fails gracefully when the cart service is unreachable" (attempt 1, worker 1)
+2026-09-24T10:51:05.981Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Simulating network failure (failed) for **/cart/add.js
+2026-09-24T10:51:05.992Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) Opening product grey-jacket
+2026-09-24T10:51:06.456Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:06.639Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:06.664Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:08.065Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) Uncaught page error: SyntaxError: Unexpected token ')'
+2026-09-24T10:51:08.069Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/cart/add.js (net::ERR_FAILED)
+2026-09-24T10:51:08.069Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) console.error: Failed to load resource: net::ERR_FAILED
+2026-09-24T10:51:08.863Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:api) GET /cart.js -> 200 in 138ms
+2026-09-24T10:51:09.018Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) ■ END status=passed duration=3053ms

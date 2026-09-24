@@ -1,0 +1,2 @@
+2026-09-24T10:51:08.065Z [PAGEERROR] SyntaxError: Unexpected token ')'  @ at error (https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943:1:23839)
+2026-09-24T10:51:08.069Z [ERROR] Failed to load resource: net::ERR_FAILED  @ https://sauce-demo.myshopify.com/cart/add.js:0:0

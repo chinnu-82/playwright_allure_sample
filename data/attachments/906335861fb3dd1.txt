@@ -1,0 +1,26 @@
+2026-09-24T10:51:00.025Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ▶ START "Changing the quantity recalculates line and cart totals" (attempt 1, worker 0)
+2026-09-24T10:51:00.280Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) GET /products/grey-jacket.js -> 200 in 229ms
+2026-09-24T10:51:00.697Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) POST /cart/add.js -> 200 in 412ms
+2026-09-24T10:51:00.698Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-24T10:51:01.074Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:01.283Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:01.438Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-24T10:51:01.503Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:02.463Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:02.525Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:02.526Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:02.552Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.lines
+    [
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 3,
+        "lineTotal": 165
+      }
+    ]
+2026-09-24T10:51:02.585Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.total
+    165
+2026-09-24T10:51:02.593Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ■ END status=passed duration=2568ms

@@ -1,0 +1,5 @@
+2026-09-24T10:51:46.883Z [INFO ] (Allure feature showcase › Metadata › Parameters: plain, masked, hidden and excluded from history) ▶ START "Parameters: plain, masked, hidden and excluded from history" (attempt 1, worker 0)
+2026-09-24T10:51:47.345Z [DEBUG] (Allure feature showcase › Metadata › Parameters: plain, masked, hidden and excluded from history:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:47.552Z [DEBUG] (Allure feature showcase › Metadata › Parameters: plain, masked, hidden and excluded from history:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:51:47.563Z [DEBUG] (Allure feature showcase › Metadata › Parameters: plain, masked, hidden and excluded from history:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:51:47.919Z [INFO ] (Allure feature showcase › Metadata › Parameters: plain, masked, hidden and excluded from history) ■ END status=passed duration=1036ms

@@ -1,0 +1,26 @@
+2026-09-24T10:52:00.282Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) ▶ START "Full shopping journey with checkpoints, video and trace" (attempt 1, worker 5)
+2026-09-24T10:52:00.303Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigating to https://sauce-demo.myshopify.com/
+2026-09-24T10:52:00.612Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:00.687Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:00.771Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-09-24T10:52:00.820Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:52:01.363Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:01.418Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:01.445Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:52:01.987Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:02.072Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:02.072Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:52:02.289Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Adding "Grey jacket" to the cart
+2026-09-24T10:52:04.040Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) /cart/add.js answered HTTP 200
+2026-09-24T10:52:04.041Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-24T10:52:04.275Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:04.331Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-24T10:52:04.368Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-24T10:52:04.381Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-24T10:52:04.602Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) ■ END status=passed duration=4320ms
