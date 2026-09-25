@@ -1,0 +1,17 @@
+2026-09-25T10:54:31.986Z [INFO ] (Shopping cart › Removing the only item empties the cart) ▶ START "Removing the only item empties the cart" (attempt 1, worker 1)
+2026-09-25T10:54:32.216Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) GET /products/striped-top.js -> 200 in 218ms
+2026-09-25T10:54:33.118Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) POST /cart/add.js -> 200 in 897ms
+2026-09-25T10:54:33.119Z [INFO ] (Shopping cart › Removing the only item empties the cart) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-25T10:54:33.534Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:33.715Z [DEBUG] (Shopping cart › Removing the only item empties the cart) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-25T10:54:33.911Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:33.937Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:34.725Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://pixel.tapad.com/idsync/ex/receive?partner_id=3521&partner_device_id=NjVkZTYyYzUyZGZkNDE0MjA3NDZhOTA4MjljMmYwOGQ&gdpr=0&gdpr_consent= (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:34.901Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:35.088Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:35.136Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:35.364Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) GET /cart.js -> 200 in 116ms
+2026-09-25T10:54:35.369Z [INFO ] (Shopping cart › Removing the only item empties the cart) ■ END status=passed duration=3383ms

@@ -1,1 +1,0 @@
-2026-09-24T10:52:04.035Z [INFO] Clear-Site-Data header on 'https://sauce-demo.myshopify.com/cart/add.js': Cleared data types: "prefetchCache", "prerenderCache".  @ https://sauce-demo.myshopify.com/products/grey-jacket:0:0

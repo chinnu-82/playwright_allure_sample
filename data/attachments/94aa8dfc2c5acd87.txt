@@ -1,0 +1,32 @@
+2026-09-25T10:54:39.686Z [INFO ] (Checkout › Pay now with an empty form lists every required field) ▶ START "Pay now with an empty form lists every required field" (attempt 1, worker 0)
+2026-09-25T10:54:39.887Z [INFO ] (Checkout › Pay now with an empty form lists every required field:api) GET /products/grey-jacket.js -> 200 in 191ms
+2026-09-25T10:54:40.294Z [INFO ] (Checkout › Pay now with an empty form lists every required field:api) POST /cart/add.js -> 200 in 399ms
+2026-09-25T10:54:40.444Z [INFO ] (Checkout › Pay now with an empty form lists every required field:api) GET /products/striped-top.js -> 200 in 147ms
+2026-09-25T10:54:40.831Z [INFO ] (Checkout › Pay now with an empty form lists every required field:api) POST /cart/add.js -> 200 in 383ms
+2026-09-25T10:54:40.835Z [INFO ] (Checkout › Pay now with an empty form lists every required field) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-25T10:54:41.507Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:41.512Z [DEBUG] (Checkout › Pay now with an empty form lists every required field) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-25T10:54:41.556Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:41.569Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:41.914Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: POST https://sauce-demo.myshopify.com/api/event/collect (net::ERR_ABORTED)
+2026-09-25T10:54:43.508Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-09-25T10:54:43.546Z [WARN ] (Checkout › Pay now with an empty form lists every required field:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=8f850a4033672765e650a28038e2a8a3&checkout_type=c1
+2026-09-25T10:54:43.547Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-09-25T10:54:43.627Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=8f850a4033672765e650a28038e2a8a3&checkout_type=c1 (net::ERR_ABORTED)
+2026-09-25T10:54:43.715Z [DEBUG] (Checkout › Pay now with an empty form lists every required field:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:45.388Z [INFO ] (Checkout › Pay now with an empty form lists every required field) DATA checkout.fieldErrors
+    [
+      "Enter an email",
+      "Enter a last name",
+      "Enter an address",
+      "Enter a city",
+      "Enter a ZIP / postal code",
+      "Enter a card number",
+      "Enter a valid expiration date",
+      "Enter the CVV or security code on your card",
+      "Enter your name exactly as it’s written on your card"
+    ]
+2026-09-25T10:54:46.853Z [INFO ] (Checkout › Pay now with an empty form lists every required field) ■ END status=passed duration=7167ms

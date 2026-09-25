@@ -1,0 +1,17 @@
+2026-09-25T10:54:09.916Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) ▶ START "Invalid credentials do not authenticate the user (unknown user)" (attempt 1, worker 0)
+2026-09-25T10:54:09.939Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-25T10:54:10.549Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:10.696Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:10.713Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user)) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-25T10:54:10.925Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:11.116Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) DATA login.email
+    unknown.user@example.com
+2026-09-25T10:54:11.116Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) DATA login.password
+    ***************
+2026-09-25T10:54:11.291Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=8055be66-ea35-419f-a830-e1cc6801564d&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3D01bd38c9-93c0-42de-b669-9ccb8d047428&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-25T10:54:11.465Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):console) console.error: Provider's accounts list is empty.
+2026-09-25T10:54:12.880Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://346b1272c7a3.w.hcaptcha.com/logo.png (net::ERR_ABORTED)
+2026-09-25T10:54:13.059Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) ■ END status=passed duration=3143ms

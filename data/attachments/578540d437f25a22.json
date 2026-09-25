@@ -1,0 +1,53 @@
+[
+  {
+    "id": 32,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-09-25T10:55:24.268Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.5.1\"}",
+    "status": 200,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "88f1d10a-446f-48f2-8161-c9315ee5abb2-1790333724",
+      "cf-cache-status": "DYNAMIC",
+      "powered-by": "Shopify",
+      "x-dc": "gcp-us-west1,gcp-us-west1,gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=f%2BKTW5EVTgNeGgP6UX5E%2B%2B3%2B7WR49r39cugv8NJbBGhCvDuG%2FEkCpfJsJSCyJr2Q39fkjHYXGBFJCvcjRpug8ESKbp3ptjcIbsIhdoxT3g64V%2F%2FZtCR%2FsIu2XDycQpdhkiWkLTTYpT27RA%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "server-timing": "processing;dur=12, db_async;dur=2.678, asn;desc=\"8075\", edge;desc=\"LAX\", country;desc=\"US\", servedBy;desc=\"wsvb\", requestID;desc=\"88f1d10a-446f-48f2-8161-c9315ee5abb2-1790333724\", _y;desc=\"ebd58ec4-94f4-480c-ba5d-fa011c09d2a8\", _s;desc=\"cd1e4473-2310-46b2-be3d-3b1d31013276\", _cmp;desc=\"3.AMPS_USAZ_f_f_qARzPZpcQAOXuUL-fbSIsA_%7B%7D\", cfExtPri",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Fri, 25 Sep 2026 10:55:24 GMT",
+      "shopify-complexity-score-v2": "5",
+      "content-type": "text/html; charset=utf-8",
+      "vary": "Accept",
+      "priority": "u=1,i",
+      "x-frame-options": "DENY",
+      "content-security-policy": "block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;",
+      "cdn-cache-control": "no-cache, no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a4097f10b9856a29-LAX",
+      "shopify-complexity-score": "0",
+      "content-length": "0",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 157.3,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  }
+]

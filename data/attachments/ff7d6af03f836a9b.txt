@@ -1,0 +1,1 @@
+[WARN] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) HTTP 404 GET https://shop.app/pay/authentication/login/check?email=admin%40example.com%27%20OR%20%271%27%3D%271&analytics_trace_id=91b651e6-4c69-46fe-ac77-ccd7f51d83c0

@@ -1,0 +1,12 @@
+2026-09-25T10:54:14.299Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ▶ START "Submitting an empty form keeps the customer signed out" (attempt 1, worker 0)
+2026-09-25T10:54:14.335Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-25T10:54:15.000Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:15.386Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-25T10:54:15.388Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:15.449Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:15.755Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=c7798f9f-a61c-49cc-963d-e64b64d0576a&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3D513383f9-970e-40de-a937-14b468c8a22e&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-25T10:54:16.045Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:console) console.error: Provider's accounts list is empty.
+2026-09-25T10:54:16.089Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ■ END status=passed duration=1790ms

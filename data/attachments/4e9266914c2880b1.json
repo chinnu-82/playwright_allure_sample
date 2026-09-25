@@ -1,0 +1,543 @@
+{
+  "products": [
+    {
+      "id": 407143389,
+      "title": "Brown Shades",
+      "handle": "brown-shades",
+      "body_html": "",
+      "published_at": "2015-02-02T13:36:00+00:00",
+      "created_at": "2015-02-02T13:37:51+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Sunglasses",
+      "tags": [],
+      "variants": [
+        {
+          "id": 1063105029,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": false,
+          "price": "20.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 407143389,
+          "created_at": "2015-02-02T13:37:51+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 1126206249,
+          "created_at": "2015-02-02T13:37:51+00:00",
+          "position": 1,
+          "updated_at": "2015-02-02T13:37:51+00:00",
+          "product_id": 407143389,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/RayBanWayfarer5022sunglasses.JPG?v=1422884271",
+          "width": 2048,
+          "height": 1536
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263741321,
+      "title": "Noir jacket",
+      "handle": "noir-jacket",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>",
+      "published_at": "2014-03-12T20:46:00+00:00",
+      "created_at": "2014-03-12T20:47:34+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Jackets",
+      "tags": [],
+      "variants": [
+        {
+          "id": 611952521,
+          "title": "S / Blue",
+          "option1": "S",
+          "option2": "Blue",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263741321,
+          "created_at": "2014-03-12T20:47:34+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7295557889,
+          "title": "M / Blue",
+          "option1": "M",
+          "option2": "Blue",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 263741321,
+          "created_at": "2015-10-14T16:03:31+01:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7295558017,
+          "title": "L / Blue",
+          "option1": "L",
+          "option2": "Blue",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 263741321,
+          "created_at": "2015-10-14T16:03:31+01:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7805229441,
+          "title": "S / Red",
+          "option1": "S",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 263741321,
+          "created_at": "2015-10-29T11:01:22+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7805236929,
+          "title": "M / Red",
+          "option1": "M",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 263741321,
+          "created_at": "2015-10-29T11:01:48+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7805238401,
+          "title": "L / Red",
+          "option1": "L",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "60.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 263741321,
+          "created_at": "2015-10-29T11:01:55+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585286857,
+          "created_at": "2014-03-12T20:47:34+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:47:34+00:00",
+          "product_id": 263741321,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/jacket.jpg?v=1394657254",
+          "width": 300,
+          "height": 480
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "S",
+            "M",
+            "L"
+          ]
+        },
+        {
+          "name": "Color",
+          "position": 2,
+          "values": [
+            "Blue",
+            "Red"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263741033,
+      "title": "Striped top",
+      "handle": "striped-top",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>X",
+      "published_at": "2014-03-12T20:46:00+00:00",
+      "created_at": "2014-03-12T20:46:44+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "ASOS",
+      "product_type": "Tops",
+      "tags": [],
+      "variants": [
+        {
+          "id": 611951029,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "50.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263741033,
+          "created_at": "2014-03-12T20:46:44+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585284625,
+          "created_at": "2014-03-12T20:46:44+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:46:44+00:00",
+          "product_id": 263741033,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/top-striped.jpg?v=1394657204",
+          "width": 300,
+          "height": 480
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263739389,
+      "title": "Grey jacket",
+      "handle": "grey-jacket",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>X",
+      "published_at": "2014-03-12T20:42:38+00:00",
+      "created_at": "2014-03-12T20:43:09+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Jackets",
+      "tags": [],
+      "variants": [
+        {
+          "id": 611945025,
+          "title": "Grey jacket",
+          "option1": "Grey jacket",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "55.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263739389,
+          "created_at": "2014-03-12T20:43:09+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585274145,
+          "created_at": "2014-03-12T20:43:09+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:43:09+00:00",
+          "product_id": 263739389,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989",
+          "width": 300,
+          "height": 480
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Grey jacket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263738805,
+      "title": "Black heels",
+      "handle": "flower-print-jeans",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>",
+      "published_at": "2014-03-12T20:41:00+00:00",
+      "created_at": "2014-03-12T20:42:06+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Jeans",
+      "tags": [
+        "Vintage"
+      ],
+      "variants": [
+        {
+          "id": 611942549,
+          "title": "S / Red",
+          "option1": "S",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "45.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263738805,
+          "created_at": "2014-03-12T20:42:06+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7176066113,
+          "title": "M / Red",
+          "option1": "M",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "45.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 263738805,
+          "created_at": "2015-10-09T11:13:49+01:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        },
+        {
+          "id": 7176066241,
+          "title": "L / Red",
+          "option1": "L",
+          "option2": "Red",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "45.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 263738805,
+          "created_at": "2015-10-09T11:13:49+01:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585270465,
+          "created_at": "2014-03-12T20:42:06+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:42:06+00:00",
+          "product_id": 263738805,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/shoes3.jpg?v=1394656926",
+          "width": 300,
+          "height": 480
+        }
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "position": 1,
+          "values": [
+            "S",
+            "M",
+            "L"
+          ]
+        },
+        {
+          "name": "Color",
+          "position": 2,
+          "values": [
+            "Red"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263738357,
+      "title": "White sandals",
+      "handle": "white-sandals",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>",
+      "published_at": "2014-03-12T20:40:00+00:00",
+      "created_at": "2014-03-12T20:41:09+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Shoes",
+      "tags": [],
+      "variants": [
+        {
+          "id": 611940609,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": false,
+          "price": "25.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263738357,
+          "created_at": "2014-03-12T20:41:09+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585267929,
+          "created_at": "2014-03-12T20:41:09+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:41:09+00:00",
+          "product_id": 263738357,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/shoes2.jpg?v=1394656869",
+          "width": 300,
+          "height": 480
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 263735661,
+      "title": "Bronze sandals",
+      "handle": "bronze-sandals",
+      "body_html": "<span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href=\"http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell\" target=\"_blank\">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>",
+      "published_at": "2014-03-12T20:33:58+00:00",
+      "created_at": "2014-03-12T20:35:06+00:00",
+      "updated_at": "2026-09-25T11:55:28+01:00",
+      "vendor": "Sauce Demo",
+      "product_type": "Shoes",
+      "tags": [],
+      "variants": [
+        {
+          "id": 611931337,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "39.99",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 263735661,
+          "created_at": "2014-03-12T20:35:06+00:00",
+          "updated_at": "2026-09-25T11:55:28+01:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 585252637,
+          "created_at": "2014-03-12T20:35:41+00:00",
+          "position": 1,
+          "updated_at": "2014-03-12T20:35:41+00:00",
+          "product_id": 263735661,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0399/1157/products/shoes.jpg?v=1394656541",
+          "width": 1920,
+          "height": 1920
+        }
+      ],
+      "options": [
+        {
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ]
+    }
+  ]
+}

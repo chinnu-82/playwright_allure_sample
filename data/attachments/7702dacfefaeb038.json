@@ -1,0 +1,29 @@
+{
+  "total": 291,
+  "firstParty": 241,
+  "apiCalls": 6,
+  "failed": 7,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 365,
+  "p95Ms": 937,
+  "slowestUrl": "1146ms https://sauce-demo.myshopify.com/checkouts/internal/graphql/persisted?operationName=Proposal",
+  "byResourceType": {
+    "document": 11,
+    "other": 10,
+    "stylesheet": 56,
+    "script": 164,
+    "image": 12,
+    "ping": 21,
+    "fetch": 17
+  },
+  "byStatus": {
+    "200": 281,
+    "202": 1,
+    "301": 1,
+    "302": 2,
+    "401": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

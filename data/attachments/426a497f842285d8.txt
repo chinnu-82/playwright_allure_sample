@@ -1,0 +1,10 @@
+2026-09-25T10:55:15.438Z [INFO ] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions) ▶ START "Rich metadata: labels, links, severity and descriptions" (attempt 1, worker 0)
+2026-09-25T10:55:15.470Z [INFO ] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions) Navigating to https://sauce-demo.myshopify.com/
+2026-09-25T10:55:15.761Z [DEBUG] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:55:15.953Z [DEBUG] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-09-25T10:55:16.120Z [DEBUG] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:55:16.124Z [DEBUG] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:55:16.237Z [INFO ] (Allure feature showcase › Metadata › Rich metadata: labels, links, severity and descriptions) ■ END status=passed duration=799ms

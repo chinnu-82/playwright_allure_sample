@@ -1,0 +1,11 @@
+2026-09-25T10:54:22.490Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ▶ START ""Forgot your password?" swaps the login form for the recovery form" (attempt 1, worker 0)
+2026-09-25T10:54:22.497Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-25T10:54:23.012Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:23.237Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-25T10:54:23.407Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-25T10:54:23.414Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-25T10:54:23.731Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=9df20a25-c120-4a52-a525-65c64babf76d&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3D0557af71-2c8b-4105-b707-0bbe1d22405d&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-25T10:54:23.900Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ■ END status=passed duration=1410ms

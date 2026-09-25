@@ -1,0 +1,74 @@
+{
+  "token": "hWNHEklfXhEDllediIlpNLZY?key=7ce0f6d1226612eb80bf1aa990476bd4",
+  "note": "",
+  "attributes": {},
+  "original_total_price": 5000,
+  "total_price": 5000,
+  "total_discount": 0,
+  "total_weight": 0,
+  "item_count": 1,
+  "items": [
+    {
+      "id": 611951029,
+      "properties": {},
+      "quantity": 1,
+      "variant_id": 611951029,
+      "key": "611951029:3fd318c90824eec89d237cf3ec103024",
+      "title": "Striped top",
+      "price": 5000,
+      "original_price": 5000,
+      "presentment_price": 50,
+      "discounted_price": 5000,
+      "line_price": 5000,
+      "original_line_price": 5000,
+      "total_discount": 0,
+      "discounts": [],
+      "sku": "",
+      "grams": 0,
+      "vendor": "ASOS",
+      "taxable": true,
+      "product_id": 263741033,
+      "product_has_only_default_variant": true,
+      "gift_card": false,
+      "final_price": 5000,
+      "final_line_price": 5000,
+      "url": "/products/striped-top?variant=611951029",
+      "featured_image": {
+        "aspect_ratio": 0.625,
+        "alt": "Striped top",
+        "height": 480,
+        "url": "https://cdn.shopify.com/s/files/1/0399/1157/products/top-striped.jpg?v=1394657204",
+        "width": 300
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0399/1157/products/top-striped.jpg?v=1394657204",
+      "handle": "striped-top",
+      "requires_shipping": true,
+      "product_type": "Tops",
+      "product_title": "Striped top",
+      "product_description": "This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at 9 ways to write compelling product descriptions. In Theme Settings you can also change render the product description to the write of the product images.X",
+      "variant_title": null,
+      "variant_options": [
+        "Default Title"
+      ],
+      "options_with_values": [
+        {
+          "name": "Title",
+          "value": "Default Title"
+        }
+      ],
+      "line_level_discount_allocations": [],
+      "line_level_total_discount": 0,
+      "quantity_rule": {
+        "min": 1,
+        "max": null,
+        "increment": 1
+      },
+      "has_components": false
+    }
+  ],
+  "requires_shipping": true,
+  "currency": "GBP",
+  "items_subtotal_price": 5000,
+  "cart_level_discount_applications": [],
+  "discount_codes": []
+}
