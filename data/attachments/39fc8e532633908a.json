@@ -1,0 +1,26 @@
+{
+  "total": 56,
+  "firstParty": 42,
+  "apiCalls": 1,
+  "failed": 3,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 118,
+  "p95Ms": 273,
+  "slowestUrl": "335ms https://sauce-demo.myshopify.com/products/noir-jacket",
+  "byResourceType": {
+    "document": 2,
+    "other": 7,
+    "stylesheet": 1,
+    "script": 21,
+    "image": 9,
+    "ping": 12,
+    "fetch": 4
+  },
+  "byStatus": {
+    "200": 50,
+    "301": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "total": 46,
+  "firstParty": 36,
+  "apiCalls": 1,
+  "failed": 3,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 117,
+  "p95Ms": 198,
+  "slowestUrl": "276ms https://sauce-demo.myshopify.com/products/bronze-sandals",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 19,
+    "image": 9,
+    "ping": 9,
+    "fetch": 3
+  },
+  "byStatus": {
+    "200": 40,
+    "301": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

@@ -1,0 +1,19 @@
+2026-09-28T12:30:25.905Z [INFO ] (Checkout › An invalid discount code is rejected) ▶ START "An invalid discount code is rejected" (attempt 1, worker 0)
+2026-09-28T12:30:26.122Z [INFO ] (Checkout › An invalid discount code is rejected:api) GET /products/grey-jacket.js -> 200 in 204ms
+2026-09-28T12:30:26.573Z [INFO ] (Checkout › An invalid discount code is rejected:api) POST /cart/add.js -> 200 in 445ms
+2026-09-28T12:30:26.762Z [INFO ] (Checkout › An invalid discount code is rejected:api) GET /products/striped-top.js -> 200 in 184ms
+2026-09-28T12:30:27.643Z [INFO ] (Checkout › An invalid discount code is rejected:api) POST /cart/add.js -> 200 in 869ms
+2026-09-28T12:30:27.660Z [INFO ] (Checkout › An invalid discount code is rejected) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-28T12:30:28.204Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-28T12:30:28.216Z [DEBUG] (Checkout › An invalid discount code is rejected) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-28T12:30:28.453Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-28T12:30:28.478Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-28T12:30:30.543Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-09-28T12:30:31.735Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-28T12:30:31.794Z [WARN ] (Checkout › An invalid discount code is rejected:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=90af93af074a4e91879f652f50cccdbd&checkout_type=c1
+2026-09-28T12:30:31.795Z [DEBUG] (Checkout › An invalid discount code is rejected:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-09-28T12:30:31.925Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=90af93af074a4e91879f652f50cccdbd&checkout_type=c1 (net::ERR_ABORTED)
+2026-09-28T12:30:34.765Z [INFO ] (Checkout › An invalid discount code is rejected) ■ END status=passed duration=8860ms
