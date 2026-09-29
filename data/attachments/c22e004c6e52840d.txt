@@ -1,0 +1,26 @@
+2026-09-29T11:53:33.419Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ▶ START "Changing the quantity recalculates line and cart totals" (attempt 1, worker 0)
+2026-09-29T11:53:33.659Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) GET /products/grey-jacket.js -> 200 in 220ms
+2026-09-29T11:53:34.043Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) POST /cart/add.js -> 200 in 378ms
+2026-09-29T11:53:34.044Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-29T11:53:34.572Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:34.580Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-29T11:53:34.854Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:34.864Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:53:35.915Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:36.000Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:53:36.038Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:36.110Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.lines
+    [
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 3,
+        "lineTotal": 165
+      }
+    ]
+2026-09-29T11:53:36.185Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.total
+    165
+2026-09-29T11:53:36.197Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ■ END status=passed duration=2778ms

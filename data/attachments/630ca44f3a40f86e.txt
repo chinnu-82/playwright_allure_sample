@@ -1,0 +1,42 @@
+2026-09-29T11:53:29.470Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) ▶ START "Cart total equals the sum of all line totals" (attempt 1, worker 1)
+2026-09-29T11:53:29.488Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Opening product grey-jacket
+2026-09-29T11:53:30.109Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:30.378Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:30.426Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:53:30.617Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Adding "Grey jacket" to the cart
+2026-09-29T11:53:32.321Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) /cart/add.js answered HTTP 200
+2026-09-29T11:53:32.334Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Opening product striped-top
+2026-09-29T11:53:32.464Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-09-29T11:53:32.791Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:32.861Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:53:32.861Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:32.941Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Adding "Striped top" to the cart
+2026-09-29T11:53:34.358Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-09-29T11:53:34.611Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) /cart/add.js answered HTTP 200
+2026-09-29T11:53:34.612Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Navigating to https://sauce-demo.myshopify.com/cart
+2026-09-29T11:53:34.779Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-09-29T11:53:34.971Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:35.157Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-09-29T11:53:35.190Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:53:35.207Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:53:35.342Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) DATA cart.lines
+    [
+      {
+        "name": "Striped top",
+        "unitPrice": 50,
+        "quantity": 1,
+        "lineTotal": 50
+      },
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 1,
+        "lineTotal": 55
+      }
+    ]
+2026-09-29T11:53:35.384Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) DATA cart.total
+    105
+2026-09-29T11:53:35.515Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) ■ END status=passed duration=6045ms

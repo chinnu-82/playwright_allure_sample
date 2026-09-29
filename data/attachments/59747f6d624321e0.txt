@@ -1,0 +1,13 @@
+2026-09-29T11:54:09.282Z [INFO ] (Product catalog › Customer can open a product from the catalog) ▶ START "Customer can open a product from the catalog" (attempt 1, worker 1)
+2026-09-29T11:54:09.300Z [INFO ] (Product catalog › Customer can open a product from the catalog) Navigating to https://sauce-demo.myshopify.com/collections/all
+2026-09-29T11:54:09.703Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:54:09.846Z [DEBUG] (Product catalog › Customer can open a product from the catalog) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/collections/all"
+    }
+2026-09-29T11:54:09.876Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:54:09.895Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:54:10.573Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:54:10.735Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-29T11:54:10.740Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-29T11:54:11.320Z [INFO ] (Product catalog › Customer can open a product from the catalog) ■ END status=passed duration=2038ms
