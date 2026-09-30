@@ -1,0 +1,20 @@
+2026-09-30T11:40:22.844Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ▶ START "Invalid credentials do not authenticate the user (sql-injection attempt)" (attempt 1, worker 0)
+2026-09-30T11:40:22.881Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-09-30T11:40:23.407Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-09-30T11:40:23.503Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-09-30T11:40:23.632Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-09-30T11:40:23.650Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-09-30T11:40:23.789Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.email
+    admin@example.com' OR '1'='1
+2026-09-30T11:40:23.789Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.password
+    ***********
+2026-09-30T11:40:23.989Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=98fa88f8-9f22-466b-be0d-c74871ce95a9&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Dda001d88-b152-47e0-8318-6c7c939abe74&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-09-30T11:40:24.182Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):console) console.error: Provider's accounts list is empty.
+2026-09-30T11:40:25.709Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://bb88a7930258.w.hcaptcha.com/logo.png (net::ERR_ABORTED)
+2026-09-30T11:40:25.914Z [WARN ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) HTTP 404 GET https://shop.app/pay/authentication/login/check?email=admin%40example.com%27%20OR%20%271%27%3D%271&analytics_trace_id=98fa88f8-9f22-466b-be0d-c74871ce95a9
+2026-09-30T11:40:25.915Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):console) console.error: Failed to load resource: the server responded with a status of 404 ()
+2026-09-30T11:40:25.919Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://shop.app/pay/authentication/login/check?email=admin%40example.com%27%20OR%20%271%27%3D%271&analytics_trace_id=98fa88f8-9f22-466b-be0d-c74871ce95a9 (net::ERR_ABORTED)
+2026-09-30T11:40:26.246Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ■ END status=passed duration=3402ms
