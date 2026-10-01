@@ -1,0 +1,17 @@
+2026-10-01T12:09:53.589Z [INFO ] (Product catalog › Header navigation leads from home page to catalog) ▶ START "Header navigation leads from home page to catalog" (attempt 1, worker 0)
+2026-10-01T12:09:53.595Z [INFO ] (Product catalog › Header navigation leads from home page to catalog) Navigating to https://sauce-demo.myshopify.com/
+2026-10-01T12:09:54.078Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:54.217Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-10-01T12:09:54.288Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:54.317Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-01T12:09:54.589Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:09:54.678Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:09:54.737Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:09:55.278Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:55.332Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:55.367Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-01T12:09:55.404Z [DEBUG] (Product catalog › Header navigation leads from home page to catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:09:55.455Z [INFO ] (Product catalog › Header navigation leads from home page to catalog) ■ END status=passed duration=1866ms

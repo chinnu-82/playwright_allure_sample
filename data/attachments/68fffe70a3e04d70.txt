@@ -1,0 +1,15 @@
+2026-10-01T12:09:08.055Z [LOG] recaptchacompat disabled  @ https://js.hcaptcha.com/1/api.js?render=explicit&recaptchacompat=off&onload=__shopify_hcap_load_iojqs88e:3:331547
+2026-10-01T12:09:08.114Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login:0:0
+2026-10-01T12:09:08.722Z [DEBUG] [bugsnag] Loaded!  @ https://cdn.shopify.com/shopifycloud/arrive-server/pay/vite-pay/assets/checkout-DTJs6qRt.js:0:46037
+2026-10-01T12:09:09.263Z [ENDGROUP] EvalError
+    at https://newassets.hcaptcha.com/c/19a9e12836b299475eb5a619727bd5299ef156d7764b98c66fb7915108173eff/hsw.js:2:1094806
+    at aC_ (https://newassets.hcaptcha.com/c/19a9e12836b299475eb5a619727bd5299ef156d7764b98c66fb7915108173eff/hsw.js:2:1744)
+    at lc (https://newassets.hcaptcha.com/c/19a9e12836b299475eb5a619727bd5299ef156d7764b98c66fb7915108173eff/hsw.js:2:1094760)
+    at wasm://wasm/002a253a:wasm-function[910]:0x83db8
+    at wasm://wasm/002a253a:wasm-function[803]:0x6f041
+    at wasm://wasm/002a253a:wasm-function[302]:0x1e85c
+    at wasm://wasm/002a253a:wasm-function[284]:0x19955
+    at wasm://wasm/002a253a:wasm-function[492]:0x36a36
+    at wasm://wasm/002a253a:wasm-function[442]:0x2ede4
+    at wasm://wasm/002a253a:wasm-function[677]:0x58c89  @ https://newassets.hcaptcha.com/c/19a9e12836b299475eb5a619727bd5299ef156d7764b98c66fb7915108173eff/hsw.js:1:1094317
+2026-10-01T12:09:09.355Z [WARNING] [.WebGL-0x107404285400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels  @ https://newassets.hcaptcha.com/captcha/v1/b9ca2a6602c2bf69741b771db488f3001ea35b08/static/hcaptcha.html#frame=challenge&id=0xk7rtjf9w6d&host=sauce-demo.myshopify.com&sentry=true&reportapi=https%3A%2F%2Faccounts.hcaptcha.com&recaptchacompat=off&custom=false&hl=en&tplinks=on&andint=off&pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&sitekey=f06e6c50-85a8-45c8-87d0-21a2b65856fe&size=invisible&theme=light&origin=https%3A%2F%2Fsauce-demo.myshopify.com&clientOptions=%7B%22sentry%22%3Atrue%2C%22reportapi%22%3A%22https%3A%2F%2Faccounts.hcaptcha.com%22%2C%22recaptchacompat%22%3A%22off%22%2C%22custom%22%3Afalse%2C%22hl%22%3A%22en-GB%22%2C%22tplinks%22%3A%22on%22%2C%22andint%22%3A%22off%22%2C%22pat%22%3A%22on%22%2C%22pstissuer%22%3A%22https%3A%2F%2Fpst-issuer.hcaptcha.com%22%2C%22endpoint%22%3A%22https%3A%2F%2Fapi.hcaptcha.com%22%2C%22theme%22%3A%22light%22%2C%22size%22%3A%22normal%22%2C%22confirm-nav%22%3Afalse%7D:0:0

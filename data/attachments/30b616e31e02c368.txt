@@ -1,0 +1,58 @@
+2026-10-01T12:10:02.034Z [INFO ] (Product search › Searching "jacket" returns the matching products) ▶ START "Searching "jacket" returns the matching products" (attempt 1, worker 0)
+2026-10-01T12:10:02.045Z [INFO ] (Product search › Searching "jacket" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-10-01T12:10:02.456Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:10:02.543Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:10:02.662Z [DEBUG] (Product search › Searching "jacket" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-10-01T12:10:02.718Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-01T12:10:02.767Z [INFO ] (Product search › Searching "jacket" returns the matching products) Searching for "jacket"
+2026-10-01T12:10:02.840Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:02.938Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:03.001Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:03.505Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:10:03.564Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:10:03.573Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-01T12:10:03.611Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:03.666Z [INFO ] (Product search › Searching "jacket" returns the matching products) DATA catalog.products
+    [
+      {
+        "name": "Grey jacket",
+        "priceText": "£55.00",
+        "href": "/products/grey-jacket?_pos=1&_sid=3da880750&_ss=r",
+        "imageAlt": "Grey jacket",
+        "price": 55
+      },
+      {
+        "name": "Noir jacket",
+        "priceText": "£60.00",
+        "href": "/products/noir-jacket?_pos=2&_sid=3da880750&_ss=r",
+        "imageAlt": "Noir jacket",
+        "price": 60
+      },
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/products/flower-print-jeans?_pos=3&_sid=3da880750&_ss=r",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "Striped top",
+        "priceText": "£50.00",
+        "href": "/products/striped-top?_pos=4&_sid=3da880750&_ss=r",
+        "imageAlt": "Striped top",
+        "price": 50
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/products/brown-shades?_pos=5&_sid=3da880750&_ss=r",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      }
+    ]
+2026-10-01T12:10:03.699Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:03.774Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:10:03.785Z [INFO ] (Product search › Searching "jacket" returns the matching products) ■ END status=passed duration=1751ms

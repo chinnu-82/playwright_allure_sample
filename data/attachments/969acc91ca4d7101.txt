@@ -1,6 +1,0 @@
-2026-09-30T11:41:22.159Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) ▶ START "Sold-out product "White sandals" cannot be added to the cart" (attempt 1, worker 1)
-2026-09-30T11:41:22.176Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) Opening product white-sandals
-2026-09-30T11:41:22.434Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-09-30T11:41:22.574Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-09-30T11:41:22.806Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-09-30T11:41:23.064Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) ■ END status=passed duration=905ms

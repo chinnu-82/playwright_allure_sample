@@ -1,0 +1,2 @@
+2026-10-01T12:10:18.621Z [INFO ] (Allure feature showcase › Result statuses › SKIPPED: feature toggled off in this environment) ▶ START "SKIPPED: feature toggled off in this environment" (attempt 1, worker 2)
+2026-10-01T12:10:18.628Z [INFO ] (Allure feature showcase › Result statuses › SKIPPED: feature toggled off in this environment) ■ END status=skipped duration=7ms

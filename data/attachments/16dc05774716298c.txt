@@ -1,0 +1,11 @@
+2026-10-01T12:09:13.578Z [INFO ] (Customer login › Browser validation flags malformed email "user@") ▶ START "Browser validation flags malformed email "user@"" (attempt 1, worker 1)
+2026-10-01T12:09:13.597Z [INFO ] (Customer login › Browser validation flags malformed email "user@") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-01T12:09:14.259Z [DEBUG] (Customer login › Browser validation flags malformed email "user@") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-01T12:09:14.260Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:14.453Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-01T12:09:14.481Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-01T12:09:14.606Z [DEBUG] (Customer login › Browser validation flags malformed email "user@":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-01T12:09:14.750Z [INFO ] (Customer login › Browser validation flags malformed email "user@") ■ END status=passed duration=1172ms
