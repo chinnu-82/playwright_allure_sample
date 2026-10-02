@@ -1,0 +1,27 @@
+{
+  "total": 45,
+  "firstParty": 35,
+  "apiCalls": 4,
+  "failed": 4,
+  "httpErrors": 1,
+  "slow": 0,
+  "averageMs": 78,
+  "p95Ms": 163,
+  "slowestUrl": "211ms https://sauce-demo.myshopify.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-shopify-custom-pixel@0530/sandbox/modern/products/this-product-does-not-exist",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 20,
+    "image": 7,
+    "ping": 6,
+    "fetch": 6
+  },
+  "byStatus": {
+    "200": 38,
+    "301": 1,
+    "404": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

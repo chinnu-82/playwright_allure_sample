@@ -1,7 +1,0 @@
-2026-10-01T12:10:15.146Z [INFO ] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry) ▶ START "FLAKY: fails on the first attempt, passes on retry" (attempt 1, worker 0)
-2026-10-01T12:10:15.433Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-10-01T12:10:15.515Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-10-01T12:10:15.635Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-10-01T12:10:15.707Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-01T12:10:15.759Z [DEBUG] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-01T12:10:15.820Z [INFO ] (Allure feature showcase › Result statuses › FLAKY: fails on the first attempt, passes on retry) ■ END status=failed duration=674ms

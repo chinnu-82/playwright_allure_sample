@@ -1,0 +1,8 @@
+2026-10-02T11:40:39.323Z [INFO ] (Product details › Product page shows correct title and price for Striped top) ▶ START "Product page shows correct title and price for Striped top" (attempt 1, worker 1)
+2026-10-02T11:40:39.462Z [INFO ] (Product details › Product page shows correct title and price for Striped top:api) GET /products/striped-top.js -> 200 in 126ms
+2026-10-02T11:40:39.463Z [INFO ] (Product details › Product page shows correct title and price for Striped top) Opening product striped-top
+2026-10-02T11:40:39.985Z [DEBUG] (Product details › Product page shows correct title and price for Striped top:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-02T11:40:40.203Z [DEBUG] (Product details › Product page shows correct title and price for Striped top:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-02T11:40:40.214Z [DEBUG] (Product details › Product page shows correct title and price for Striped top:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-02T11:40:40.350Z [DEBUG] (Product details › Product page shows correct title and price for Striped top:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-02T11:40:40.400Z [INFO ] (Product details › Product page shows correct title and price for Striped top) ■ END status=passed duration=1077ms
