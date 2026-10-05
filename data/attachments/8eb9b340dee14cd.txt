@@ -1,3 +1,0 @@
-2026-10-02T11:40:55.250Z [LOG] [demo] storefront booted
-2026-10-02T11:40:55.250Z [WARNING] [demo] deprecated API used by a theme script
-2026-10-02T11:40:55.250Z [ERROR] [demo] recommendation widget failed to load

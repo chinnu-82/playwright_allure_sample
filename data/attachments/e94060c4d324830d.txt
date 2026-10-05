@@ -1,0 +1,2 @@
+2026-10-05T13:10:40.432Z [ERROR] Failed to load resource: the server responded with a status of 401 ()  @ https://sauce-demo.myshopify.com/private_access_tokens?id=99939b5a32896fa65d9dc7f9905d290f&checkout_type=c1:0:0
+2026-10-05T13:10:43.974Z [WARNING] Bugsnag.start() has already been called. Ignoring.  @ https://sauce-demo.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/2c1ab0fe.XVnTovwp.js:0:93291

@@ -1,0 +1,2 @@
+2026-10-05T13:11:18.899Z [INFO ] (Allure feature showcase › Result statuses › FAILED: cart total assertion (intentional product defect)) ▶ START "FAILED: cart total assertion (intentional product defect)" (attempt 1, worker 1)
+2026-10-05T13:11:18.905Z [INFO ] (Allure feature showcase › Result statuses › FAILED: cart total assertion (intentional product defect)) ■ END status=skipped duration=6ms

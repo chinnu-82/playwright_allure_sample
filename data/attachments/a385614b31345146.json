@@ -1,0 +1,28 @@
+{
+  "total": 202,
+  "firstParty": 99,
+  "apiCalls": 10,
+  "failed": 15,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 75,
+  "p95Ms": 163,
+  "slowestUrl": "660ms https://sauce-demo.myshopify.com/",
+  "byResourceType": {
+    "document": 6,
+    "other": 26,
+    "stylesheet": 2,
+    "script": 107,
+    "image": 30,
+    "ping": 15,
+    "fetch": 15,
+    "font": 1
+  },
+  "byStatus": {
+    "200": 180,
+    "301": 2,
+    "302": 12,
+    "failed": 5,
+    "pending": 3
+  }
+}

@@ -1,0 +1,15 @@
+2026-10-05T13:10:31.594Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) ▶ START "Add to cart fails gracefully when the cart service is unreachable" (attempt 1, worker 0)
+2026-10-05T13:10:31.599Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Simulating network failure (failed) for **/cart/add.js
+2026-10-05T13:10:31.604Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) Opening product grey-jacket
+2026-10-05T13:10:32.887Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-05T13:10:33.027Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-05T13:10:33.073Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-05T13:10:33.174Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-05T13:10:33.221Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-05T13:10:33.308Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-05T13:10:33.371Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-05T13:10:34.505Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) Uncaught page error: SyntaxError: Unexpected token ')'
+2026-10-05T13:10:34.505Z [WARN ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/cart/add.js (net::ERR_FAILED)
+2026-10-05T13:10:34.505Z [DEBUG] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) console.error: Failed to load resource: net::ERR_FAILED
+2026-10-05T13:10:35.298Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:api) GET /cart.js -> 200 in 155ms
+2026-10-05T13:10:35.503Z [INFO ] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable) ■ END status=passed duration=3909ms
