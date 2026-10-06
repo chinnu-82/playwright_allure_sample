@@ -1,2 +1,0 @@
-2026-10-05T13:10:10.309Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login:0:0
-2026-10-05T13:10:10.446Z [LOG] recaptchacompat disabled  @ https://js.hcaptcha.com/1/api.js?render=explicit&recaptchacompat=off&onload=__shopify_hcap_load_eajh2fx8:3:336335
