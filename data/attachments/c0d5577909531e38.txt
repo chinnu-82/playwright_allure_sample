@@ -1,0 +1,28 @@
+2026-10-07T12:24:17.262Z [INFO ] (Checkout › An invalid discount code is rejected) ▶ START "An invalid discount code is rejected" (attempt 1, worker 0)
+2026-10-07T12:24:17.554Z [INFO ] (Checkout › An invalid discount code is rejected:api) GET /products/grey-jacket.js -> 200 in 285ms
+2026-10-07T12:24:17.932Z [INFO ] (Checkout › An invalid discount code is rejected:api) POST /cart/add.js -> 200 in 372ms
+2026-10-07T12:24:18.064Z [INFO ] (Checkout › An invalid discount code is rejected:api) GET /products/striped-top.js -> 200 in 128ms
+2026-10-07T12:24:18.394Z [INFO ] (Checkout › An invalid discount code is rejected:api) POST /cart/add.js -> 200 in 327ms
+2026-10-07T12:24:18.408Z [INFO ] (Checkout › An invalid discount code is rejected) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-07T12:24:19.050Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-07T12:24:19.083Z [DEBUG] (Checkout › An invalid discount code is rejected) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-07T12:24:19.295Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-07T12:24:19.299Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-07T12:24:19.398Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:19.464Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:19.552Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:21.068Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-10-07T12:24:21.914Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-07T12:24:21.949Z [WARN ] (Checkout › An invalid discount code is rejected:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=14efad0abcc7d5b3a21568fbc85431e8&checkout_type=c1
+2026-10-07T12:24:21.950Z [DEBUG] (Checkout › An invalid discount code is rejected:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-10-07T12:24:22.000Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=14efad0abcc7d5b3a21568fbc85431e8&checkout_type=c1 (net::ERR_ABORTED)
+2026-10-07T12:24:22.310Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:22.522Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:22.651Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:22.966Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:24.100Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:24.181Z [DEBUG] (Checkout › An invalid discount code is rejected:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-07T12:24:24.250Z [INFO ] (Checkout › An invalid discount code is rejected) ■ END status=passed duration=6988ms

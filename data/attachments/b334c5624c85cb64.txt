@@ -1,0 +1,1 @@
+2026-10-07T12:23:56.776Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login:0:0
