@@ -1,1 +1,0 @@
-2026-10-07T12:24:31.187Z [ERROR] Failed to load resource: the server responded with a status of 401 ()  @ https://sauce-demo.myshopify.com/private_access_tokens?id=e7dbc66f60e342cdb87bd42e25d8b904&checkout_type=c1:0:0

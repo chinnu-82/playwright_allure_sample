@@ -1,0 +1,13 @@
+2026-10-08T12:33:39.730Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ▶ START "UI cart and /cart.js API stay in sync" (attempt 1, worker 1)
+2026-10-08T12:33:39.735Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Opening product striped-top
+2026-10-08T12:33:39.957Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-08T12:33:40.131Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-08T12:33:40.481Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-08T12:33:40.606Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-08T12:33:40.634Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Adding "Striped top" to the cart
+2026-10-08T12:33:40.697Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-08T12:33:40.741Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-08T12:33:42.354Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync) /cart/add.js answered HTTP 200
+2026-10-08T12:33:42.486Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-08T12:33:42.513Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync:api) GET /cart.js -> 200 in 137ms
+2026-10-08T12:33:42.517Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ■ END status=passed duration=2787ms

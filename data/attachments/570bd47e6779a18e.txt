@@ -1,0 +1,10 @@
+2026-10-08T12:33:30.624Z [INFO ] (Shopping cart › A new visitor starts with an empty cart) ▶ START "A new visitor starts with an empty cart" (attempt 1, worker 0)
+2026-10-08T12:33:30.631Z [INFO ] (Shopping cart › A new visitor starts with an empty cart) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-08T12:33:30.958Z [DEBUG] (Shopping cart › A new visitor starts with an empty cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-08T12:33:31.097Z [DEBUG] (Shopping cart › A new visitor starts with an empty cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-08T12:33:31.098Z [DEBUG] (Shopping cart › A new visitor starts with an empty cart) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-08T12:33:31.198Z [DEBUG] (Shopping cart › A new visitor starts with an empty cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-08T12:33:31.276Z [INFO ] (Shopping cart › A new visitor starts with an empty cart) ■ END status=passed duration=652ms
