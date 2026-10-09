@@ -1,0 +1,12 @@
+2026-10-09T12:21:17.136Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ▶ START "Login page renders every element a customer needs to sign in" (attempt 1, worker 0)
+2026-10-09T12:21:17.145Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-09T12:21:17.612Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:17.725Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-09T12:21:17.773Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:17.789Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-09T12:21:17.889Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=5e1f364e-532e-4e94-b7ad-d74923b6c4a5&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3D1ba32e18-f4af-47e3-8803-72edad4efe76&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-10-09T12:21:17.893Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:18.006Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ■ END status=passed duration=870ms

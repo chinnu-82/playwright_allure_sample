@@ -1,0 +1,12 @@
+2026-10-09T12:21:24.098Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ▶ START ""Forgot your password?" swaps the login form for the recovery form" (attempt 1, worker 1)
+2026-10-09T12:21:24.110Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-09T12:21:24.586Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:24.720Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-09T12:21:24.726Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:24.743Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-09T12:21:24.832Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:24.901Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:24.950Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ■ END status=passed duration=852ms

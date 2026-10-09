@@ -1,0 +1,49 @@
+2026-10-09T12:21:56.121Z [INFO ] (Product search › Searching "sandals" returns the matching products) ▶ START "Searching "sandals" returns the matching products" (attempt 1, worker 0)
+2026-10-09T12:21:56.129Z [INFO ] (Product search › Searching "sandals" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-10-09T12:21:56.382Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:56.463Z [DEBUG] (Product search › Searching "sandals" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-10-09T12:21:56.480Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:56.486Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-09T12:21:56.533Z [INFO ] (Product search › Searching "sandals" returns the matching products) Searching for "sandals"
+2026-10-09T12:21:56.590Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:56.603Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:56.671Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:56.947Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:56.981Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-09T12:21:57.011Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-09T12:21:57.030Z [INFO ] (Product search › Searching "sandals" returns the matching products) DATA catalog.products
+    [
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/products/bronze-sandals?_pos=1&_sid=345e8f596&_ss=r",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/products/flower-print-jeans?_pos=2&_sid=345e8f596&_ss=r",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/products/white-sandals?_pos=3&_sid=345e8f596&_ss=r",
+        "imageAlt": "White sandals",
+        "price": 25
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/products/brown-shades?_pos=4&_sid=345e8f596&_ss=r",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      }
+    ]
+2026-10-09T12:21:57.037Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-09T12:21:57.129Z [INFO ] (Product search › Searching "sandals" returns the matching products) ■ END status=passed duration=1008ms

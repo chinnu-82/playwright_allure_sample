@@ -1,0 +1,1 @@
+2026-10-09T12:22:05.359Z [ERROR] Failed to load resource: the server responded with a status of 404 ()  @ https://sauce-demo.myshopify.com/pages/shipping:0:0

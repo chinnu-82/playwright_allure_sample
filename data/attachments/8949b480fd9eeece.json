@@ -1,0 +1,29 @@
+{
+  "total": 145,
+  "firstParty": 112,
+  "apiCalls": 6,
+  "failed": 7,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 44,
+  "p95Ms": 127,
+  "slowestUrl": "224ms https://ps.eyeota.net/match?bid=d9gd6vu&uid=5d75061b98d8c5b73f08d457ebf06632&gdpr=0&gdpr_consent=",
+  "byResourceType": {
+    "document": 2,
+    "other": 74,
+    "stylesheet": 1,
+    "script": 27,
+    "image": 22,
+    "ping": 10,
+    "fetch": 7,
+    "xhr": 2
+  },
+  "byStatus": {
+    "200": 127,
+    "204": 1,
+    "301": 1,
+    "302": 11,
+    "failed": 3,
+    "pending": 2
+  }
+}
