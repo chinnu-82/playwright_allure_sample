@@ -1,0 +1,28 @@
+{
+  "total": 75,
+  "firstParty": 49,
+  "apiCalls": 4,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 77,
+  "p95Ms": 193,
+  "slowestUrl": "303ms https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",
+  "byResourceType": {
+    "document": 2,
+    "other": 9,
+    "stylesheet": 1,
+    "script": 27,
+    "image": 22,
+    "ping": 8,
+    "fetch": 6
+  },
+  "byStatus": {
+    "200": 59,
+    "204": 1,
+    "301": 1,
+    "302": 6,
+    "failed": 2,
+    "pending": 6
+  }
+}
