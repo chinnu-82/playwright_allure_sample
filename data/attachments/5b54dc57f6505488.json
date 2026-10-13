@@ -1,0 +1,28 @@
+{
+  "total": 44,
+  "firstParty": 35,
+  "apiCalls": 4,
+  "failed": 5,
+  "httpErrors": 1,
+  "slow": 0,
+  "averageMs": 83,
+  "p95Ms": 181,
+  "slowestUrl": "207ms https://www.marinsoftware.com/",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 20,
+    "image": 7,
+    "ping": 6,
+    "fetch": 5
+  },
+  "byStatus": {
+    "200": 38,
+    "204": 1,
+    "301": 1,
+    "404": 1,
+    "failed": 2,
+    "pending": 1
+  }
+}

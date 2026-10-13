@@ -1,0 +1,22 @@
+2026-10-13T13:16:47.700Z [INFO ] (Shopping cart › Removing the only item empties the cart) ▶ START "Removing the only item empties the cart" (attempt 1, worker 0)
+2026-10-13T13:16:47.859Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) GET /products/striped-top.js -> 200 in 151ms
+2026-10-13T13:16:48.298Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) POST /cart/add.js -> 200 in 431ms
+2026-10-13T13:16:48.303Z [INFO ] (Shopping cart › Removing the only item empties the cart) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-13T13:16:49.043Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:16:49.170Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:16:49.338Z [DEBUG] (Shopping cart › Removing the only item empties the cart) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-13T13:16:49.407Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-13T13:16:49.575Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:49.665Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:49.750Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:50.361Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:16:50.417Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-13T13:16:50.439Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:16:50.468Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:50.546Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:50.606Z [DEBUG] (Shopping cart › Removing the only item empties the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:16:50.654Z [INFO ] (Shopping cart › Removing the only item empties the cart:api) GET /cart.js -> 200 in 104ms
+2026-10-13T13:16:50.655Z [INFO ] (Shopping cart › Removing the only item empties the cart) ■ END status=passed duration=2955ms

@@ -1,0 +1,37 @@
+2026-10-13T13:17:07.157Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) ▶ START "Shipping details are accepted for Name with apostrophe" (attempt 1, worker 0)
+2026-10-13T13:17:07.312Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe:api) GET /products/grey-jacket.js -> 200 in 148ms
+2026-10-13T13:17:07.819Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe:api) POST /cart/add.js -> 200 in 503ms
+2026-10-13T13:17:07.932Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe:api) GET /products/striped-top.js -> 200 in 108ms
+2026-10-13T13:17:08.394Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe:api) POST /cart/add.js -> 200 in 453ms
+2026-10-13T13:17:08.404Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-13T13:17:08.989Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-13T13:17:09.137Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:17:09.259Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-13T13:17:09.304Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-13T13:17:09.471Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:09.630Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:11.888Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-10-13T13:17:11.931Z [WARN ] (Checkout › Shipping details are accepted for Name with apostrophe:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=fc3f74fd4554416885ce5c081e117476&checkout_type=c1
+2026-10-13T13:17:11.938Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-10-13T13:17:11.993Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-13T13:17:12.027Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=fc3f74fd4554416885ce5c081e117476&checkout_type=c1 (net::ERR_ABORTED)
+2026-10-13T13:17:12.213Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) DATA shipping.Name with apostrophe
+    {
+      "label": "Name with apostrophe",
+      "email": "conor.obrien@example.com",
+      "firstName": "Conor",
+      "lastName": "O'Brien",
+      "address": "10 Downing Street",
+      "city": "London",
+      "postcode": "SW1A 2AA"
+    }
+2026-10-13T13:17:12.219Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:12.508Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:12.744Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:12.829Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:13.972Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:14.024Z [DEBUG] (Checkout › Shipping details are accepted for Name with apostrophe:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-13T13:17:15.889Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) ■ END status=passed duration=8732ms
