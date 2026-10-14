@@ -1,1 +1,0 @@
-[WARN] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) HTTP 503 POST https://sauce-demo.myshopify.com/cart/add.js

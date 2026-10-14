@@ -1,0 +1,65 @@
+[
+  {
+    "id": 34,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-14T10:57:01.927Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.5.1\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "68a18a9a-645f-4f8f-8c7a-abe55a0c0012-1791975421",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-central1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ewvdKdKCwocBMH19QqMNlZfamfMS3qMflFS%2FpUlVsRo44XWVFUXDhgBdWYa5FH13kQN%2BbjDkheiWFSvjJaxmwygH1EQM0zb39G4wFCUPGvj%2FFJ8ZXQSHWJ9ikmrZdrkmuCbIF5cuRipakg%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Wed, 14 Oct 2026 10:57:01 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a4a60f932b6c2cc8-DFW",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 163.7,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 41,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-14T10:57:02.093Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"b5acf91awd18c8882p8c792781mb6692deb\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1791975422052}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"b5acf91awd18c8882p8c792781mb6692deb\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-3a0ef9d4-317C-4B8D-A9F6-7A042F271C9D\"},\"metadata\":{\"event_created_at_ms\":1791975422053}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"b5acf91awd18c8882p8c792781mb6692deb\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"search_submitted\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-3a0ef9ad-43A5-42AF-2A73-6B072DBD3581\"},\"metadata\":{\"event_created_at_ms\":1791975422054}}],\"metadata\":{\"event_sent_at_ms\":1791975422085}}"
+  }
+]
