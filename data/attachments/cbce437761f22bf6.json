@@ -1,0 +1,27 @@
+{
+  "total": 51,
+  "firstParty": 42,
+  "apiCalls": 3,
+  "failed": 4,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 99,
+  "p95Ms": 220,
+  "slowestUrl": "223ms https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/cc-mastercard.png?v=163639441997642668931394656066",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 20,
+    "image": 14,
+    "ping": 7,
+    "fetch": 4
+  },
+  "byStatus": {
+    "200": 41,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 6
+  }
+}
