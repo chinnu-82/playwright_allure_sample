@@ -1,0 +1,29 @@
+{
+  "total": 127,
+  "firstParty": 98,
+  "apiCalls": 8,
+  "failed": 12,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 55,
+  "p95Ms": 167,
+  "slowestUrl": "263ms https://sauce-demo.myshopify.com/search?type=product&q=sandals",
+  "byResourceType": {
+    "document": 4,
+    "other": 26,
+    "stylesheet": 2,
+    "script": 49,
+    "image": 20,
+    "ping": 15,
+    "fetch": 11
+  },
+  "byStatus": {
+    "200": 113,
+    "204": 2,
+    "301": 2,
+    "302": 2,
+    "304": 1,
+    "failed": 4,
+    "pending": 3
+  }
+}

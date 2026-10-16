@@ -1,0 +1,27 @@
+{
+  "total": 50,
+  "firstParty": 40,
+  "apiCalls": 4,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 84,
+  "p95Ms": 193,
+  "slowestUrl": "226ms https://www.facebook.com/tr/?id=395560230629559&ev=PixelInitialized&dl=https%3A%2F%2Fsauce-demo.myshopify.com%2F&rl=&if=false&v=1.1.1&a=fbds_js&ts=1792146338535",
+  "byResourceType": {
+    "document": 2,
+    "other": 5,
+    "stylesheet": 1,
+    "script": 21,
+    "image": 10,
+    "ping": 6,
+    "fetch": 5
+  },
+  "byStatus": {
+    "200": 45,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 1
+  }
+}
