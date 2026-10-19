@@ -1,1 +1,0 @@
-2026-10-16T10:24:52.761Z [LOG] recaptchacompat disabled  @ https://js.hcaptcha.com/1/api.js?render=explicit&recaptchacompat=off&onload=__shopify_hcap_load_djfrlhzj:3:363938

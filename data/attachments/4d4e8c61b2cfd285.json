@@ -1,0 +1,28 @@
+{
+  "total": 132,
+  "firstParty": 96,
+  "apiCalls": 8,
+  "failed": 12,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 63,
+  "p95Ms": 186,
+  "slowestUrl": "234ms https://sauce-demo.myshopify.com/products/striped-top",
+  "byResourceType": {
+    "document": 4,
+    "other": 20,
+    "stylesheet": 2,
+    "script": 52,
+    "image": 27,
+    "ping": 16,
+    "fetch": 11
+  },
+  "byStatus": {
+    "200": 113,
+    "204": 2,
+    "301": 2,
+    "302": 3,
+    "failed": 4,
+    "pending": 8
+  }
+}

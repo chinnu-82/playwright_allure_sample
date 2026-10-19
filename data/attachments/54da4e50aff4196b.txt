@@ -1,2 +1,0 @@
-2026-10-16T10:25:43.727Z [INFO ] (Allure feature showcase › Result statuses › KNOWN ISSUE: automated sign-in is blocked by hCaptcha) ▶ START "KNOWN ISSUE: automated sign-in is blocked by hCaptcha" (attempt 1, worker 0)
-2026-10-16T10:25:43.731Z [INFO ] (Allure feature showcase › Result statuses › KNOWN ISSUE: automated sign-in is blocked by hCaptcha) ■ END status=skipped duration=4ms

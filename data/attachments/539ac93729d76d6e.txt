@@ -1,0 +1,29 @@
+2026-10-19T11:42:50.072Z [INFO ] (Product search › Searching "shades" returns the matching products) ▶ START "Searching "shades" returns the matching products" (attempt 1, worker 1)
+2026-10-19T11:42:50.083Z [INFO ] (Product search › Searching "shades" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-10-19T11:42:50.528Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-19T11:42:50.564Z [DEBUG] (Product search › Searching "shades" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-10-19T11:42:50.698Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-19T11:42:50.701Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-19T11:42:50.749Z [INFO ] (Product search › Searching "shades" returns the matching products) Searching for "shades"
+2026-10-19T11:42:50.794Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-19T11:42:50.918Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-19T11:42:50.933Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-19T11:42:51.348Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-19T11:42:51.423Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-19T11:42:51.426Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-19T11:42:51.483Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-19T11:42:51.502Z [INFO ] (Product search › Searching "shades" returns the matching products) DATA catalog.products
+    [
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/products/brown-shades?_pos=1&_sid=0d0634d01&_ss=r",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      }
+    ]
+2026-10-19T11:42:51.507Z [DEBUG] (Product search › Searching "shades" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-19T11:42:51.574Z [INFO ] (Product search › Searching "shades" returns the matching products) ■ END status=passed duration=1502ms
