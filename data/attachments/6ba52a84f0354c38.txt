@@ -1,0 +1,31 @@
+2026-10-21T10:55:17.273Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ▶ START "Changing the quantity recalculates line and cart totals" (attempt 1, worker 1)
+2026-10-21T10:55:17.484Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) GET /products/grey-jacket.js -> 200 in 201ms
+2026-10-21T10:55:17.867Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals:api) POST /cart/add.js -> 200 in 381ms
+2026-10-21T10:55:17.868Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-21T10:55:18.283Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-21T10:55:18.404Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-21T10:55:18.424Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-21T10:55:18.445Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-21T10:55:18.554Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-21T10:55:18.635Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-21T10:55:18.697Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-21T10:55:18.705Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/event/collect (net::ERR_ABORTED)
+2026-10-21T10:55:19.295Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-21T10:55:19.363Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-21T10:55:19.365Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-21T10:55:19.397Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.lines
+    [
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 3,
+        "lineTotal": 165
+      }
+    ]
+2026-10-21T10:55:19.419Z [DEBUG] (Shopping cart › Changing the quantity recalculates line and cart totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-21T10:55:19.420Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) DATA cart.total
+    165
+2026-10-21T10:55:19.422Z [INFO ] (Shopping cart › Changing the quantity recalculates line and cart totals) ■ END status=passed duration=2149ms
