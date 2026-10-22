@@ -1,0 +1,1 @@
+[WARN] (Checkout › An invalid discount code is rejected:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=4aff2beff24871203e02ce160932711b&checkout_type=c1

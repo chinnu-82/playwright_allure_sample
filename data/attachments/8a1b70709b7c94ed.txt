@@ -1,0 +1,1 @@
+2026-10-22T11:02:06.091Z [INFO] Clear-Site-Data header on 'https://sauce-demo.myshopify.com/cart/change?line=1&quantity=0': Cleared data types: "prefetchCache", "prerenderCache".  @ https://sauce-demo.myshopify.com/cart:0:0

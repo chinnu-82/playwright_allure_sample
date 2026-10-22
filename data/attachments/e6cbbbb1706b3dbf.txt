@@ -1,1 +1,0 @@
-[WARN] (Checkout › Pay now with an empty form lists every required field:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=120639d6791a63203189d3de0e6b17bf&checkout_type=c1

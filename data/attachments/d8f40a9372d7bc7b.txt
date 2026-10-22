@@ -1,0 +1,15 @@
+2026-10-22T11:01:48.837Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ▶ START "Submitting an empty form keeps the customer signed out" (attempt 1, worker 0)
+2026-10-22T11:01:48.842Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-22T11:01:49.385Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-22T11:01:49.561Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-22T11:01:49.567Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-22T11:01:49.585Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-22T11:01:49.740Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-22T11:01:49.826Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-22T11:01:49.912Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=ec72321c-cff5-4096-8e48-d0aa0d56115b&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Da5d32ac3-2b99-4634-b5bd-de09734c9a29&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-10-22T11:01:49.924Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-22T11:01:50.086Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:console) console.error: Provider's accounts list is empty.
+2026-10-22T11:01:50.157Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ■ END status=passed duration=1320ms
