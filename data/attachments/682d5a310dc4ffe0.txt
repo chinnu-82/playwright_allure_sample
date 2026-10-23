@@ -1,0 +1,1 @@
+[WARN] (Shopping cart › UI cart and /cart.js API stay in sync:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')

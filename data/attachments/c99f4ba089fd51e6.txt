@@ -1,0 +1,72 @@
+2026-10-23T10:55:27.264Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) ▶ START "Nested steps with parameters, timings and log steps" (attempt 1, worker 0)
+2026-10-23T10:55:27.279Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) Navigating to https://sauce-demo.myshopify.com/collections/all
+2026-10-23T10:55:27.603Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-23T10:55:27.734Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-23T10:55:27.743Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/collections/all"
+    }
+2026-10-23T10:55:27.914Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-23T10:55:28.122Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:28.163Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) DATA catalog.products
+    [
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/collections/all/products/flower-print-jeans",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/collections/all/products/bronze-sandals",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/collections/all/products/brown-shades",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      },
+      {
+        "name": "Grey jacket",
+        "priceText": "£55.00",
+        "href": "/collections/all/products/grey-jacket",
+        "imageAlt": "Grey jacket",
+        "price": 55
+      },
+      {
+        "name": "Noir jacket",
+        "priceText": "£60.00",
+        "href": "/collections/all/products/noir-jacket",
+        "imageAlt": "Noir jacket",
+        "price": 60
+      },
+      {
+        "name": "Striped top",
+        "priceText": "£50.00",
+        "href": "/collections/all/products/striped-top",
+        "imageAlt": "Striped top",
+        "price": 50
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/collections/all/products/white-sandals",
+        "imageAlt": "White sandals",
+        "price": 25
+      }
+    ]
+2026-10-23T10:55:28.169Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) Opening product striped-top
+2026-10-23T10:55:28.274Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:28.490Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-23T10:55:28.602Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-23T10:55:28.611Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-23T10:55:28.705Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:28.752Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:28.838Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:28.884Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-23T10:55:29.028Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) ■ END status=passed duration=1764ms

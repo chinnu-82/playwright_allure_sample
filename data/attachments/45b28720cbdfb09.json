@@ -1,0 +1,28 @@
+{
+  "total": 98,
+  "firstParty": 78,
+  "apiCalls": 7,
+  "failed": 11,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 66,
+  "p95Ms": 167,
+  "slowestUrl": "247ms https://sauce-demo.myshopify.com/search?type=product&q=shades",
+  "byResourceType": {
+    "document": 4,
+    "other": 9,
+    "stylesheet": 2,
+    "script": 41,
+    "image": 18,
+    "ping": 15,
+    "fetch": 9
+  },
+  "byStatus": {
+    "200": 87,
+    "204": 2,
+    "301": 2,
+    "304": 1,
+    "failed": 4,
+    "pending": 2
+  }
+}
