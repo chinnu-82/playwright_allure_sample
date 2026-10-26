@@ -1,0 +1,27 @@
+{
+  "total": 51,
+  "firstParty": 40,
+  "apiCalls": 4,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 70,
+  "p95Ms": 158,
+  "slowestUrl": "215ms https://connect.facebook.net/en_US/fbds.js",
+  "byResourceType": {
+    "document": 2,
+    "other": 5,
+    "stylesheet": 1,
+    "script": 21,
+    "image": 10,
+    "ping": 6,
+    "fetch": 6
+  },
+  "byStatus": {
+    "200": 44,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

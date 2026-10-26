@@ -1,0 +1,14 @@
+2026-10-26T11:58:49.578Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ▶ START "Submitting an empty form keeps the customer signed out" (attempt 1, worker 0)
+2026-10-26T11:58:49.587Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-26T11:58:50.134Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-26T11:58:50.453Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-26T11:58:50.618Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-26T11:58:50.637Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-26T11:58:50.738Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-26T11:58:50.850Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-26T11:58:50.874Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/api/event/collect (net::ERR_ABORTED)
+2026-10-26T11:58:50.912Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-26T11:58:50.964Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ■ END status=passed duration=1386ms
