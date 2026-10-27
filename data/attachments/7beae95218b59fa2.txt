@@ -1,0 +1,12 @@
+2026-10-27T11:20:34.644Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ▶ START "Submitting an empty form keeps the customer signed out" (attempt 1, worker 0)
+2026-10-27T11:20:34.651Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-27T11:20:35.180Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:20:35.508Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:20:35.551Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-27T11:20:35.552Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-27T11:20:35.654Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-27T11:20:35.774Z [DEBUG] (Customer login › Submitting an empty form keeps the customer signed out:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-27T11:20:35.787Z [INFO ] (Customer login › Submitting an empty form keeps the customer signed out) ■ END status=passed duration=1143ms

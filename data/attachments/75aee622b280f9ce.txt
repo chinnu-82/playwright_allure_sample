@@ -1,0 +1,24 @@
+2026-10-27T11:21:40.275Z [INFO ] (Allure feature showcase › Browser console capture and analysis) ▶ START "Browser console capture and analysis" (attempt 1, worker 1)
+2026-10-27T11:21:40.597Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:21:40.672Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:21:40.931Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-27T11:21:41.101Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-27T11:21:41.235Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:console) console.error: [demo] recommendation widget failed to load
+2026-10-27T11:21:41.235Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-27T11:21:41.323Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-27T11:21:41.738Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:21:41.790Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-27T11:21:41.811Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-27T11:21:41.863Z [INFO ] (Allure feature showcase › Browser console capture and analysis) DATA console.summary
+    {
+      "total": 3,
+      "errors": 1,
+      "warnings": 1,
+      "pageErrors": 0,
+      "byType": {
+        "log": 1,
+        "warning": 1,
+        "error": 1
+      }
+    }
+2026-10-27T11:21:41.866Z [INFO ] (Allure feature showcase › Browser console capture and analysis) ■ END status=passed duration=1591ms
