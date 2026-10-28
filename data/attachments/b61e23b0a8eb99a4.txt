@@ -1,8 +1,0 @@
-2026-10-27T11:21:26.244Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals) ▶ START "Product page shows correct title and price for Bronze sandals" (attempt 1, worker 1)
-2026-10-27T11:21:26.394Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals:api) GET /products/bronze-sandals.js -> 200 in 136ms
-2026-10-27T11:21:26.395Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals) Opening product bronze-sandals
-2026-10-27T11:21:26.911Z [DEBUG] (Product details › Product page shows correct title and price for Bronze sandals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-10-27T11:21:27.215Z [DEBUG] (Product details › Product page shows correct title and price for Bronze sandals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-10-27T11:21:27.237Z [DEBUG] (Product details › Product page shows correct title and price for Bronze sandals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-10-27T11:21:27.383Z [DEBUG] (Product details › Product page shows correct title and price for Bronze sandals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-27T11:21:27.433Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals) ■ END status=passed duration=1189ms

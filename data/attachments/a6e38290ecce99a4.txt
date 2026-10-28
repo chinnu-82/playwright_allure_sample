@@ -1,0 +1,14 @@
+2026-10-28T11:54:35.379Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") ▶ START "Browser validation flags malformed email "@missing-local.org"" (attempt 1, worker 1)
+2026-10-28T11:54:35.388Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-10-28T11:54:37.163Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-28T11:54:37.306Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-10-28T11:54:37.351Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-28T11:54:37.405Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-28T11:54:37.614Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-28T11:54:37.733Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-28T11:54:37.845Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":console) console.error: Provider's accounts list is empty.
+2026-10-28T11:54:37.845Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=896e9747-b350-425e-a650-2031a39c3529&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Dbebc2012-dbdc-43ce-801b-aa30e7abb611&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-10-28T11:54:38.454Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") ■ END status=passed duration=3075ms

@@ -1,0 +1,28 @@
+{
+  "total": 164,
+  "firstParty": 116,
+  "apiCalls": 10,
+  "failed": 14,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 48,
+  "p95Ms": 173,
+  "slowestUrl": "249ms https://rtb-csync.smartadserver.com/redir/?partnerid=187&partneruserid=ZDA0YWE3ZmYwODc3YTQzNmI3MzhjMWFhYjc1NzAxZjc&gdpr=0&gdpr_consent=",
+  "byResourceType": {
+    "document": 5,
+    "other": 34,
+    "stylesheet": 2,
+    "script": 56,
+    "image": 36,
+    "ping": 17,
+    "fetch": 14
+  },
+  "byStatus": {
+    "200": 136,
+    "204": 2,
+    "301": 4,
+    "302": 13,
+    "failed": 4,
+    "pending": 5
+  }
+}
