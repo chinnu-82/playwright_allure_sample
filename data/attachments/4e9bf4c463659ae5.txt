@@ -1,9 +1,0 @@
-2026-10-28T11:55:29.245Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) ▶ START "Sold-out product "White sandals" cannot be added to the cart" (attempt 1, worker 1)
-2026-10-28T11:55:29.265Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) Opening product white-sandals
-2026-10-28T11:55:29.690Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-10-28T11:55:29.756Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-10-28T11:55:30.029Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-10-28T11:55:30.164Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-28T11:55:30.292Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-28T11:55:30.317Z [DEBUG] (Product details › Sold-out product "White sandals" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-10-28T11:55:30.373Z [INFO ] (Product details › Sold-out product "White sandals" cannot be added to the cart) ■ END status=passed duration=1128ms

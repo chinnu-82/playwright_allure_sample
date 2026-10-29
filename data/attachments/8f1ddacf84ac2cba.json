@@ -1,0 +1,85 @@
+[
+  {
+    "id": 30,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:35.592Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/grey-jacket",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "462d2d38-258c-4097-962f-d0af153d65b9-1793275355",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-central1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Y6K3xubMpIIs8ps2T45ZiESnCNJbxEz%2BkG%2B6SCfNNjARYb%2BC%2Bp%2FamyqDeIqwBs5VUc1nize0DiCAFcvXBXs99qQ7n0%2B%2FC6B2p9rszQCRfIZyACJlS93yXmiUTXKzHvSsvgFEUtSSXaDIfw%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Thu, 29 Oct 2026 12:02:35 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a522083c78014aa8-MSP",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 121.1,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 42,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:35.705Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/grey-jacket",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/products/grey-jacket\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1793275355662}},{\"schema_id\":\"web_pixels_manager_buyer_event_sample/1.0\",\"payload\":{\"shop_id\":3991157,\"event_type\":\"standard\",\"event_name\":\"page_viewed\",\"surface\":\"storefront-renderer\",\"event_payload_json\":\"{\\\"id\\\":\\\"sh-878a638e-7F31-4A15-84A1-717D96FACB5E\\\",\\\"name\\\":\\\"page_viewed\\\",\\\"data\\\":{},\\\"type\\\":\\\"standard\\\",\\\"timestamp\\\":\\\"2026-10-29T12:02:35.662Z\\\",\\\"context\\\":{\\\"document\\\":{\\\"location\\\":{\\\"href\\\":\\\"https://sauce-demo.myshopify.com/products/grey-jacket\\\",\\\"hash\\\":\\\"\\\",\\\"host\\\":\\\"sauce-demo.myshopify.com\\\",\\\"hostname\\\":\\\"sauce-demo.myshopify.com\\\",\\\"origin\\\":\\\"https://sauce-demo.myshopify.com\\\",\\\"pathname\\\":\\\"/products/grey-jacket\\\",\\\"port\\\":\\\"\\\",\\\"protocol\\\":\\\"https:\\\",\\\"search\\\":\\\"\\\"},\\\"referrer\\\":\\\"\\\",\\\"characterSet\\\":\\\"UTF-8\\\",\\\"title\\\":\\\"Grey jacket – Sauce Demo\\\"},\\\"navigator\\\":{\\\"language\\\":\\\"en-GB\\\",\\\"cookieEnabled\\\":true,\\\"languages\\\":[\\\"en-GB\\\"],\\\"userAgent\\\":\\\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36\\\"},\\\"window\\\":{\\\"innerHeight\\\":900,\\\"innerWidth\\\":1366,\\\"outerHeight\\\":900,\\\"outerWidth\\\":1366,\\\"pageXOffset\\\":0,\\\"pageYOffset\\\":0,\\\"location\\\":{\\\"href\\\":\\\"https://sauce-demo.myshopify.com/products/grey-jacket\\\",\\\"hash\\\":\\\"\\\",\\\"host\\\":\\\"sauce-demo.myshopify.com\\\",\\\"hostname\\\":\\\"sauce-demo.myshopify.com\\\",\\\"origin\\\":\\\"https://sauce-demo.myshopify.com\\\",\\\"pathname\\\":\\\"/products/grey-jacket\\\",\\\"port\\\":\\\"\\\",\\\"protocol\\\":\\\"https:\\\",\\\"search\\\":\\\"\\\"},\\\"origin\\\":\\\"https://sauce-demo.myshopify.com\\\",\\\"screen\\\":{\\\"height\\\":900,\\\"width\\\":1366},\\\"screenX\\\":0,\\\"screenY\\\":0,\\\"scrollX\\\":0,\\\"scrollY\\\":0}},\\\"seq\\\":1,\\\"clientId\\\":\\\"974df33f-eb86-4038-b5bf-e5367f3ba2df\\\"}\",\"session_token\":\"e29475b4-79de-4de2-9ada-40fd4163f4ff\"},\"metadata\":{\"event_created_at_ms\":1793275355663}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/products/grey-jacket\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-878a638e-7F31-4A15-84A1-717D96FACB5E\"},\"metadata\":{\"event_created_at_ms\":1793275355664}},{\"schema_id\":\"web_pixels_manager_buyer_event_sample/1.0\",\"payload\":{\"shop_id\":3991157,\"event_type\":\"standard\",\"event_name\":\"product_viewed\",\"surface\":\"storefront-renderer\",\"event_payload_json\":\"{\\\"id\\\":\\\"sh-878a63a1-3B79-4C6F-62B1-B5A3D80E92B4\\\",\\\"name\\\":\\\"product_viewed\\\",\\\"data\\\":{\\\"productVariant\\\":{\\\"price\\\":{\\\"amount\\\":55,\\\"currencyCode\\\":\\\"GBP\\\"},\\\"product\\\":{\\\"title\\\":\\\"Grey jacket\\\",\\\"vendor\\\":\\\"Sauce Demo\\\",\\\"id\\\":\\\"263739389\\\",\\\"untranslatedTitle\\\":\\\"Grey jacket\\\",\\\"url\\\":\\\"/products/grey-jacket\\\",\\\"type\\\":\\\"Jackets\\\"},\\\"id\\\":\\\"611945025\\\",\\\"image\\\":{\\\"src\\\":\\\"//sauce-demo.myshopify.com/cdn/shop/products/fleece.jpg?v=1394656989\\\"},\\\"sku\\\":\\\"\\\",\\\"title\\\":\\\"Grey jacket\\\",\\\"untranslatedTitle\\\":\\\"Grey jacket\\\"}},\\\"type\\\":\\\"standard\\\",\\\"timestamp\\\":\\\"2026-10-29T12:02:35.664Z\\\",\\\"context\\\":{\\\"document\\\":{\\\"location\\\":{\\\"href\\\":\\\"https://sauce-demo.myshopify.com/products/grey-jacket\\\",\\\"hash\\\":\\\"\\\",\\\"host\\\":\\\"sauce-demo.myshopify.com\\\",\\\"hostname\\\":\\\"sauce-demo.myshopify.com\\\",\\\"origin\\\":\\\"https://sauce-demo.myshopify.com\\\",\\\"pathname\\\":\\\"/products/grey-jacket\\\",\\\"port\\\":\\\"\\\",\\\"protocol\\\":\\\"https:\\\",\\\"search\\\":\\\"\\\"},\\\"referrer\\\":\\\"\\\",\\\"characterSet\\\":\\\"UTF-8\\\",\\\"title\\\":\\\"Grey jacket – Sauce Demo\\\"},\\\"navigator\\\":{\\\"language\\\":\\\"en-GB\\\",\\\"cookieEnabled\\\":true,\\\"languages\\\":[\\\"en-GB\\\"],\\\"userAgent\\\":\\\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36\\\"}… [truncated 1254 chars]"
+  },
+  {
+    "id": 47,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:35.757Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/grey-jacket",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_pixel_register/3.8\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"page_url\":\"https://sauce-demo.myshopify.com/products/grey-jacket\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"pixel_id\":\"shopify-custom-pixel\",\"pixel_app_id\":\"shopify-pixel\",\"pixel_source\":\"CUSTOM\",\"pixel_runtime_context\":\"LAX\",\"pixel_script_version\":\"0530\",\"pixel_event_schema_version\":\"v1\",\"status\":\"registered\",\"user_can_be_tracked\":\"true\",\"bundle_target\":\"modern\",\"duration\":89,\"start_time\":403,\"session_id\":\"sh-878a6387-E775-4650-8040-2560CDBCA5B7\"},\"metadata\":{\"event_created_at_ms\":1793275355754}}],\"metadata\":{\"event_sent_at_ms\":1793275355755}}"
+  }
+]

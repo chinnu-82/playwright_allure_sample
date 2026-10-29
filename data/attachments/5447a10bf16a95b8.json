@@ -1,0 +1,85 @@
+[
+  {
+    "id": 30,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:37.925Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/brown-shades",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "b11199d8-e90c-49ae-9bd5-91ddeaf87d19-1793275357",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-central1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HO%2Bp%2B6eqqfxuhsMsjgbq5kk8AxDbc9RlS7stD0nlcuo880cPV5RmEoGDkB8n6TdQf53OeCdCwwbAys5jFhicwi%2BiAIez0k%2BjeLdBBNtF1oIooL4Zc1ZV6xN%2Bv3jkLO2KCyrFyuLBk5TSEQ%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Thu, 29 Oct 2026 12:02:38 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a522084b1fa2072c-MSP",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 125.8,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 42,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:38.056Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/brown-shades",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/products/brown-shades\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1793275358018}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/products/brown-shades\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-878a6d5c-BCA0-481D-B01F-EAD34E438864\"},\"metadata\":{\"event_created_at_ms\":1793275358019}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/products/brown-shades\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"product_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-878a6d6e-6C34-4B03-F29C-AA7ACE6D4B59\"},\"metadata\":{\"event_created_at_ms\":1793275358020}}],\"metadata\":{\"event_sent_at_ms\":1793275358048}}"
+  },
+  {
+    "id": 46,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-29T12:02:38.140Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/products/brown-shades",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_pixel_register/3.8\",\"payload\":{\"version\":\"264bf420w2e1681cap8d55857fm7d879f9c\",\"page_url\":\"https://sauce-demo.myshopify.com/products/brown-shades\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"pixel_id\":\"shopify-app-pixel\",\"pixel_app_id\":\"shopify-pixel\",\"pixel_source\":\"APP\",\"pixel_runtime_context\":\"STRICT\",\"pixel_script_version\":\"0530\",\"pixel_configuration\":\"{}\",\"pixel_event_schema_version\":\"v1\",\"status\":\"registered\",\"user_can_be_tracked\":\"true\",\"bundle_target\":\"modern\",\"duration\":118,\"start_time\":555,\"session_id\":\"sh-878a6d55-AE47-4BAA-7683-17454297237C\"},\"metadata\":{\"event_created_at_ms\":1793275358139}}],\"metadata\":{\"event_sent_at_ms\":1793275358139}}"
+  }
+]

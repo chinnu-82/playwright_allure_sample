@@ -1,0 +1,9 @@
+2026-10-29T12:02:38.594Z [INFO ] (Product details › Unknown product URL shows the 404 page) ▶ START "Unknown product URL shows the 404 page" (attempt 1, worker 1)
+2026-10-29T12:02:38.598Z [INFO ] (Product details › Unknown product URL shows the 404 page) Opening product this-product-does-not-exist
+2026-10-29T12:02:38.970Z [WARN ] (Product details › Unknown product URL shows the 404 page:network) HTTP 404 GET https://sauce-demo.myshopify.com/products/this-product-does-not-exist
+2026-10-29T12:02:38.975Z [DEBUG] (Product details › Unknown product URL shows the 404 page:console) console.error: Failed to load resource: the server responded with a status of 404 ()
+2026-10-29T12:02:39.198Z [DEBUG] (Product details › Unknown product URL shows the 404 page:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-29T12:02:39.343Z [DEBUG] (Product details › Unknown product URL shows the 404 page:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-29T12:02:39.343Z [DEBUG] (Product details › Unknown product URL shows the 404 page:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-29T12:02:39.347Z [DEBUG] (Product details › Unknown product URL shows the 404 page:network) Request failed: POST https://monorail-edge.shopifysvc.com/v1/produce (net::ERR_ABORTED)
+2026-10-29T12:02:39.455Z [INFO ] (Product details › Unknown product URL shows the 404 page) ■ END status=passed duration=861ms
