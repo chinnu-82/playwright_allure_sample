@@ -1,0 +1,1 @@
+[WARN] (Checkout › Customer reaches checkout with the correct order summary:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=35481dde8ffcc7f10c11e6528962ab04&checkout_type=c1

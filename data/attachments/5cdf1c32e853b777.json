@@ -1,0 +1,85 @@
+[
+  {
+    "id": 29,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-30T11:56:51.425Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "cfcd900a-dc01-45d1-a590-e34c5d4a435f-1793361411",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KkHut8%2FIeGed0kqweQXd7CYV%2FMJGdu3GQLujAnfAMOgfJZeA2MV5zyJzpXIJhpPkqY%2BvLq4x1b3%2BsPP2nNqivRfT%2BgAx8l%2BwQw00YFLFTp6QecZqZlAWArZ6TonuH1GUmLGJQt0f8NiP2A%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Fri, 30 Oct 2026 11:56:51 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a52a3d356d34680e-SEA",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 156,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 39,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-30T11:56:51.581Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"610a19cewf693d529pf324840bm6169d9b4\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1793361411532}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"610a19cewf693d529pf324840bm6169d9b4\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-8cab7f84-C224-42AF-C618-470563F11918\"},\"metadata\":{\"event_created_at_ms\":1793361411534}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"610a19cewf693d529pf324840bm6169d9b4\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"search_submitted\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-8cab7fa2-F45D-4BD6-F131-52EA71E3CCF4\"},\"metadata\":{\"event_created_at_ms\":1793361411535}}],\"metadata\":{\"event_sent_at_ms\":1793361411577}}"
+  },
+  {
+    "id": 45,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-30T11:56:51.660Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_pixel_register/3.8\",\"payload\":{\"version\":\"610a19cewf693d529pf324840bm6169d9b4\",\"page_url\":\"https://sauce-demo.myshopify.com/search?q=zzqx-no-such-product&type=product\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"pixel_id\":\"shopify-custom-pixel\",\"pixel_app_id\":\"shopify-pixel\",\"pixel_source\":\"CUSTOM\",\"pixel_runtime_context\":\"LAX\",\"pixel_script_version\":\"0530\",\"pixel_event_schema_version\":\"v1\",\"status\":\"registered\",\"user_can_be_tracked\":\"true\",\"bundle_target\":\"modern\",\"duration\":120,\"start_time\":469,\"session_id\":\"sh-8cab7f78-81AE-4BD7-DD17-3438D1976703\"},\"metadata\":{\"event_created_at_ms\":1793361411656}}],\"metadata\":{\"event_sent_at_ms\":1793361411656}}"
+  }
+]

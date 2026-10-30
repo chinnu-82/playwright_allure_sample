@@ -1,0 +1,67 @@
+[
+  {
+    "id": 21,
+    "method": "GET",
+    "url": "https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-10-30T11:56:52.384Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 192
+  },
+  {
+    "id": 34,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-30T11:56:52.567Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "26aca4b5-f15e-4f3e-8c6d-3f574c4c9d95-1793361412",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qXzp3GF6DeP6idlbfzh7%2FJkH54HgNWzDKejz2VDSnNN8XTNkF%2FjF%2F7pGYBAkgJNQz5pQn5ltN60vMAjlL2HQ0flI9xaC0q%2Bqy3ySfMZfMxNNFObxOMlIvRmfN8cso9Ftt4vrqTItLLmziQ%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Fri, 30 Oct 2026 11:56:52 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a52a3d3c8c7f9173-SEA",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 96.5,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 35,
+    "method": "GET",
+    "url": "https://www.marinsoftware.com/",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-10-30T11:56:52.595Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 73
+  }
+]

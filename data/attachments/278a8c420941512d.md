@@ -1,0 +1,163 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cart/cart.spec.ts >> Shopping cart >> Cart total equals the sum of all line totals
+- Location: src/tests/cart/cart.spec.ts:49:7
+
+# Error details
+
+```
+Tearing down "evidence" exceeded the test timeout of 90000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e5]:
+        - search:
+          - button "Submit" [ref=f4e6] [cursor=pointer]
+          - textbox "Search" [ref=f4e7]
+      - navigation [ref=f4e9]:
+        - link "Search" [ref=f4e10] [cursor=pointer]:
+          - /url: /search
+        - link "About Us" [ref=f4e11] [cursor=pointer]:
+          - /url: /pages/about-us
+        - link "Log In" [ref=f4e12] [cursor=pointer]:
+          - /url: /account/login
+        - link "Sign up" [ref=f4e13] [cursor=pointer]:
+          - /url: /account/register
+      - generic [ref=f4e15]:
+        - link "My Cart (2)" [ref=f4e16] [cursor=pointer]:
+          - /url: "#"
+        - link "Check Out" [ref=f4e17] [cursor=pointer]:
+          - /url: /cart
+    - generic [ref=f4e20]:
+      - heading [level=1] [ref=f4e22]:
+        - link [ref=f4e23] [cursor=pointer]:
+          - /url: /
+          - img "Sauce Demo" [ref=f4e24]
+      - heading "Just a demo site showing off what Sauce can do." [level=3] [ref=f4e27]
+  - generic [ref=f4e28]:
+    - navigation [ref=f4e30]:
+      - list [ref=f4e31]:
+        - listitem [ref=f4e32]:
+          - link "Home" [ref=f4e33] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f4e34]:
+          - link "Catalog" [ref=f4e35] [cursor=pointer]:
+            - /url: /collections/all
+        - listitem [ref=f4e36]:
+          - link "Blog" [ref=f4e37] [cursor=pointer]:
+            - /url: /blogs/news
+        - listitem [ref=f4e38]:
+          - link "About Us" [ref=f4e39] [cursor=pointer]:
+            - /url: /pages/about-us
+        - listitem [ref=f4e40]:
+          - link "Wish list" [ref=f4e41] [cursor=pointer]:
+            - /url: "#sauce-show-wish-list"
+        - listitem [ref=f4e42]:
+          - link "Refer a friend" [ref=f4e43] [cursor=pointer]:
+            - /url: "#sauce-show-refer-friend"
+      - generic [ref=f4e44]:
+        - link [ref=f4e45] [cursor=pointer]:
+          - /url: http://www.facebook.com/shopify
+        - link [ref=f4e46] [cursor=pointer]:
+          - /url: http://www.twitter.com/sauce_io
+        - link [ref=f4e47] [cursor=pointer]:
+          - /url: http://www.instagram.com/shopify
+        - link [ref=f4e48] [cursor=pointer]:
+          - /url: http://www.pinterest.com/chrisjhoughton/awesome-facebook-integration/
+        - link [ref=f4e49] [cursor=pointer]:
+          - /url: /blogs/news.atom
+    - generic [ref=f4e51]:
+      - generic [ref=f4e52]:
+        - link "Home" [ref=f4e54] [cursor=pointer]:
+          - /url: /
+        - text: —
+        - link "Cart" [ref=f4e55] [cursor=pointer]:
+          - /url: /cart
+      - heading "My Cart" [level=1] [ref=f4e56]
+      - generic [ref=f4e58]:
+        - generic [ref=f4e59]:
+          - generic [ref=f4e60]:
+            - generic [ref=f4e61]: Description
+            - generic [ref=f4e62]: Price
+            - generic [ref=f4e63]: Qty
+            - generic [ref=f4e64]: Total
+          - generic [ref=f4e65]:
+            - generic [ref=f4e66]:
+              - img "Striped top" [ref=f4e67]
+              - generic [ref=f4e68]:
+                - heading [level=3] [ref=f4e69]:
+                  - link "Striped top" [ref=f4e70] [cursor=pointer]:
+                    - /url: /collections/all/products/striped-top
+                - heading "ASOS" [level=4] [ref=f4e71]
+                - paragraph [ref=f4e72]: This area is populated by the product description. If you ever run out of things to say about what you're...
+            - generic [ref=f4e73]: £50.00
+            - textbox [ref=f4e75]: "1"
+            - generic [ref=f4e76]: £50.00
+            - link "x" [ref=f4e78] [cursor=pointer]:
+              - /url: /cart/change?line=1&quantity=0
+          - generic [ref=f4e79]:
+            - generic [ref=f4e80]:
+              - img "Grey jacket - Grey jacket" [ref=f4e81]
+              - generic [ref=f4e82]:
+                - heading [level=3] [ref=f4e83]:
+                  - link "Grey jacket - Grey jacket" [ref=f4e84] [cursor=pointer]:
+                    - /url: /collections/all/products/grey-jacket
+                - heading "Sauce Demo" [level=4] [ref=f4e85]
+                - paragraph [ref=f4e86]: This area is populated by the product description. If you ever run out of things to say about what you're...
+            - generic [ref=f4e87]: £55.00
+            - textbox [ref=f4e89]: "1"
+            - generic [ref=f4e90]: £55.00
+            - link "x" [ref=f4e92] [cursor=pointer]:
+              - /url: /cart/change?line=2&quantity=0
+        - generic [ref=f4e93]:
+          - link "« Continue Shopping" [ref=f4e95] [cursor=pointer]:
+            - /url: /collections/all
+          - heading "Total £105.00" [level=2] [ref=f4e97]
+        - generic [ref=f4e98]:
+          - textbox "Add a note to your order..." [ref=f4e100]
+          - generic [ref=f4e101]:
+            - button "Update" [ref=f4e102] [cursor=pointer]
+            - button "Check Out" [ref=f4e103] [cursor=pointer]
+    - contentinfo [ref=f4e104]:
+      - generic [ref=f4e105]:
+        - navigation [ref=f4e107]:
+          - heading "Footer" [level=2] [ref=f4e108]
+          - link "Search" [ref=f4e109] [cursor=pointer]:
+            - /url: /search
+          - link "About Us" [ref=f4e110] [cursor=pointer]:
+            - /url: /pages/about-us
+        - generic [ref=f4e112]:
+          - heading "About Us" [level=2] [ref=f4e113]
+          - paragraph [ref=f4e115]:
+            - strong [ref=f4e116]:
+              - text: This is a demo site created for
+              - link "Sauce" [ref=f4e117] [cursor=pointer]:
+                - /url: http://sauceapp.io
+            - text: ", an awesome new way to make your Shopify site social. Sauce allows you to let customers to share what they purchase to their friends, and see what their friends have purchased or \"wanted\" on your store."
+        - generic [ref=f4e119]:
+          - img "We accept Amex" [ref=f4e120]
+          - img "We accept Visa" [ref=f4e121]
+          - img "We accept Mastercard" [ref=f4e122]
+      - generic [ref=f4e123]:
+        - generic [ref=f4e125]:
+          - text: Copyright © 2026 Sauce Demo.
+          - link "Shopping Cart by Shopify" [ref=f4e126] [cursor=pointer]:
+            - /url: https://www.shopify.co.uk/tour/shopping-cart?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+          - text: .
+        - navigation [ref=f4e128]:
+          - link "Search" [ref=f4e129] [cursor=pointer]:
+            - /url: /search
+          - link "About Us" [ref=f4e130] [cursor=pointer]:
+            - /url: /pages/about-us
+```

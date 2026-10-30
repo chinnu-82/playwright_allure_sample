@@ -1,0 +1,30 @@
+2026-10-30T11:56:03.744Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) ▶ START "Customer reaches checkout with the correct order summary" (attempt 1, worker 0)
+2026-10-30T11:56:03.845Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) GET /products/grey-jacket.js -> 200 in 96ms
+2026-10-30T11:56:04.352Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) POST /cart/add.js -> 200 in 504ms
+2026-10-30T11:56:04.469Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) GET /products/striped-top.js -> 200 in 114ms
+2026-10-30T11:56:04.939Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary:api) POST /cart/add.js -> 200 in 467ms
+2026-10-30T11:56:04.943Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-30T11:56:05.267Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-30T11:56:05.393Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:05.402Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:05.402Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:56:05.495Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) DATA cart.total
+    105
+2026-10-30T11:56:05.499Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:05.568Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:05.644Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:07.021Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-10-30T11:56:07.084Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:56:07.125Z [WARN ] (Checkout › Customer reaches checkout with the correct order summary:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=35481dde8ffcc7f10c11e6528962ab04&checkout_type=c1
+2026-10-30T11:56:07.126Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-10-30T11:56:07.160Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=35481dde8ffcc7f10c11e6528962ab04&checkout_type=c1 (net::ERR_ABORTED)
+2026-10-30T11:56:07.290Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:07.460Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:07.489Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) DATA checkout.subtotal
+    105
+2026-10-30T11:56:07.501Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:07.776Z [DEBUG] (Checkout › Customer reaches checkout with the correct order summary:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:07.813Z [INFO ] (Checkout › Customer reaches checkout with the correct order summary) ■ END status=passed duration=4069ms

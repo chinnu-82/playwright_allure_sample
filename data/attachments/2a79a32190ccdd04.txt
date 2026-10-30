@@ -1,0 +1,44 @@
+2026-10-30T11:56:47.762Z [INFO ] (Product search › Searching "sandals" returns the matching products) ▶ START "Searching "sandals" returns the matching products" (attempt 1, worker 0)
+2026-10-30T11:56:47.769Z [INFO ] (Product search › Searching "sandals" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-10-30T11:56:48.098Z [DEBUG] (Product search › Searching "sandals" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-10-30T11:56:48.208Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:56:48.208Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:48.220Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:48.253Z [INFO ] (Product search › Searching "sandals" returns the matching products) Searching for "sandals"
+2026-10-30T11:56:48.292Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.366Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.492Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.727Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:48.776Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:56:48.791Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:56:48.826Z [INFO ] (Product search › Searching "sandals" returns the matching products) DATA catalog.products
+    [
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/products/bronze-sandals?_pos=1&_sid=23c51a2e5&_ss=r",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/products/white-sandals?_pos=2&_sid=23c51a2e5&_ss=r",
+        "imageAlt": "White sandals",
+        "price": 25
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/products/brown-shades?_pos=3&_sid=23c51a2e5&_ss=r",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      }
+    ]
+2026-10-30T11:56:48.845Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.856Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.918Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:56:48.923Z [INFO ] (Product search › Searching "sandals" returns the matching products) ■ END status=passed duration=1161ms

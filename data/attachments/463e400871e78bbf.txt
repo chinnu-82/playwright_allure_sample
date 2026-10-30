@@ -1,0 +1,35 @@
+2026-10-30T11:55:46.751Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) ▶ START "Adding a product updates the header cart counter" (attempt 1, worker 0)
+2026-10-30T11:55:46.760Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) Opening product grey-jacket
+2026-10-30T11:55:47.162Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:55:47.390Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:55:47.407Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:55:47.536Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) Adding "Grey jacket" to the cart
+2026-10-30T11:55:47.551Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:47.664Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:47.694Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:49.302Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter) /cart/add.js answered HTTP 200
+2026-10-30T11:55:49.421Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:49.439Z [WARN ] (Shopping cart › Adding a product updates the header cart counter:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-10-30T11:55:49.473Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) Navigating to https://sauce-demo.myshopify.com/cart
+2026-10-30T11:55:49.512Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:49.933Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:55:50.002Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-10-30T11:55:50.012Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-10-30T11:55:50.050Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-10-30T11:55:50.052Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:50.208Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:50.229Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:50.239Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) DATA cart.lines
+    [
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 1,
+        "lineTotal": 55
+      }
+    ]
+2026-10-30T11:55:50.280Z [DEBUG] (Shopping cart › Adding a product updates the header cart counter:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-10-30T11:55:50.476Z [INFO ] (Shopping cart › Adding a product updates the header cart counter) ■ END status=passed duration=3725ms

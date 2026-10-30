@@ -1,0 +1,56 @@
+[
+  {
+    "id": 25,
+    "method": "GET",
+    "url": "https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-10-30T11:56:32.737Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 115
+  },
+  {
+    "id": 36,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-10-30T11:56:32.829Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/collections/all",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "26cacb1f-83f8-4601-baa6-a765f2202b65-1793361392",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2NwabzqT41wuhAzUxb2RWhaAGUm%2B6B7Qdqb%2Fte4qiyDq5QS7u5RudN4Cycp2RcBReR4RcQQDRLVGH2e61jnGL6VUgP8P%2FrMixLaQW7ne5F5ebx7Xb9Xe%2BZNW5fZExcDWxtXE8IDyXrNYQQ%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Fri, 30 Oct 2026 11:56:32 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a52a3cc1389ec70a-SEA",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 159.3,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  }
+]
