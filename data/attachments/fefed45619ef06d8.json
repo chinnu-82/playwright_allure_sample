@@ -1,0 +1,27 @@
+{
+  "total": 43,
+  "firstParty": 34,
+  "apiCalls": 3,
+  "failed": 3,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 75,
+  "p95Ms": 183,
+  "slowestUrl": "190ms https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/cc-amex.png?v=85206210438157468371394656065",
+  "byResourceType": {
+    "document": 2,
+    "other": 4,
+    "stylesheet": 1,
+    "script": 19,
+    "image": 10,
+    "ping": 3,
+    "fetch": 4
+  },
+  "byStatus": {
+    "200": 35,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 4
+  }
+}
