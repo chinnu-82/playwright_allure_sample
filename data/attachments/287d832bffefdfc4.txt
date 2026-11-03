@@ -1,0 +1,39 @@
+2026-11-03T13:21:58.883Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ▶ START "Shipping details are accepted for UK resident" (attempt 1, worker 1)
+2026-11-03T13:21:59.031Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) GET /products/grey-jacket.js -> 200 in 141ms
+2026-11-03T13:21:59.565Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) POST /cart/add.js -> 200 in 515ms
+2026-11-03T13:21:59.731Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) GET /products/striped-top.js -> 200 in 157ms
+2026-11-03T13:22:00.190Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) POST /cart/add.js -> 200 in 451ms
+2026-11-03T13:22:00.195Z [INFO ] (Checkout › Shipping details are accepted for UK resident) Navigating to https://sauce-demo.myshopify.com/cart
+2026-11-03T13:22:00.603Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-03T13:22:00.607Z [DEBUG] (Checkout › Shipping details are accepted for UK resident) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-11-03T13:22:00.768Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-03T13:22:00.768Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-03T13:22:01.002Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:01.016Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:01.111Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:01.112Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:02.903Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://error-analytics-sessions-production.shopifysvc.com/observeonly (net::ERR_ABORTED)
+2026-11-03T13:22:03.135Z [WARN ] (Checkout › Shipping details are accepted for UK resident:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=cb30c55ee4f109fab53e99d91069a875&checkout_type=c1
+2026-11-03T13:22:03.143Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:console) console.error: Failed to load resource: the server responded with a status of 401 ()
+2026-11-03T13:22:03.210Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: GET https://sauce-demo.myshopify.com/private_access_tokens?id=cb30c55ee4f109fab53e99d91069a875&checkout_type=c1 (net::ERR_ABORTED)
+2026-11-03T13:22:03.345Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-03T13:22:03.425Z [INFO ] (Checkout › Shipping details are accepted for UK resident) DATA shipping.UK resident
+    {
+      "label": "UK resident",
+      "email": "alice.tester@example.com",
+      "firstName": "Alice",
+      "lastName": "Tester",
+      "address": "221B Baker Street",
+      "city": "London",
+      "postcode": "NW1 6XE"
+    }
+2026-11-03T13:22:03.463Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:03.739Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:03.898Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:04.082Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:04.087Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:04.199Z [DEBUG] (Checkout › Shipping details are accepted for UK resident:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:04.658Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ■ END status=passed duration=5775ms

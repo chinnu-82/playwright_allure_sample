@@ -1,0 +1,12 @@
+2026-11-03T13:22:21.948Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) ▶ START "Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images" (attempt 1, worker 1)
+2026-11-03T13:22:21.958Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) Navigating to https://sauce-demo.myshopify.com/cart
+2026-11-03T13:22:22.231Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-03T13:22:22.344Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-03T13:22:22.359Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-11-03T13:22:22.519Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-03T13:22:22.677Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:22.723Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-03T13:22:22.819Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) ■ END status=passed duration=871ms
