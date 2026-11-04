@@ -1,9 +1,0 @@
-2026-11-03T13:22:14.118Z [INFO ] (Product details › Variant selectors expose every size and colour) ▶ START "Variant selectors expose every size and colour" (attempt 1, worker 0)
-2026-11-03T13:22:14.124Z [INFO ] (Product details › Variant selectors expose every size and colour) Opening product noir-jacket
-2026-11-03T13:22:14.459Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-11-03T13:22:14.669Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-11-03T13:22:14.712Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-11-03T13:22:14.852Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-03T13:22:14.958Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-03T13:22:15.020Z [DEBUG] (Product details › Variant selectors expose every size and colour:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-03T13:22:15.086Z [INFO ] (Product details › Variant selectors expose every size and colour) ■ END status=passed duration=968ms

@@ -1,0 +1,30 @@
+{
+  "total": 369,
+  "firstParty": 327,
+  "apiCalls": 11,
+  "failed": 13,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 408,
+  "p95Ms": 976,
+  "slowestUrl": "1175ms https://sauce-demo.myshopify.com/checkouts/cn/hWNIl9Xcb9hHMXgLGCCMl9pY/en-us?_r=AQABT1bIRdBb3aATjP32D9GzgLbBwN8QPV8o_dlxWEfKC0Syhy_Z",
+  "byResourceType": {
+    "document": 11,
+    "other": 15,
+    "stylesheet": 67,
+    "script": 241,
+    "image": 12,
+    "ping": 5,
+    "fetch": 18
+  },
+  "byStatus": {
+    "200": 357,
+    "202": 1,
+    "204": 2,
+    "301": 1,
+    "302": 2,
+    "401": 1,
+    "failed": 2,
+    "pending": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "total": 100,
+  "firstParty": 75,
+  "apiCalls": 9,
+  "failed": 13,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 62,
+  "p95Ms": 221,
+  "slowestUrl": "299ms https://sauce-demo.myshopify.com/search?type=product&q=jacket",
+  "byResourceType": {
+    "document": 4,
+    "other": 12,
+    "stylesheet": 2,
+    "script": 43,
+    "image": 20,
+    "ping": 6,
+    "fetch": 13
+  },
+  "byStatus": {
+    "200": 88,
+    "204": 2,
+    "301": 2,
+    "302": 1,
+    "failed": 4,
+    "pending": 3
+  }
+}

@@ -1,7 +1,0 @@
-2026-11-03T13:21:28.144Z [INFO ] (Account access › Anonymous visitors are redirected from /account to the login page) ▶ START "Anonymous visitors are redirected from /account to the login page" (attempt 1, worker 0)
-2026-11-03T13:21:29.146Z [DEBUG] (Account access › Anonymous visitors are redirected from /account to the login page:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-11-03T13:21:29.364Z [DEBUG] (Account access › Anonymous visitors are redirected from /account to the login page:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-11-03T13:21:29.368Z [DEBUG] (Account access › Anonymous visitors are redirected from /account to the login page:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-11-03T13:21:29.531Z [DEBUG] (Account access › Anonymous visitors are redirected from /account to the login page:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-03T13:21:29.627Z [DEBUG] (Account access › Anonymous visitors are redirected from /account to the login page:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-03T13:21:29.630Z [INFO ] (Account access › Anonymous visitors are redirected from /account to the login page) ■ END status=passed duration=1486ms

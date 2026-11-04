@@ -1,0 +1,30 @@
+{
+  "total": 383,
+  "firstParty": 307,
+  "apiCalls": 25,
+  "failed": 21,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 44,
+  "p95Ms": 186,
+  "slowestUrl": "539ms https://sauce-demo.myshopify.com/cdn/shopifycloud/storefront/assets/storefront/storefronts.moderate.specrules-eb468f32.json",
+  "byResourceType": {
+    "document": 6,
+    "other": 199,
+    "stylesheet": 3,
+    "script": 75,
+    "image": 53,
+    "ping": 15,
+    "fetch": 23,
+    "xhr": 9
+  },
+  "byStatus": {
+    "200": 344,
+    "204": 3,
+    "301": 3,
+    "302": 21,
+    "307": 1,
+    "failed": 6,
+    "pending": 5
+  }
+}

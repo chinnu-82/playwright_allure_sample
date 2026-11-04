@@ -1,0 +1,20 @@
+2026-11-04T13:33:16.952Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ▶ START "Header "Sign up" link opens the registration form" (attempt 1, worker 1)
+2026-11-04T13:33:16.992Z [INFO ] (Account access › Header "Sign up" link opens the registration form) Navigating to https://sauce-demo.myshopify.com/
+2026-11-04T13:33:17.387Z [DEBUG] (Account access › Header "Sign up" link opens the registration form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-11-04T13:33:17.518Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:33:17.524Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:33:17.524Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-04T13:33:17.658Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:17.875Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:17.887Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:18.477Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:33:18.638Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:33:18.638Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-04T13:33:18.694Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:18.789Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:18.911Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:33:18.950Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=7efd0d74-c78a-4fe4-a399-d1e26cf89032&avoid_sdk_session=false&client_id=&compact_layout=true&flow=classic_customer_accounts&flow_version=sign_up&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Dba2c2fe8-9968-427d-95fe-c76d2261032a&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-11-04T13:33:18.976Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ■ END status=passed duration=2024ms

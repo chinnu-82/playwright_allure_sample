@@ -1,0 +1,19 @@
+2026-11-04T13:34:16.355Z [INFO ] (Product catalog › Customer can open a product from the catalog) ▶ START "Customer can open a product from the catalog" (attempt 1, worker 1)
+2026-11-04T13:34:16.362Z [INFO ] (Product catalog › Customer can open a product from the catalog) Navigating to https://sauce-demo.myshopify.com/collections/all
+2026-11-04T13:34:16.825Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:34:17.142Z [DEBUG] (Product catalog › Customer can open a product from the catalog) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/collections/all"
+    }
+2026-11-04T13:34:17.171Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:34:17.201Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-04T13:34:17.387Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:17.623Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:17.682Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:18.241Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:34:18.324Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-04T13:34:18.326Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-04T13:34:18.381Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:18.473Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:18.539Z [DEBUG] (Product catalog › Customer can open a product from the catalog:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-04T13:34:18.656Z [INFO ] (Product catalog › Customer can open a product from the catalog) ■ END status=passed duration=2301ms
