@@ -1,0 +1,14 @@
+2026-11-05T13:47:35.091Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ▶ START "UI cart and /cart.js API stay in sync" (attempt 1, worker 0)
+2026-11-05T13:47:35.098Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Opening product striped-top
+2026-11-05T13:47:35.426Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-05T13:47:35.685Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-05T13:47:35.718Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-05T13:47:35.866Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-05T13:47:35.958Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Adding "Striped top" to the cart
+2026-11-05T13:47:36.094Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-05T13:47:37.140Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-05T13:47:37.570Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync) /cart/add.js answered HTTP 200
+2026-11-05T13:47:37.664Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-05T13:47:37.712Z [WARN ] (Shopping cart › UI cart and /cart.js API stay in sync:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-05T13:47:37.729Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync:api) GET /cart.js -> 200 in 150ms
+2026-11-05T13:47:37.733Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ■ END status=passed duration=2642ms
