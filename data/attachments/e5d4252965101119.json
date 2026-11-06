@@ -1,0 +1,32 @@
+{
+  "total": 211,
+  "firstParty": 46,
+  "apiCalls": 7,
+  "failed": 11,
+  "httpErrors": 0,
+  "slow": 1,
+  "averageMs": 138,
+  "p95Ms": 227,
+  "slowestUrl": "1636ms https://6719c0f4c7e3.w.hcaptcha.com/logo.png",
+  "byResourceType": {
+    "document": 7,
+    "other": 13,
+    "stylesheet": 4,
+    "script": 135,
+    "image": 21,
+    "ping": 4,
+    "fetch": 22,
+    "font": 3,
+    "xhr": 2
+  },
+  "byStatus": {
+    "200": 189,
+    "202": 1,
+    "204": 1,
+    "301": 1,
+    "302": 12,
+    "404": 1,
+    "failed": 3,
+    "pending": 3
+  }
+}

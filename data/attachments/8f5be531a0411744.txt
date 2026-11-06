@@ -1,0 +1,3 @@
+2026-11-06T13:31:44.590Z [INFO ] (Product details › Product page shows correct title and price for Striped top) ▶ START "Product page shows correct title and price for Striped top" (attempt 1, worker 10)
+2026-11-06T13:31:44.686Z [INFO ] (Product details › Product page shows correct title and price for Striped top:api) GET /products/striped-top.js -> 429 in 73ms
+2026-11-06T13:31:44.777Z [INFO ] (Product details › Product page shows correct title and price for Striped top) ■ END status=failed duration=187ms

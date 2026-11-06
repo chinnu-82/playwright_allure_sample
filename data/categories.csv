@@ -1,4 +1,4 @@
 "BROKEN","CATEGORY","FAILED","PASSED","SKIPPED","UNKNOWN"
-"0","Network / API failures","8","0","0","0"
+"0","Network / API failures","7","0","0","0"
 "0","Product defects (assertion failures)","1","0","0","0"
 "0","Ignored / skipped tests","0","0","6","0"
