@@ -1,0 +1,12 @@
+2026-11-09T14:48:21.281Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ▶ START "Login page renders every element a customer needs to sign in" (attempt 1, worker 0)
+2026-11-09T14:48:21.292Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-09T14:48:21.769Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-09T14:48:21.824Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-09T14:48:21.877Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-09T14:48:21.976Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-09T14:48:22.005Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-09T14:48:22.110Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-09T14:48:22.115Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ■ END status=passed duration=834ms

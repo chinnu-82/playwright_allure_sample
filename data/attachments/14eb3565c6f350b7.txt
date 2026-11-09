@@ -1,0 +1,3 @@
+2026-11-09T14:48:46.917Z [INFO ] (Checkout › An invalid discount code is rejected) ▶ START "An invalid discount code is rejected" (attempt 2, worker 2)
+2026-11-09T14:48:47.058Z [INFO ] (Checkout › An invalid discount code is rejected:api) GET /products/grey-jacket.js -> 429 in 106ms
+2026-11-09T14:48:47.208Z [INFO ] (Checkout › An invalid discount code is rejected) ■ END status=failed duration=291ms

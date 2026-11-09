@@ -1,1 +1,1 @@
-{"reportName":"Sauce Demo – E2E Quality Report","testRuns":[],"statistic":{"failed":8,"broken":0,"skipped":6,"passed":43,"unknown":0,"total":57},"time":{"start":1793971850330,"stop":1793971938561,"duration":88231,"minDuration":0,"maxDuration":7595,"sumDuration":137750}}
+{"reportName":"Sauce Demo – E2E Quality Report","testRuns":[],"statistic":{"failed":10,"broken":0,"skipped":6,"passed":41,"unknown":0,"total":57},"time":{"start":1794235698970,"stop":1794235765247,"duration":66277,"minDuration":0,"maxDuration":5975,"sumDuration":97264}}
