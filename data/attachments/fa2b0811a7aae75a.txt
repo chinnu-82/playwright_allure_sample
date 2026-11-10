@@ -1,0 +1,25 @@
+2026-11-10T14:02:16.552Z [INFO ] (Allure feature showcase › Browser console capture and analysis) ▶ START "Browser console capture and analysis" (attempt 1, worker 16)
+2026-11-10T14:02:16.980Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-10T14:02:17.279Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-10T14:02:17.298Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-10T14:02:17.487Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-10T14:02:17.633Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:console) console.error: [demo] recommendation widget failed to load
+2026-11-10T14:02:17.710Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-10T14:02:17.788Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-10T14:02:18.077Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-10T14:02:18.206Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-10T14:02:18.206Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-10T14:02:18.209Z [DEBUG] (Allure feature showcase › Browser console capture and analysis:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-10T14:02:18.227Z [INFO ] (Allure feature showcase › Browser console capture and analysis) DATA console.summary
+    {
+      "total": 3,
+      "errors": 1,
+      "warnings": 1,
+      "pageErrors": 0,
+      "byType": {
+        "log": 1,
+        "warning": 1,
+        "error": 1
+      }
+    }
+2026-11-10T14:02:18.242Z [INFO ] (Allure feature showcase › Browser console capture and analysis) ■ END status=passed duration=1690ms
