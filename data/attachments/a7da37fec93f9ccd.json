@@ -1,0 +1,42 @@
+[
+  {
+    "id": 30,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-11T13:19:34.025Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.7.0\"}"
+  },
+  {
+    "id": 36,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-11T13:19:34.120Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"997f36b7wa91af9b9p0b3d274amb4b328d1\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1794403174097}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"997f36b7wa91af9b9p0b3d274amb4b328d1\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-cac38868-E02A-4F81-CE5C-3054E2878ECC\"},\"metadata\":{\"event_created_at_ms\":1794403174098}}],\"metadata\":{\"event_sent_at_ms\":1794403174115}}"
+  }
+]

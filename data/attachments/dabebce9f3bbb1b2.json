@@ -1,0 +1,28 @@
+{
+  "total": 125,
+  "firstParty": 91,
+  "apiCalls": 8,
+  "failed": 12,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 55,
+  "p95Ms": 191,
+  "slowestUrl": "355ms https://sauce-demo.myshopify.com/collections/all/products/grey-jacket",
+  "byResourceType": {
+    "document": 5,
+    "other": 24,
+    "stylesheet": 2,
+    "script": 50,
+    "image": 27,
+    "ping": 7,
+    "fetch": 10
+  },
+  "byStatus": {
+    "200": 106,
+    "204": 2,
+    "301": 4,
+    "302": 3,
+    "failed": 4,
+    "pending": 6
+  }
+}

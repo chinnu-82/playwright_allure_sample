@@ -1,0 +1,11 @@
+2026-11-11T13:18:52.092Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") ▶ START "Browser validation flags malformed email "@missing-local.org"" (attempt 1, worker 1)
+2026-11-11T13:18:52.098Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-11T13:18:52.615Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-11T13:18:52.635Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-11T13:18:52.758Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-11T13:18:52.765Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-11T13:18:52.851Z [DEBUG] (Customer login › Browser validation flags malformed email "@missing-local.org":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-11T13:18:52.924Z [INFO ] (Customer login › Browser validation flags malformed email "@missing-local.org") ■ END status=passed duration=832ms

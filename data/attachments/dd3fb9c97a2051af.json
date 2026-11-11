@@ -1,0 +1,27 @@
+{
+  "total": 40,
+  "firstParty": 31,
+  "apiCalls": 3,
+  "failed": 4,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 64,
+  "p95Ms": 144,
+  "slowestUrl": "276ms https://sauce-demo.myshopify.com/products/white-sandals",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 18,
+    "image": 9,
+    "ping": 3,
+    "fetch": 4
+  },
+  "byStatus": {
+    "200": 34,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 2
+  }
+}

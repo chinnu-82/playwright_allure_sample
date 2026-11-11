@@ -1,0 +1,3 @@
+[WARN] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+[WARN] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+[WARN] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
