@@ -1,3 +1,0 @@
-2026-11-11T13:19:15.294Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ▶ START "Shipping details are accepted for UK resident" (attempt 1, worker 1)
-2026-11-11T13:19:15.368Z [INFO ] (Checkout › Shipping details are accepted for UK resident:api) GET /products/grey-jacket.js -> 429 in 66ms
-2026-11-11T13:19:15.466Z [INFO ] (Checkout › Shipping details are accepted for UK resident) ■ END status=failed duration=172ms
