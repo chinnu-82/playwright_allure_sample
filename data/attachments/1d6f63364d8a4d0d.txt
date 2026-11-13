@@ -1,0 +1,14 @@
+2026-11-13T13:42:38.273Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ▶ START "UI cart and /cart.js API stay in sync" (attempt 1, worker 0)
+2026-11-13T13:42:38.282Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Opening product striped-top
+2026-11-13T13:42:38.795Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:38.962Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:38.962Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:42:39.087Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:39.114Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) Adding "Striped top" to the cart
+2026-11-13T13:42:39.166Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:39.265Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:40.843Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync) /cart/add.js answered HTTP 200
+2026-11-13T13:42:40.942Z [WARN ] (Shopping cart › UI cart and /cart.js API stay in sync:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-13T13:42:40.964Z [DEBUG] (Shopping cart › UI cart and /cart.js API stay in sync:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:41.009Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync:api) GET /cart.js -> 200 in 160ms
+2026-11-13T13:42:41.012Z [INFO ] (Shopping cart › UI cart and /cart.js API stay in sync) ■ END status=passed duration=2739ms

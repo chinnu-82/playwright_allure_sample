@@ -1,0 +1,1 @@
+[WARN] (Checkout › Shipping details are accepted for UK resident:network) HTTP 401 GET https://sauce-demo.myshopify.com/private_access_tokens?id=cf7c328ffc5537767ebc08ee1fc54a05&checkout_type=c1

@@ -1,0 +1,40 @@
+2026-11-13T13:43:35.824Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) ▶ START "Full shopping journey with checkpoints, video and trace" (attempt 1, worker 5)
+2026-11-13T13:43:35.837Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigating to https://sauce-demo.myshopify.com/
+2026-11-13T13:43:36.221Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:36.232Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-11-13T13:43:36.348Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:36.348Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:43:36.427Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:36.557Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:36.612Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:36.922Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:36.979Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:36.979Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:43:36.986Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:37.089Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:37.523Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:37.617Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:43:37.617Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:37.628Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:37.677Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:37.786Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:37.793Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Adding "Grey jacket" to the cart
+2026-11-13T13:43:39.521Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) /cart/add.js answered HTTP 200
+2026-11-13T13:43:39.522Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigating to https://sauce-demo.myshopify.com/cart
+2026-11-13T13:43:39.623Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:39.664Z [WARN ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-13T13:43:39.674Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:39.810Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:39.823Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-11-13T13:43:39.862Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:43:39.863Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:43:39.930Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:39.933Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:40.027Z [DEBUG] (Allure feature showcase › Full shopping journey with checkpoints, video and trace:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:43:40.055Z [INFO ] (Allure feature showcase › Full shopping journey with checkpoints, video and trace) ■ END status=passed duration=4231ms

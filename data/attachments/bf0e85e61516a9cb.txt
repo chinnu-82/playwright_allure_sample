@@ -1,0 +1,57 @@
+2026-11-13T13:42:30.833Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) ▶ START "Cart total equals the sum of all line totals" (attempt 1, worker 1)
+2026-11-13T13:42:30.856Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Opening product grey-jacket
+2026-11-13T13:42:31.496Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:31.768Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:31.771Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:42:31.901Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:31.946Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Adding "Grey jacket" to the cart
+2026-11-13T13:42:32.013Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:32.105Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:33.751Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) /cart/add.js answered HTTP 200
+2026-11-13T13:42:33.752Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Opening product striped-top
+2026-11-13T13:42:33.844Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:33.862Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-13T13:42:33.889Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:34.142Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:34.207Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:42:34.226Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:34.270Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:34.317Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Adding "Striped top" to the cart
+2026-11-13T13:42:34.346Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:34.436Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:34.887Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://secure.adnxs.com/getuid?https%3A%2F%2Fpixel.tapad.com%2Fidsync%2Fex%2Freceive%3Fpartner_id%3DAPPNEXUS%26partner_device_id%3D%24UID%26pt%3D01c0087e-92c1-4705-a3c6-950ee0546c91%252C%252C (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:35.688Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-13T13:42:36.006Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) /cart/add.js answered HTTP 200
+2026-11-13T13:42:36.007Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) Navigating to https://sauce-demo.myshopify.com/cart
+2026-11-13T13:42:36.130Z [WARN ] (Shopping cart › Cart total equals the sum of all line totals:console) Uncaught page error: TypeError: Cannot read properties of null (reading 'description')
+2026-11-13T13:42:36.163Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:36.211Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:36.718Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:36.729Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-13T13:42:36.738Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-11-13T13:42:36.842Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-13T13:42:37.005Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:37.008Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:37.020Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) DATA cart.lines
+    [
+      {
+        "name": "Striped top",
+        "unitPrice": 50,
+        "quantity": 1,
+        "lineTotal": 50
+      },
+      {
+        "name": "Grey jacket - Grey jacket",
+        "unitPrice": 55,
+        "quantity": 1,
+        "lineTotal": 55
+      }
+    ]
+2026-11-13T13:42:37.027Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) DATA cart.total
+    105
+2026-11-13T13:42:37.144Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:37.165Z [DEBUG] (Shopping cart › Cart total equals the sum of all line totals:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-13T13:42:37.215Z [INFO ] (Shopping cart › Cart total equals the sum of all line totals) ■ END status=passed duration=6382ms

@@ -1,3 +1,0 @@
-2026-11-12T14:24:18.104Z [INFO ] (Checkout › Pay now with an empty form lists every required field) ▶ START "Pay now with an empty form lists every required field" (attempt 3, worker 32)
-2026-11-12T14:24:18.187Z [INFO ] (Checkout › Pay now with an empty form lists every required field:api) GET /products/grey-jacket.js -> 429 in 69ms
-2026-11-12T14:24:18.243Z [INFO ] (Checkout › Pay now with an empty form lists every required field) ■ END status=failed duration=139ms

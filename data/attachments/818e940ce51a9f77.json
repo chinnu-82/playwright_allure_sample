@@ -1,0 +1,12 @@
+{
+  "title": {
+    "ui": "Striped top",
+    "api": "Striped top",
+    "expected": "Striped top"
+  },
+  "price": {
+    "ui": 50,
+    "api": 50,
+    "expected": 50
+  }
+}
