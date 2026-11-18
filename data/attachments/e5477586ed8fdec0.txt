@@ -1,0 +1,16 @@
+2026-11-18T14:52:58.582Z [INFO ] (Customer login › Browser validation flags malformed email "plainaddress") ▶ START "Browser validation flags malformed email "plainaddress"" (attempt 1, worker 1)
+2026-11-18T14:52:58.600Z [INFO ] (Customer login › Browser validation flags malformed email "plainaddress") Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-18T14:52:59.094Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-18T14:52:59.442Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress") Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-18T14:52:59.464Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-18T14:52:59.493Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: POST https://monorail-edge.shopifysvc.com/v1/produce (net::ERR_ABORTED)
+2026-11-18T14:52:59.493Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-18T14:52:59.536Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:52:59.608Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: GET https://sauce-demo.myshopify.com/services/login_with_shop/authorize?analytics_context=loginWithShopClassicCustomerAccounts&analytics_trace_id=9e0ceb9d-acc9-42cd-ac88-f3e7a36e7e50&avoid_sdk_session=false&client_id=&compact_layout=true&consent_challenge=true&flow=classic_customer_accounts&flow_version=sign_in&locale=en&preact=true&prompt=login&redirect_uri=https%3A%2F%2Fsauce-demo.myshopify.com&require_verification=false&response_mode=web_message&response_type=code&return_uri=https%3A%2F%2Fsauce-demo.myshopify.com%2Faccount%2Fredirect%3Fanalytics_trace_id%3Dd7557258-5e09-47b4-af27-f6e1ded53044&scope=openid+email+profile&sign_up_enabled=false&supports_context_code_v1=true&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&ux_mode=windoid&ux_role=prompt (net::ERR_ABORTED)
+2026-11-18T14:52:59.790Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:52:59.895Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":console) console.error: Provider's accounts list is empty.
+2026-11-18T14:52:59.895Z [DEBUG] (Customer login › Browser validation flags malformed email "plainaddress":network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:53:00.169Z [INFO ] (Customer login › Browser validation flags malformed email "plainaddress") ■ END status=passed duration=1587ms

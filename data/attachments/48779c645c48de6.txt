@@ -1,3 +1,0 @@
-2026-11-17T15:19:07.582Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals) ▶ START "Product page shows correct title and price for Bronze sandals" (attempt 1, worker 17)
-2026-11-17T15:19:07.726Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals:api) GET /products/bronze-sandals.js -> 429 in 117ms
-2026-11-17T15:19:07.798Z [INFO ] (Product details › Product page shows correct title and price for Bronze sandals) ■ END status=failed duration=216ms

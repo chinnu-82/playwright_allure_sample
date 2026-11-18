@@ -1,0 +1,23 @@
+2026-11-18T14:52:54.039Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ▶ START "Invalid credentials do not authenticate the user (sql-injection attempt)" (attempt 1, worker 1)
+2026-11-18T14:52:54.066Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-18T14:52:54.417Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-18T14:52:54.635Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-18T14:52:54.733Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-18T14:52:54.751Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-18T14:52:54.929Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://shop.app/accounts/pre_auth?client_id=991c38b9-5a81-463d-a935-532717899f45&analytics_trace_id=2fff0def-864d-49ae-a0a0-796cdbd96a6c&flow=classic_customer_accounts&flow_version=sign_in&target_origin=https%3A%2F%2Fsauce-demo.myshopify.com&storefront_domain=https%3A%2F%2Fsauce-demo.myshopify.com&scope=openid+email+profile&locale=en (net::ERR_ABORTED)
+2026-11-18T14:52:54.944Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:52:54.975Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.email
+    admin@example.com' OR '1'='1
+2026-11-18T14:52:54.976Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.password
+    ***********
+2026-11-18T14:52:55.045Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:52:55.146Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):console) console.error: Provider's accounts list is empty.
+2026-11-18T14:52:55.248Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-18T14:52:57.147Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://23a32f7b47c3.w.hcaptcha.com/logo.png (net::ERR_ABORTED)
+2026-11-18T14:52:57.234Z [WARN ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) HTTP 404 GET https://shop.app/pay/authentication/login/check?email=admin%40example.com%27%20OR%20%271%27%3D%271&analytics_trace_id=2fff0def-864d-49ae-a0a0-796cdbd96a6c
+2026-11-18T14:52:57.234Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):console) console.error: Failed to load resource: the server responded with a status of 404 ()
+2026-11-18T14:52:57.234Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://shop.app/pay/authentication/login/check?email=admin%40example.com%27%20OR%20%271%27%3D%271&analytics_trace_id=2fff0def-864d-49ae-a0a0-796cdbd96a6c (net::ERR_ABORTED)
+2026-11-18T14:52:57.751Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ■ END status=passed duration=3712ms
