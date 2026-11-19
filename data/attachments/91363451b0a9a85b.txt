@@ -1,9 +1,0 @@
-2026-11-18T14:53:52.252Z [INFO ] (Product details › Sold-out product "Brown Shades" cannot be added to the cart) ▶ START "Sold-out product "Brown Shades" cannot be added to the cart" (attempt 1, worker 13)
-2026-11-18T14:53:52.259Z [INFO ] (Product details › Sold-out product "Brown Shades" cannot be added to the cart) Opening product brown-shades
-2026-11-18T14:53:52.579Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
-2026-11-18T14:53:52.813Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
-2026-11-18T14:53:52.816Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
-2026-11-18T14:53:52.932Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-18T14:53:52.991Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-18T14:53:53.075Z [DEBUG] (Product details › Sold-out product "Brown Shades" cannot be added to the cart:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
-2026-11-18T14:53:53.112Z [INFO ] (Product details › Sold-out product "Brown Shades" cannot be added to the cart) ■ END status=passed duration=860ms

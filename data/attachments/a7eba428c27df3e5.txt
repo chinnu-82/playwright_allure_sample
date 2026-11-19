@@ -1,0 +1,14 @@
+2026-11-19T14:58:58.421Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ▶ START ""Forgot your password?" swaps the login form for the recovery form" (attempt 1, worker 0)
+2026-11-19T14:58:58.425Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-19T14:58:58.942Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-19T14:58:59.154Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-19T14:58:59.156Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-19T14:58:59.307Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-19T14:58:59.571Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-19T14:58:59.701Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-19T14:58:59.769Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-19T14:59:00.170Z [DEBUG] (Customer login › "Forgot your password?" swaps the login form for the recovery form:console) console.error: Provider's accounts list is empty.
+2026-11-19T14:59:00.238Z [INFO ] (Customer login › "Forgot your password?" swaps the login form for the recovery form) ■ END status=passed duration=1817ms
