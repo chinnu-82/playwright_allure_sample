@@ -1,0 +1,14 @@
+2026-11-20T14:40:53.285Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ▶ START "Login page renders every element a customer needs to sign in" (attempt 1, worker 0)
+2026-11-20T14:40:53.296Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-20T14:40:54.263Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-20T14:40:54.263Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-20T14:40:54.407Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-20T14:40:54.408Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-20T14:40:54.598Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-20T14:40:54.698Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-20T14:40:54.817Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-20T14:40:54.955Z [DEBUG] (Customer login › Login page renders every element a customer needs to sign in:console) console.error: Provider's accounts list is empty.
+2026-11-20T14:40:55.222Z [INFO ] (Customer login › Login page renders every element a customer needs to sign in) ■ END status=passed duration=1937ms
