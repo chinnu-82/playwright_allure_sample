@@ -1,0 +1,1 @@
+[WARN] (Shopping cart › UI cart and /cart.js API stay in sync:network) HTTP 429 GET https://sauce-demo.myshopify.com/cart.js

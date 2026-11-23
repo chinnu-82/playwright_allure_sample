@@ -1,0 +1,12 @@
+{
+  "title": {
+    "ui": "Grey jacket",
+    "api": "Grey jacket",
+    "expected": "Grey jacket"
+  },
+  "price": {
+    "ui": 55,
+    "api": 55,
+    "expected": 55
+  }
+}

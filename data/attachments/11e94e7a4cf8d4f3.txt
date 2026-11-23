@@ -1,0 +1,21 @@
+2026-11-23T17:07:15.159Z [INFO ] (Product search › Searching "sandals" returns the matching products) ▶ START "Searching "sandals" returns the matching products" (attempt 3, worker 25)
+2026-11-23T17:07:15.167Z [INFO ] (Product search › Searching "sandals" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-11-23T17:07:15.447Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:15.461Z [DEBUG] (Product search › Searching "sandals" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-11-23T17:07:15.569Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:15.571Z [DEBUG] (Product search › Searching "sandals" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-23T17:07:15.571Z [WARN ] (Product search › Searching "sandals" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/
+2026-11-23T17:07:15.575Z [DEBUG] (Product search › Searching "sandals" returns the matching products:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:15.578Z [WARN ] (Product search › Searching "sandals" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+2026-11-23T17:07:15.578Z [WARN ] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+2026-11-23T17:07:15.607Z [INFO ] (Product search › Searching "sandals" returns the matching products) Searching for "sandals"
+2026-11-23T17:07:15.626Z [WARN ] (Product search › Searching "sandals" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1c4e62b755ea4 (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
+2026-11-23T17:07:15.626Z [DEBUG] (Product search › Searching "sandals" returns the matching products:console) console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
+2026-11-23T17:07:15.683Z [WARN ] (Product search › Searching "sandals" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/search?type=product&q=sandals
+2026-11-23T17:07:15.712Z [DEBUG] (Product search › Searching "sandals" returns the matching products:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:15.967Z [INFO ] (Product search › Searching "sandals" returns the matching products) DATA catalog.products
+    []
+2026-11-23T17:07:16.124Z [INFO ] (Product search › Searching "sandals" returns the matching products) ■ END status=failed duration=965ms

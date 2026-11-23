@@ -1,0 +1,27 @@
+{
+  "total": 43,
+  "firstParty": 33,
+  "apiCalls": 3,
+  "failed": 3,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 58,
+  "p95Ms": 138,
+  "slowestUrl": "221ms https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 19,
+    "image": 10,
+    "ping": 3,
+    "fetch": 5
+  },
+  "byStatus": {
+    "200": 35,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 4
+  }
+}

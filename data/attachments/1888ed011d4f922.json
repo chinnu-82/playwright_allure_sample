@@ -1,0 +1,28 @@
+{
+  "total": 39,
+  "firstParty": 30,
+  "apiCalls": 2,
+  "failed": 6,
+  "httpErrors": 1,
+  "slow": 0,
+  "averageMs": 76,
+  "p95Ms": 167,
+  "slowestUrl": "248ms https://sauce-demo.myshopify.com/cdn/shop/products/shoes2_grande.jpg?v=1394656869",
+  "byResourceType": {
+    "document": 2,
+    "other": 2,
+    "stylesheet": 1,
+    "script": 19,
+    "image": 9,
+    "ping": 3,
+    "fetch": 3
+  },
+  "byStatus": {
+    "200": 31,
+    "204": 1,
+    "301": 1,
+    "429": 2,
+    "failed": 3,
+    "pending": 1
+  }
+}

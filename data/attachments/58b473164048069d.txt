@@ -1,0 +1,10 @@
+2026-11-23T17:07:23.737Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ▶ START "Nonsense search term shows a "no results" message" (attempt 1, worker 29)
+2026-11-23T17:07:23.753Z [INFO ] (Product search › Nonsense search term shows a "no results" message) Opening search results for "zzqx-no-such-product"
+2026-11-23T17:07:24.342Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:24.443Z [WARN ] (Product search › Nonsense search term shows a "no results" message:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/search?q=zzqx-no-such-product&type=product
+2026-11-23T17:07:24.445Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:24.464Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-23T17:07:24.465Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:24.474Z [WARN ] (Product search › Nonsense search term shows a "no results" message:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+2026-11-23T17:07:24.474Z [WARN ] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+2026-11-23T17:07:24.512Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ■ END status=passed duration=775ms

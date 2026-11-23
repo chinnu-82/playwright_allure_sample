@@ -1,0 +1,32 @@
+{
+  "total": 68,
+  "firstParty": 41,
+  "apiCalls": 4,
+  "failed": 7,
+  "httpErrors": 3,
+  "slow": 0,
+  "averageMs": 98,
+  "p95Ms": 272,
+  "slowestUrl": "448ms blob:https://challenges.cloudflare.com/bdcec3b8-6265-4b32-afff-819d00425ea4",
+  "byResourceType": {
+    "document": 5,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 32,
+    "image": 15,
+    "ping": 3,
+    "fetch": 6,
+    "xhr": 3
+  },
+  "byStatus": {
+    "200": 51,
+    "204": 1,
+    "301": 1,
+    "302": 1,
+    "307": 1,
+    "401": 1,
+    "429": 3,
+    "failed": 4,
+    "pending": 5
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 21,
+    "method": "GET",
+    "url": "https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-11-23T16:59:23.796Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 45
+  },
+  {
+    "id": 30,
+    "method": "GET",
+    "url": "https://www.marinsoftware.com/",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-11-23T16:59:23.847Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 79
+  },
+  {
+    "id": 31,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-23T16:59:23.872Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/cart",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.8.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "ed900441-a191-4797-8154-0b378d5f7afc-1795453163",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7OhrtWKfRz1oAF2pUlxNAAfQXhPD7isu62YV4I6dvtKt0n%2BCaLYHtbUo4rBPlqdygeBKxFVI%2BiBbRmp%2Fs8C9yDDfDUR4ayJ49jDm7tOzSP2hQX6GhcjChaV33R6I7r%2BgGTg7ubF0OQJEVQ%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Mon, 23 Nov 2026 16:59:23 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a5f1b96238e4bddd-LAX",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 90.6,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 34,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/cart",
+    "resourceType": "document",
+    "firstParty": true,
+    "startedAt": "2026-11-23T16:59:24.010Z",
+    "outcome": "http-error",
+    "status": 429,
+    "statusText": "",
+    "durationMs": 26
+  },
+  {
+    "id": 45,
+    "method": "GET",
+    "url": "https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a5f1b9661ed6c171/CqZFM7AZaiG4qfOF-z_r2f98qRQXJL7_67SDToxDCgTyg153tyZQg-Ch2RHYqS4RE4ji0tqhVmnsz5C3VBISJZm3BM2dsT8V2n4x3sjzkaPvbYUL53wwdF5R8KEekdr6Iw",
+    "resourceType": "fetch",
+    "firstParty": false,
+    "startedAt": "2026-11-23T16:59:25.301Z",
+    "outcome": "failed",
+    "failure": "net::ERR_NAME_NOT_RESOLVED",
+    "durationMs": 26
+  },
+  {
+    "id": 46,
+    "method": "GET",
+    "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a5f1b9661ed6c171/1795453164751/23476e4a968f72973e2beffb18e446336fd30d50729dc380edbbe3a89428639b/CthJMMlN9cylgvFkwMrK7LoR40ZZ3AZHouup0jXl2vMs8EOdT697WB5lu1nrGfir7uYd2IYyIi0RoDp-W6JAdaI2abaD6tiuIYMCq2k4aUPrP_78RIKPPWUsKwsYCj7AwPTiW0Ag3Bo8WZnkdQh3lcFqSXTOYozwh53o7df9ET47n4tE0v8HHYDn0gfHVEWGZaeqZaEFdsIR3c3uBbo-4QB5M-nud6hUesxSYYTVbtDFa1Fvyt3jlsj1jiJ_FUcNJrACjpnrGXH-DqzW6QikEdE3GGOZwnkb-zPC-p6ikmabl0Yrcal2kukcgL0BzHkZn7R0FL9FQNQCfPichj2OL5qvDf7PgURvMTyC6Y-ipXRHv1Cm-8x7O-NyuucUNdSKIviSI-t5R6XuPuEJpMextVHLDbTRq-5w4pcGU6vQ70D_BChxCB4rQQQ6GeSmzQ8sQbfX-wy3NtIg5BmF5sh8i3t2o6iR6L92xJnv519-6fFEF-SklTm7i6Q_MARxLypDsGsAbEmfDKkkfgo1iaQZABzqP_eQto8GdgB7dEZX5w7gcGSgsjhynLteixNYArb3nMa8OuZYa_77erRrJu9gBRlZl4tiBeJ3BRuIiZVtf6P2aTV-LQE20-f43Psw_DJEExO1Vw5tT79EwA1c3Q",
+    "resourceType": "fetch",
+    "firstParty": false,
+    "startedAt": "2026-11-23T16:59:25.311Z",
+    "outcome": "http-error",
+    "status": 401,
+    "statusText": "",
+    "durationMs": 19
+  }
+]

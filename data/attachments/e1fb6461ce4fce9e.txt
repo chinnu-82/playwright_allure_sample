@@ -1,0 +1,22 @@
+2026-11-23T17:07:04.193Z [INFO ] (Product search › Searching "jacket" returns the matching products) ▶ START "Searching "jacket" returns the matching products" (attempt 1, worker 20)
+2026-11-23T17:07:04.202Z [INFO ] (Product search › Searching "jacket" returns the matching products) Navigating to https://sauce-demo.myshopify.com/
+2026-11-23T17:07:04.455Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:04.471Z [DEBUG] (Product search › Searching "jacket" returns the matching products) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-11-23T17:07:04.562Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:04.564Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-23T17:07:04.568Z [WARN ] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/
+2026-11-23T17:07:04.583Z [DEBUG] (Product search › Searching "jacket" returns the matching products:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:04.590Z [WARN ] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+2026-11-23T17:07:04.590Z [WARN ] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+2026-11-23T17:07:04.601Z [INFO ] (Product search › Searching "jacket" returns the matching products) Searching for "jacket"
+2026-11-23T17:07:04.654Z [WARN ] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1c4a16a93b6a4 (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
+2026-11-23T17:07:04.654Z [DEBUG] (Product search › Searching "jacket" returns the matching products:console) console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
+2026-11-23T17:07:04.691Z [DEBUG] (Product search › Searching "jacket" returns the matching products:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-23T17:07:04.697Z [WARN ] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/search?type=product&q=jacket
+2026-11-23T17:07:04.726Z [DEBUG] (Product search › Searching "jacket" returns the matching products:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:05.065Z [INFO ] (Product search › Searching "jacket" returns the matching products) DATA catalog.products
+    []
+2026-11-23T17:07:05.127Z [INFO ] (Product search › Searching "jacket" returns the matching products) ■ END status=failed duration=934ms

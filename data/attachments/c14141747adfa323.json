@@ -1,0 +1,12 @@
+{
+  "title": {
+    "ui": "Bronze sandals",
+    "api": "Bronze sandals",
+    "expected": "Bronze sandals"
+  },
+  "price": {
+    "ui": 39.99,
+    "api": 39.99,
+    "expected": 39.99
+  }
+}

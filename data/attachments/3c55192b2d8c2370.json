@@ -1,0 +1,30 @@
+{
+  "total": 54,
+  "firstParty": 31,
+  "apiCalls": 3,
+  "failed": 5,
+  "httpErrors": 3,
+  "slow": 0,
+  "averageMs": 79,
+  "p95Ms": 168,
+  "slowestUrl": "578ms https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/fo/190048713:1795451114:MhqWV2bklbNPiV8D9pCOxGmJMTvhb0mhPi_wWLa6v6Y/a5f1c0b1f9f319db/CqXgLTsr1k6K0tOd9Td6DxN1Q4MXd7GQRBe9nELgfjV7LBj_tvkTzDkvX4nJnE3IU59dMs37irhsOiPKcDAD0N2owqSLB3tnJ3F-3Q_35sdfTMXcqOzbYL8vzJnGulh_0g",
+  "byResourceType": {
+    "document": 4,
+    "other": 1,
+    "stylesheet": 1,
+    "script": 27,
+    "image": 10,
+    "ping": 3,
+    "fetch": 5,
+    "xhr": 3
+  },
+  "byStatus": {
+    "200": 42,
+    "204": 1,
+    "301": 1,
+    "401": 1,
+    "429": 3,
+    "failed": 3,
+    "pending": 3
+  }
+}

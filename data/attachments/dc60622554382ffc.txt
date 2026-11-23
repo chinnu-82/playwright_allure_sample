@@ -1,0 +1,9 @@
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Simulating network failure (failed) for **/cart/add.js
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/products/grey-jacket
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1b769dd484ce5 (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) HTTP 429 POST https://sauce-demo.myshopify.com/.well-known/shopify/fec/produce
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:console) Uncaught page error: SyntaxError: Unexpected token ')'
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) Request failed: POST https://sauce-demo.myshopify.com/cart/add.js (net::ERR_FAILED)
+[WARN] (Shopping cart › Add to cart fails gracefully when the cart service is unreachable:network) HTTP 429 GET https://sauce-demo.myshopify.com/cart.js

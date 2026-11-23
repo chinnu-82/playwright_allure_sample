@@ -1,0 +1,29 @@
+{
+  "total": 101,
+  "firstParty": 35,
+  "apiCalls": 5,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 158,
+  "p95Ms": 309,
+  "slowestUrl": "352ms https://tag.marinsm.com/serve/55f0a404808337080a0001ab.js",
+  "byResourceType": {
+    "document": 4,
+    "other": 6,
+    "stylesheet": 1,
+    "script": 72,
+    "image": 7,
+    "ping": 3,
+    "fetch": 7,
+    "font": 1
+  },
+  "byStatus": {
+    "200": 95,
+    "204": 1,
+    "301": 1,
+    "302": 1,
+    "failed": 2,
+    "pending": 1
+  }
+}

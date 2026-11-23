@@ -1,0 +1,2 @@
+2026-11-23T16:57:41.616Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login?return_url=%2Faccount:0:0
+2026-11-23T16:57:41.760Z [DEBUG] [bugsnag] Loaded!  @ https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/notifier-DqqNt4wG.js:0:46037

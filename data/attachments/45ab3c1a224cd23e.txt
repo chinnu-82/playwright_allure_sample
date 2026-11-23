@@ -1,0 +1,80 @@
+2026-11-23T17:07:27.116Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) ▶ START "Nested steps with parameters, timings and log steps" (attempt 1, worker 29)
+2026-11-23T17:07:27.123Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) Navigating to https://sauce-demo.myshopify.com/collections/all
+2026-11-23T17:07:27.401Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:27.416Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/collections/all"
+    }
+2026-11-23T17:07:27.505Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/collections/all
+2026-11-23T17:07:27.509Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-23T17:07:27.512Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-23T17:07:27.512Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:27.518Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+2026-11-23T17:07:27.518Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+2026-11-23T17:07:27.555Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1c530cdcb19db (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
+2026-11-23T17:07:27.555Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
+2026-11-23T17:07:27.558Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) DATA catalog.products
+    [
+      {
+        "name": "Black heels",
+        "priceText": "£45.00",
+        "href": "/collections/all/products/flower-print-jeans",
+        "imageAlt": "Black heels",
+        "price": 45
+      },
+      {
+        "name": "Bronze sandals",
+        "priceText": "£39.99",
+        "href": "/collections/all/products/bronze-sandals",
+        "imageAlt": "Bronze sandals",
+        "price": 39.99
+      },
+      {
+        "name": "Brown Shades",
+        "priceText": "£20.00",
+        "href": "/collections/all/products/brown-shades",
+        "imageAlt": "Brown Shades",
+        "price": 20
+      },
+      {
+        "name": "Grey jacket",
+        "priceText": "£55.00",
+        "href": "/collections/all/products/grey-jacket",
+        "imageAlt": "Grey jacket",
+        "price": 55
+      },
+      {
+        "name": "Noir jacket",
+        "priceText": "£60.00",
+        "href": "/collections/all/products/noir-jacket",
+        "imageAlt": "Noir jacket",
+        "price": 60
+      },
+      {
+        "name": "Striped top",
+        "priceText": "£50.00",
+        "href": "/collections/all/products/striped-top",
+        "imageAlt": "Striped top",
+        "price": 50
+      },
+      {
+        "name": "White sandals",
+        "priceText": "£25.00",
+        "href": "/collections/all/products/white-sandals",
+        "imageAlt": "White sandals",
+        "price": 25
+      }
+    ]
+2026-11-23T17:07:27.560Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) Opening product striped-top
+2026-11-23T17:07:27.605Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) HTTP 429 GET https://sauce-demo.myshopify.com/products/striped-top
+2026-11-23T17:07:27.631Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Failed to load resource: the server responded with a status of 429 ()
+2026-11-23T17:07:28.978Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) Request failed: GET https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a5f1c5342c5afbf8/Ckga7g1wkAAeZaDHXWQb1WthMNHE7qrMEuqfeWcAHElGmZIKwCdL0EO_Lr7l6SWyuRqCUEnQxbLHpHgEfjuZLzEBB_2MmZTUquFFTZhzITomgHOPbi6j5Qk_kFV4eazMXg (net::ERR_NAME_NOT_RESOLVED)
+2026-11-23T17:07:29.001Z [WARN ] (Allure feature showcase › Nested steps with parameters, timings and log steps:network) HTTP 401 GET https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/pat/a5f1c5342c5afbf8/1795453648378/0d904d6dbea1614a4871626a3a2f7eafe7369ef5a7dd4ed1d4e5b83a9f9d6ef9/CguuKTUI9RBDX0yEhINjJdSalF1M2SFdIogXMti598szhIsA1R04xZ4yED46PfBa1-eEFjQobKnGCOFp3LTwPSaeYaYpmdq5HWXN7qKMh4ZLytIJeXNgAkPqQ4WKU2R9yaKFfd2D4oJSjeBIDxdP1jepp3XCslpTRrwFZWR2lLUGfBVzYjBIRKf14x2QxiQFIDbHfdP672d-uA6SABzaIDcvuUEvvOy6GEGNooUnCJ9NG0bSEX0TDlN5jvygoQJdxFvevsFXTbdnDV7yMIRAKFyaNHh7xh4bhzqEtDhlyLQoF9qagsL4TuXPmB2kKNmK5YzyN4GEt_GlBSg1u31-XcLuMRV5omtUdwqFr3uWFV0CasPL5bqEtL6bp9fKORmrb92S1R8g94QoZe1in0VKlngDkVDprbe6ev85tyav5AeFIoe2ClnKZK0nYjiKs4N7GcifFKz6vMD6Fs60EfY3uF0ODzLi9jLdXlQs0Wblx3VAVhqhHV-sK9xi8_8ndQhrN34di_9cObCNveiiUkB3XD17Q3epHhDdi4f3eLNEYjsExKXWrQ1RqHflDoya2R3xXhjQmZlO9l6RjOGP0MwWkak73ULkRfbS8Xv-Sr-L_PORm_yHdtIoI4QF0oc9xNDiXO4ULB4JfDkUdJ7S
+2026-11-23T17:07:30.383Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Connecting to 'data:,' violates the following Content Security Policy directive: "connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstest.dev https://ca2.cloudflarecaptcha.com https://ca1.cloudflarecaptcha.com". The action has been blocked.
+2026-11-23T17:07:30.383Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Connecting to 'data:,' violates the following Content Security Policy directive: "connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstest.dev https://ca2.cloudflarecaptcha.com https://ca1.cloudflarecaptcha.com". The action has been blocked.
+2026-11-23T17:07:30.383Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.
+2026-11-23T17:07:30.802Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: %c%d font-size:0;color:transparent NaN
+2026-11-23T17:07:30.803Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: %c%d font-size:0;color:transparent NaN
+2026-11-23T17:07:30.803Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: %c%o font-size:0;color:transparent {}
+2026-11-23T17:07:30.803Z [DEBUG] (Allure feature showcase › Nested steps with parameters, timings and log steps:console) console.error: %c%o font-size:0;color:transparent {}
+2026-11-23T17:07:37.719Z [INFO ] (Allure feature showcase › Nested steps with parameters, timings and log steps) ■ END status=failed duration=10603ms

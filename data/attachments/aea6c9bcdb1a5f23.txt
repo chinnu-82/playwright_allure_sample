@@ -1,0 +1,5 @@
+[WARN] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/
+[WARN] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
+[WARN] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
+[WARN] (Product search › Searching "jacket" returns the matching products:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1c4bbc9f98e5e (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
+[WARN] (Product search › Searching "jacket" returns the matching products:network) HTTP 429 GET https://sauce-demo.myshopify.com/search?type=product&q=jacket
