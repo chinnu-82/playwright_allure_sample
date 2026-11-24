@@ -1,0 +1,21 @@
+2026-11-24T16:46:14.985Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ▶ START "Header "Sign up" link opens the registration form" (attempt 1, worker 1)
+2026-11-24T16:46:15.001Z [INFO ] (Account access › Header "Sign up" link opens the registration form) Navigating to https://sauce-demo.myshopify.com/
+2026-11-24T16:46:15.566Z [DEBUG] (Account access › Header "Sign up" link opens the registration form) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/"
+    }
+2026-11-24T16:46:15.669Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-24T16:46:15.689Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:15.711Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:15.818Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:15.843Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:15.899Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:15.953Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:16.445Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:16.565Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-24T16:46:16.605Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:16.655Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:16.656Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:16.699Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:16.779Z [DEBUG] (Account access › Header "Sign up" link opens the registration form:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:17.470Z [INFO ] (Account access › Header "Sign up" link opens the registration form) ■ END status=passed duration=2485ms

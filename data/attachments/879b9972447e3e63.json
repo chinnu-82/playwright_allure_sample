@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "method": "GET",
+    "url": "https://sauce-demo.myshopify.com/pages/shipping",
+    "resourceType": "document",
+    "firstParty": true,
+    "startedAt": "2026-11-24T16:48:21.696Z",
+    "outcome": "http-error",
+    "status": 404,
+    "statusText": "",
+    "durationMs": 194.7
+  },
+  {
+    "id": 18,
+    "method": "GET",
+    "url": "https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-11-24T16:48:21.990Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 17
+  },
+  {
+    "id": 27,
+    "method": "GET",
+    "url": "https://www.marinsoftware.com/",
+    "resourceType": "script",
+    "firstParty": false,
+    "startedAt": "2026-11-24T16:48:22.007Z",
+    "outcome": "failed",
+    "failure": "net::ERR_BLOCKED_BY_ORB",
+    "durationMs": 77
+  },
+  {
+    "id": 28,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-24T16:48:22.071Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/pages/shipping",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0",
+      "accept-language": "en-GB,en;q=0.9"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.8.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "b7ee2043-2fb6-4466-a5fc-9ba94d41848c-1795538902",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0K8imbGWxb7ObxR3PFFwwSKD%2FNlHYUWYlMXLd89mjGEd41SEPUK%2BQH7%2BImEBO78qO%2FSpTK1RFa3DkDDKDwSe7L9bMDlmqa8%2B%2BliUYpNqXCrK7E4gJsq4DFZCBvUWF6CD0I5nj%2F%2FZPuuuZA%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Tue, 24 Nov 2026 16:48:22 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a5f9e699fc7d2a91-LAX",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 94.1,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  }
+]

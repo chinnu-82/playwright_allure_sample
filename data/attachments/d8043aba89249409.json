@@ -1,0 +1,29 @@
+{
+  "total": 118,
+  "firstParty": 85,
+  "apiCalls": 10,
+  "failed": 7,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 79,
+  "p95Ms": 197,
+  "slowestUrl": "984ms https://d.adroll.com/pixel/RLFWQFGQMZC2ZEMERYUQ34/GKTPKTIEIVDXDB73OLEF43?af0=99354fe7&adroll_fpc=99b54317b2c48d40ec55ae1dd225c00e-1795538798520&pv=18639662641.507748&arrfrr=https%3A%2F%2Fsauce-demo.myshopify.com%2Fproducts%2Fstriped-top&cookie=&adroll_s_ref=&keyw=&p0=650&adroll_version=1.0",
+  "byResourceType": {
+    "document": 2,
+    "other": 47,
+    "stylesheet": 1,
+    "script": 26,
+    "image": 22,
+    "ping": 6,
+    "fetch": 10,
+    "xhr": 4
+  },
+  "byStatus": {
+    "200": 100,
+    "204": 1,
+    "301": 1,
+    "302": 11,
+    "failed": 2,
+    "pending": 3
+  }
+}

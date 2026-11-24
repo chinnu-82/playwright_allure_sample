@@ -1,0 +1,19 @@
+2026-11-24T16:46:19.930Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ▶ START "Invalid credentials do not authenticate the user (sql-injection attempt)" (attempt 1, worker 0)
+2026-11-24T16:46:19.939Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-24T16:46:20.578Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:20.589Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-24T16:46:20.706Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-24T16:46:20.708Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-24T16:46:20.845Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.email
+    admin@example.com' OR '1'='1
+2026-11-24T16:46:20.845Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) DATA login.password
+    ***********
+2026-11-24T16:46:20.873Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:20.992Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:21.049Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-24T16:46:21.218Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):console) console.error: Provider's accounts list is empty.
+2026-11-24T16:46:23.053Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt):network) Request failed: GET https://cacb3343d4f2.w.hcaptcha.com/logo.png (net::ERR_ABORTED)
+2026-11-24T16:46:23.128Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (sql-injection attempt)) ■ END status=passed duration=3198ms

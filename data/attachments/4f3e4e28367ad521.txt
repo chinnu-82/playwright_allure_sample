@@ -1,5 +1,0 @@
-[WARN] (Product details › Unknown product URL shows the 404 page:network) HTTP 404 GET https://sauce-demo.myshopify.com/products/this-product-does-not-exist
-[WARN] (Product details › Unknown product URL shows the 404 page:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/custom/web-pixel-shopify-custom-pixel@0540/sandbox/modern/products/this-product-does-not-exist
-[WARN] (Product details › Unknown product URL shows the 404 page:network) HTTP 429 GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js
-[WARN] (Product details › Unknown product URL shows the 404 page:network) Request failed: GET https://sauce-demo.myshopify.com/web-pixels@15451528w2c618d7fpfa16f52dm59493539/web-pixel-shopify-app-pixel@0540/sandbox/worker.modern.js (net::ERR_FAILED)
-[WARN] (Product details › Unknown product URL shows the 404 page:network) Request failed: GET https://sauce-demo.myshopify.com/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a5f1c49b9acbcbac (net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep)
