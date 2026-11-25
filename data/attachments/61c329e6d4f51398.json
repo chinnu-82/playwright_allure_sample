@@ -1,0 +1,28 @@
+{
+  "total": 39,
+  "firstParty": 30,
+  "apiCalls": 3,
+  "failed": 4,
+  "httpErrors": 1,
+  "slow": 0,
+  "averageMs": 82,
+  "p95Ms": 180,
+  "slowestUrl": "191ms https://cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-6af5f5e9.js",
+  "byResourceType": {
+    "document": 2,
+    "other": 3,
+    "stylesheet": 1,
+    "script": 19,
+    "image": 7,
+    "ping": 3,
+    "fetch": 4
+  },
+  "byStatus": {
+    "200": 32,
+    "204": 1,
+    "301": 1,
+    "404": 1,
+    "failed": 2,
+    "pending": 2
+  }
+}

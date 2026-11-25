@@ -1,0 +1,17 @@
+2026-11-25T16:34:11.010Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) ▶ START "Invalid credentials do not authenticate the user (unknown user)" (attempt 1, worker 1)
+2026-11-25T16:34:11.021Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) Navigating to https://sauce-demo.myshopify.com/account/login
+2026-11-25T16:34:11.780Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-25T16:34:12.053Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user)) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/account/login"
+    }
+2026-11-25T16:34:12.059Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-25T16:34:12.122Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-25T16:34:12.122Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-25T16:34:12.207Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) DATA login.email
+    unknown.user@example.com
+2026-11-25T16:34:12.207Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) DATA login.password
+    ***************
+2026-11-25T16:34:12.329Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-25T16:34:12.376Z [DEBUG] (Customer login › Invalid credentials do not authenticate the user (unknown user):network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-25T16:34:12.503Z [INFO ] (Customer login › Invalid credentials do not authenticate the user (unknown user)) ■ END status=passed duration=1493ms
