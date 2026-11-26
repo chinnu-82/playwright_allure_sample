@@ -1,0 +1,9 @@
+2026-11-26T16:07:58.715Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ▶ START "Nonsense search term shows a "no results" message" (attempt 3, worker 32)
+2026-11-26T16:07:58.726Z [INFO ] (Product search › Nonsense search term shows a "no results" message) Opening search results for "zzqx-no-such-product"
+2026-11-26T16:07:58.902Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-26T16:07:59.034Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-26T16:07:59.040Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-26T16:07:59.134Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-26T16:07:59.151Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-26T16:07:59.241Z [DEBUG] (Product search › Nonsense search term shows a "no results" message:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-26T16:08:09.207Z [INFO ] (Product search › Nonsense search term shows a "no results" message) ■ END status=failed duration=10492ms

@@ -1,0 +1,31 @@
+{
+  "total": 186,
+  "firstParty": 36,
+  "apiCalls": 5,
+  "failed": 6,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 97,
+  "p95Ms": 163,
+  "slowestUrl": "274ms https://error-analytics-sessions-production.shopifysvc.com/",
+  "byResourceType": {
+    "document": 6,
+    "other": 7,
+    "stylesheet": 4,
+    "script": 131,
+    "image": 8,
+    "ping": 3,
+    "fetch": 22,
+    "font": 3,
+    "xhr": 2
+  },
+  "byStatus": {
+    "200": 173,
+    "202": 1,
+    "204": 1,
+    "301": 1,
+    "302": 2,
+    "failed": 2,
+    "pending": 6
+  }
+}

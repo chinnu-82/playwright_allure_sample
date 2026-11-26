@@ -1,0 +1,27 @@
+{
+  "total": 46,
+  "firstParty": 36,
+  "apiCalls": 4,
+  "failed": 4,
+  "httpErrors": 0,
+  "slow": 0,
+  "averageMs": 65,
+  "p95Ms": 131,
+  "slowestUrl": "150ms https://sauce-demo.myshopify.com/cdn/shop/products/RayBanWayfarer5022sunglasses_grande.JPG?v=1422884271",
+  "byResourceType": {
+    "document": 2,
+    "other": 6,
+    "stylesheet": 1,
+    "script": 20,
+    "image": 9,
+    "ping": 3,
+    "fetch": 5
+  },
+  "byStatus": {
+    "200": 38,
+    "204": 1,
+    "301": 1,
+    "failed": 2,
+    "pending": 4
+  }
+}
