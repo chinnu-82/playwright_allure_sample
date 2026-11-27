@@ -1,5 +1,0 @@
-2026-11-26T16:07:00.698Z [INFO] Clear-Site-Data header on 'https://sauce-demo.myshopify.com/cart/add.js': Cleared data types: "prefetchCache", "prerenderCache".  @ https://sauce-demo.myshopify.com/products/grey-jacket:0:0
-2026-11-26T16:07:00.821Z [PAGEERROR] TypeError: Cannot read properties of null (reading 'description')  @ at Object.<anonymous> (https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943:1:29646)
-2026-11-26T16:07:02.427Z [PAGEERROR] TypeError: Cannot read properties of null (reading 'description')  @ at Object.<anonymous> (https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943:1:29646)
-2026-11-26T16:07:02.743Z [INFO] Clear-Site-Data header on 'https://sauce-demo.myshopify.com/cart/add.js': Cleared data types: "prefetchCache", "prerenderCache".  @ https://sauce-demo.myshopify.com/products/striped-top:0:0
-2026-11-26T16:07:02.850Z [PAGEERROR] TypeError: Cannot read properties of null (reading 'description')  @ at Object.<anonymous> (https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943:1:29646)

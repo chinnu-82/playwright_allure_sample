@@ -1,0 +1,17 @@
+2026-11-27T15:54:56.309Z [LOG] recaptchacompat disabled  @ https://js.hcaptcha.com/1/api.js?render=explicit&recaptchacompat=off&onload=__shopify_hcap_load_jeok87vv:3:702010
+2026-11-27T15:54:56.372Z [ERROR] Provider's accounts list is empty.  @ https://sauce-demo.myshopify.com/account/login:0:0
+2026-11-27T15:54:56.664Z [DEBUG] [bugsnag] Loaded!  @ https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pay/vite-pay/assets/notifier-DqqNt4wG.js:0:46037
+2026-11-27T15:54:57.251Z [ENDGROUP] EvalError
+    at https://newassets.hcaptcha.com/c/0ab823e9c6b541c61692a3a0b7ddd9510d8dda112d8ba06d79bb2b7b47403acc/hsw.js:2:1613951
+    at bO (https://newassets.hcaptcha.com/c/0ab823e9c6b541c61692a3a0b7ddd9510d8dda112d8ba06d79bb2b7b47403acc/hsw.js:2:1520121)
+    at Ic (https://newassets.hcaptcha.com/c/0ab823e9c6b541c61692a3a0b7ddd9510d8dda112d8ba06d79bb2b7b47403acc/hsw.js:2:1613904)
+    at wasm://wasm/00422e4a:wasm-function[342]:0x2802d
+    at wasm://wasm/00422e4a:wasm-function[966]:0xc0ca8
+    at wasm://wasm/00422e4a:wasm-function[687]:0x7baa9
+    at wasm://wasm/00422e4a:wasm-function[960]:0xba69c
+    at wasm://wasm/00422e4a:wasm-function[794]:0x8d9a1
+    at wasm://wasm/00422e4a:wasm-function[1218]:0xf808e
+    at wasm://wasm/00422e4a:wasm-function[441]:0x3b84e  @ https://newassets.hcaptcha.com/c/0ab823e9c6b541c61692a3a0b7ddd9510d8dda112d8ba06d79bb2b7b47403acc/hsw.js:1:1630747
+2026-11-27T15:54:57.281Z [WARNING] [.WebGL-0x329400bc1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels  @ https://newassets.hcaptcha.com/captcha/v1/a7305732738ccf3b7862eab7fe6d8f7b136a48f4/static/hcaptcha.html#frame=challenge&id=08won5ear5em&host=sauce-demo.myshopify.com&sentry=true&recaptchacompat=off&custom=false&hl=en&tplinks=on&andint=off&clientOptions=%7B%22sentry%22%3Atrue%2C%22reportapi%22%3A%22https%3A%2F%2Faccounts.hcaptcha.com%22%2C%22recaptchacompat%22%3A%22off%22%2C%22custom%22%3Afalse%2C%22hl%22%3A%22en-GB%22%2C%22tplinks%22%3A%22on%22%2C%22andint%22%3A%22off%22%2C%22pat%22%3A%22on%22%2C%22pstissuer%22%3A%22https%3A%2F%2Fpst-issuer.hcaptcha.com%22%2C%22endpoint%22%3A%22https%3A%2F%2Fapi.hcaptcha.com%22%2C%22theme%22%3A%22light%22%2C%22size%22%3A%22normal%22%2C%22confirm-nav%22%3Afalse%7D&pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&reportapi=https%3A%2F%2Faccounts.hcaptcha.com&sitekey=f06e6c50-85a8-45c8-87d0-21a2b65856fe&size=invisible&theme=light&origin=https%3A%2F%2Fsauce-demo.myshopify.com:0:0
+2026-11-27T15:54:57.337Z [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://pay.shopify.com') does not match the recipient window's origin ('https://shop.app').  @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_yA1tNAo3.esm.js:0:0
+2026-11-27T15:54:57.337Z [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://pay.shopify.com') does not match the recipient window's origin ('https://shop.app').  @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.utils_yA1tNAo3.esm.js:0:0

@@ -1,3 +1,0 @@
-2026-11-26T16:07:22.004Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket) ▶ START "Product page shows correct title and price for Grey jacket" (attempt 1, worker 7)
-2026-11-26T16:07:22.090Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket:api) GET /products/grey-jacket.js -> 429 in 69ms
-2026-11-26T16:07:22.147Z [INFO ] (Product details › Product page shows correct title and price for Grey jacket) ■ END status=failed duration=143ms

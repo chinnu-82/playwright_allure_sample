@@ -1,0 +1,106 @@
+[
+  {
+    "id": 35,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-27T15:55:25.780Z",
+    "outcome": "failed",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/collections/all",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"v\":1,\"s\":{\"wd\":true,\"ua\":false,\"cf\":true,\"be\":true,\"nm\":false,\"nc\":false,\"ka\":false,\"sa\":false,\"ta\":false,\"pt\":false,\"mp\":false,\"sd\":false},\"r\":\"change\",\"l\":\"2.8.0\"}",
+    "status": 204,
+    "statusText": "",
+    "responseHeaders": {
+      "x-request-id": "111c376e-b6a9-439c-8a22-18344e70a629-1795794925",
+      "cf-cache-status": "DYNAMIC",
+      "x-dc": "gcp-us-west1",
+      "x-permitted-cross-domain-policies": "none",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ezb1NMhLPgMm4HAHVGGadsSrsmduX3%2FvO5OT4ToFfAI4V48ezxymdcwYco7hpqPBsVgLbSKjQsAj36WQ5OVANRsW%2B6PM6yvCQ%2BkpuNcsvAPk2DJ2sgF6ayuSNLl3MqXvrLwS3hyo1KVhww%3D%3D\"}]}",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "server-timing": "cfExtPri",
+      "date": "Fri, 27 Nov 2026 15:55:25 GMT",
+      "priority": "u=1,i",
+      "cache-control": "no-store",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+      "x-download-options": "noopen",
+      "cf-ray": "a612512e2f8bb9cd-SEA",
+      "x-xss-protection": "1; mode=block",
+      "server": "cloudflare"
+    },
+    "failure": "net::ERR_ABORTED",
+    "durationMs": 138,
+    "responseBody": "<body unavailable (redirect or page closed)>"
+  },
+  {
+    "id": 42,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-27T15:55:25.921Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/collections/all",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_init/3.2\",\"payload\":{\"version\":\"15451528w2c618d7fpfa16f52dm59493539\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/collections/all\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"status\":\"initialized\",\"user_can_be_tracked\":\"true\"},\"metadata\":{\"event_created_at_ms\":1795794925891}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"15451528w2c618d7fpfa16f52dm59493539\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/collections/all\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"page_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-1db7faa6-0857-40B9-A4A5-A61536DF4476\"},\"metadata\":{\"event_created_at_ms\":1795794925892}},{\"schema_id\":\"web_pixels_manager_event_publish/1.7\",\"payload\":{\"version\":\"15451528w2c618d7fpfa16f52dm59493539\",\"bundle_target\":\"modern\",\"page_url\":\"https://sauce-demo.myshopify.com/collections/all\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"event_name\":\"collection_viewed\",\"event_type\":\"standard\",\"user_can_be_tracked\":\"true\",\"event_id\":\"sh-1db7fab2-4DD8-4E8E-FB2D-78582B0B153A\"},\"metadata\":{\"event_created_at_ms\":1795794925893}}],\"metadata\":{\"event_sent_at_ms\":1795794925913}}"
+  },
+  {
+    "id": 45,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/api/event/collect",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-27T15:55:25.944Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/collections/all",
+      "x-shopify-essential-event": "true",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "application/json",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"schema_id\":\"storefront_observer_events/1.1\",\"payload\":{\"page_url\":\"https://sauce-demo.myshopify.com/collections/all\",\"shop_id\":3991157,\"batch_start_time\":1795794925709,\"batch_end_time\":1795794925940,\"listener_registrations\":[\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"DOMContentLoaded\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"ready\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/jquery.theme.js?v=42021284561027497791425319943\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"ready\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#captcha-bootstrap\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"submit\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#captcha-bootstrap\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"focusin\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#captcha-bootstrap\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"change\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#captcha-bootstrap\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"DOMContentLoaded\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#ln:91\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"DOMContentLoaded\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#shopify.dynamic_checkout.cart.bootstrap\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"DOMContentLoaded\\\",\\\"target\\\":\\\"htmldocument\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#ln:159\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"pagehide\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#ln:159\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"script\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#ln:159\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"error\\\",\\\"target\\\":\\\"script\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"inline-script#ln:721\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/checkouts/internal/preloads.js?locale=en-US\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"load\\\",\\\"target\\\":\\\"window\\\"},\\\"confidence\\\":\\\"high\\\",\\\"count\\\":1,\\\"blocked\\\":false}\",\"{\\\"source\\\":{\\\"script_url\\\":\\\"https://sauce-demo.myshopify.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.16.1.min.js\\\"},\\\"listener\\\":{\\\"event_type\\\":\\\"pageshow\\\",\\\"target\\\":\\\"window\\\"},\\\"co… [truncated 14949 chars]"
+  },
+  {
+    "id": 48,
+    "method": "POST",
+    "url": "https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch",
+    "resourceType": "fetch",
+    "firstParty": true,
+    "startedAt": "2026-11-27T15:55:25.985Z",
+    "outcome": "pending",
+    "requestHeaders": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://sauce-demo.myshopify.com/collections/all",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.12 Safari/537.36",
+      "content-type": "text/plain",
+      "sec-ch-viewport-width": "1366"
+    },
+    "requestBody": "{\"events\":[{\"schema_id\":\"web_pixels_manager_pixel_register/3.8\",\"payload\":{\"version\":\"15451528w2c618d7fpfa16f52dm59493539\",\"page_url\":\"https://sauce-demo.myshopify.com/collections/all\",\"shop_id\":3991157,\"surface\":\"storefront-renderer\",\"pixel_id\":\"shopify-custom-pixel\",\"pixel_app_id\":\"shopify-pixel\",\"pixel_source\":\"CUSTOM\",\"pixel_runtime_context\":\"LAX\",\"pixel_script_version\":\"0540\",\"pixel_event_schema_version\":\"v1\",\"user_can_be_tracked\":\"true\",\"bundle_target\":\"modern\",\"duration\":88,\"start_time\":384,\"session_id\":\"sh-1db7fa98-3A8E-4273-B8EA-AB86BB066C1D\",\"status\":\"registered\"},\"metadata\":{\"event_created_at_ms\":1795794925982}}],\"metadata\":{\"event_sent_at_ms\":1795794925982}}"
+  }
+]

@@ -1,0 +1,2 @@
+2026-11-27T15:55:45.195Z [INFO ] (Allure feature showcase › Result statuses › BROKEN: test exceeds its timeout (infrastructure problem)) ▶ START "BROKEN: test exceeds its timeout (infrastructure problem)" (attempt 1, worker 13)
+2026-11-27T15:55:45.197Z [INFO ] (Allure feature showcase › Result statuses › BROKEN: test exceeds its timeout (infrastructure problem)) ■ END status=skipped duration=2ms

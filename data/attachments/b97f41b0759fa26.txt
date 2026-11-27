@@ -1,3 +1,0 @@
-2026-11-26T16:07:16.549Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) ▶ START "Shipping details are accepted for Name with apostrophe" (attempt 1, worker 1)
-2026-11-26T16:07:16.600Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe:api) GET /products/grey-jacket.js -> 429 in 42ms
-2026-11-26T16:07:16.645Z [INFO ] (Checkout › Shipping details are accepted for Name with apostrophe) ■ END status=failed duration=96ms

@@ -1,0 +1,13 @@
+2026-11-27T15:55:41.620Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) ▶ START "Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images" (attempt 1, worker 13)
+2026-11-27T15:55:41.625Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) Navigating to https://sauce-demo.myshopify.com/cart
+2026-11-27T15:55:41.798Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: GET https://dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (net::ERR_BLOCKED_BY_ORB)
+2026-11-27T15:55:41.847Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) Navigation finished with HTTP 200
+    {
+      "url": "https://sauce-demo.myshopify.com/cart"
+    }
+2026-11-27T15:55:41.927Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: GET https://www.marinsoftware.com/ (net::ERR_BLOCKED_BY_ORB)
+2026-11-27T15:55:41.929Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/api/collect (net::ERR_ABORTED)
+2026-11-27T15:55:42.042Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-27T15:55:42.046Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-27T15:55:42.114Z [DEBUG] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images:network) Request failed: POST https://sauce-demo.myshopify.com/.well-known/shopify/monorail/unstable/produce_batch (net::ERR_ABORTED)
+2026-11-27T15:55:42.138Z [INFO ] (Allure feature showcase › Custom attachments: JSON, CSV, XML, log file, HTML, SVG and images) ■ END status=passed duration=518ms
